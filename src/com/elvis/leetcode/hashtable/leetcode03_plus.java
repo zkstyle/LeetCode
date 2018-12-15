@@ -29,7 +29,6 @@ import java.util.Map;
  *      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
 public class leetcode03_plus {
-    //111111111111
     public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;
         int maxLength = 0;
