@@ -31,24 +31,17 @@ import java.util.Map;
 public class leetcode03_plus {
 
     public static int lengthOfLongestSubstring(String s) {
-        //if (s.length() == 0) return 0;
+        if (s.length() == 0) return 0;
         int maxLength = 0;
         Map<Character, Integer> map = new HashMap<Character, Integer>();
-        for (int i = 0 ; i < s.length(); i++) {
-            for (int j = i; j < s.length(); j++) {
-                if (map.containsKey(s.charAt(j))){
-                    maxLength = (maxLength > map.size()) ? maxLength : map.size();
-                    map.clear();//清空重新计量
-                    break;
-                }else {
-                    map.put(s.charAt(j),j);
+        for (int i = 0 ,j = 0 ; i < s.length(); i++) {
+                if (map.containsKey(s.charAt(i))){
+                    j = Math.max(j, map.get(s.charAt(i))+1);
                 }
-            }
-
+                map.put(s.charAt(i), i);
+                maxLength = Math.max(maxLength, i - j + 1);
         }
-        maxLength = (maxLength > map.size()) ? maxLength : map.size();
         return maxLength;
-
     }
 
     public static void main(String[] args) {
