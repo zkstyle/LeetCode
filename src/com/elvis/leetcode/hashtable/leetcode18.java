@@ -26,28 +26,6 @@ import java.util.Map;
  *   [-1,  0, 0, 1],
  *   [-2, -1, 1, 2],
  *   [-2,  0, 0, 2]
- * ]
- */
-public class leetcode18 {
-    public static List<List<Integer>> fourSum(int[] nums, int target) {
-        List<List<Integer>> lists = null;
-        List<Integer> list = null;
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 0; i < nums.length; i++) {
-
-        }
-
-
-
-        return lists;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {1,0,-1,0,-2,2};
-        int target = 0;
-        List<List<Integer>> lists = fourSum(nums, target);
-        for (List<Integer> list : lists) {
-            System.out.println(list.toArray().toString());
 
         }
 
