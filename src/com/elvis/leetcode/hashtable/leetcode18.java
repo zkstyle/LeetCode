@@ -27,40 +27,35 @@ import java.util.*;
  * ]
  */
 public class leetcode18 {
-    public static List<List<Integer>> fourSum1(int[] nums, int target) {
-        List<List<Integer>> lists = null;
-        List<Integer> list = null;
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 0; i < nums.length; i++) {
-
-        }
-
-
-
-        return lists;
-    }
-
+    /**
+     * int[] nums = {1,0,-1,0,-2,2};
+     * @param nums
+     * @param target
+     * @return
+     */
     public static List<List<Integer>> fourSum(int[] nums, int target) {
-        Set<List<Integer>> listSet = new HashSet<>();
+        Set<List<Integer>> listSet = new HashSet<>();   //存储不重复四元组
         int n = nums.length;
         Arrays.sort(nums);//数据排序
-        HashMap<Integer, List<Integer[]>> hashMap = new HashMap<>();
+        HashMap<Integer, List<Integer[]>> hashMap = new HashMap<>();//分别存储两数之和以及对应的下标 for循环保证了下标循环的递增
         for(int i = 0; i < n; i++) {
             for(int j = i + 1; j < n; j++) {
-                int num = nums[i] + nums[j];
+                int num = nums[i] + nums[j];//计算两数和
                 Integer[] pair = {i, j};
                 if(hashMap.containsKey(num)) {
-                    hashMap.get(num).add(pair);
+                    hashMap.get(num).add(pair); //包含　将下标list放进去
                 }else {
                     List<Integer[]> list = new ArrayList<>();
                     list.add(pair);
-                    hashMap.put(num, list);
+                    hashMap.put(num, list); //不包含　将两数和与下标list放进去
                 }
             }
         }
+        //对两数和pair进行遍历　如果target-integer可以找到　演化为两数之和问题
         for(Integer integer : hashMap.keySet()) {
+            //利用目标减去遍历两数之值　在map里利用containsKey查找
             if(hashMap.containsKey(target - integer)) {
-                List<Integer[]> list1 = hashMap.get(integer);
+                List<Integer[]> list1 = hashMap.get(integer);   //获取下标值list
                 List<Integer[]> list2 = hashMap.get(target - integer);
                 for(Integer[] pair1 : list1) {
                     int index1 = pair1[0];
