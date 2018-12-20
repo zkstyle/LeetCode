@@ -63,7 +63,7 @@ public class leetcode18 {
                     for(Integer[] pair2 : list2) {
                         int index3 = pair2[0];
                         int index4 = pair2[1];
-                        if(index2 < index3) {
+                        if(index2 < index3) {   //去重
                             List<Integer> list = new ArrayList<>();
                             list.add(nums[index1]);
                             list.add(nums[index2]);
@@ -77,8 +77,6 @@ public class leetcode18 {
         }
         return new ArrayList<>(listSet);
     }
-
-
     public static void main(String[] args) {
         int[] nums = {1,0,-1,0,-2,2};
         int target = 0;
