@@ -79,27 +79,23 @@ public class leetcode30 {
     }
 
     public static List<Integer> findSubstring(String s, String[] words) {
-        if (words.length == 0 || s.length() == 0) return new ArrayList<>();
+        if (words.length == 0 || s.length() == 0 || s.length() < words[0].length())//如果字符串长度小于单词长度　
+            return new ArrayList<>();
         List<Integer> list = new ArrayList<>();
         Map<String, Integer> map = new HashMap<>();
-        int length = words[0].length();//获取等长单词长度
-
-        //如果字符串长度小于单词长度　
-        if (s.length() < length){
-            return list;
-        }
-
+        int wordLen = words[0].length();//获取等长单词长度
+        int wordsLen = words.length;
+        int allLength = wordLen * wordsLen;
         //判断单词长度是否相等
         for (String word : words){
-            if (word.length() != length){
+            if (word.length() != wordLen){
                 return list;
             }
         }
-
         String split ;
-        for (int j = 0; j < s.length() - length * words.length + 1; j++) {
-            for (int i = j ; i < words.length * length + j; i += length) {
-                split = s.substring(i, i + length);
+        for (int j = 0; j < s.length() - allLength + 1; j++) {
+            for (int i = j ; i < allLength + j; i += wordLen) {
+                split = s.substring(i, i + wordLen);
                 //count 记录单词重复出现次数
                 Integer count = 1;
                 //将字符串存储到map中
@@ -112,7 +108,7 @@ public class leetcode30 {
                 }
             }
             //判断与单词数组完全匹配
-            for (int h = 0; h < words.length; h++) {
+            for (int h = 0; h < wordsLen; h++) {
                 if (map.containsKey(words[h])){
                     Integer i = map.get(words[h]);
                     if (i > 1){//map里存在重复的单词
@@ -126,7 +122,6 @@ public class leetcode30 {
                     break;
                 }
             }
-
             if (map.size() == 0){
                 list.add(j);
             }
@@ -139,8 +134,10 @@ public class leetcode30 {
     public static void main(String[] args) {
        /* String s = "barfoothefoobarman";
         String[] words = {"bar","foo"};*/
-        String s = "wordgoodgoodgoodbestword";
-        String[] words = {"word","good","best","good"};
+       /* String s = "wordgoodgoodgoodbestword";
+        String[] words = {"word","good","best","good"};*/
+        String s = "wordgoodstudentgoodword";
+        String[] words = {"word","student"};
         List<Integer> list = findSubstring(s,words);
         for (Integer integer : list){
             System.out.println(integer);
