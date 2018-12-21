@@ -47,7 +47,6 @@ public class leetcode30 {
     public List<Integer> findSubstringPlus(String s, String[] words) {
         if (s.length() == 0 || words.length == 0)
             return new ArrayList<>();
-
         Map<String, Integer> wordsCounter = new HashMap<>();
         List<Integer> res = new ArrayList<>();
 
