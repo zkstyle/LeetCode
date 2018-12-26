@@ -26,7 +26,7 @@ import java.util.Map;
  * 你可以假设给定的数独只有唯一解。
  * 给定数独永远是 9x9 形式的。
  */
-public class leetcode37 {
+public class Leetcode37 {
 
     public void solveSudokuPlus(char[][] board) {
         /**
@@ -133,7 +133,7 @@ public class leetcode37 {
                 {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         };
-        leetcode37 solution = new leetcode37();
+        Leetcode37 solution = new Leetcode37();
         solution.printBoard(board);
         solution.solveSudokuPlus(board);
         solution.printBoard(board);

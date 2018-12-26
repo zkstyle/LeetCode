@@ -7,7 +7,7 @@ package com.elvis.leetcode.hashtable;
  * @CreateTime: 2018-12-26 17:42
  * Description:
  */
-public class leetcode37_best {
+public class Leetcode37_best {
     /**
      * 3ms典范
      * @param board

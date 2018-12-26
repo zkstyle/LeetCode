@@ -21,7 +21,7 @@ import java.util.Map;
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]
  */
-public class leetcode01 {
+public class Leetcode01 {
 
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
@@ -42,7 +42,7 @@ public class leetcode01 {
         int[] index = new int[2];
         int target = 18;
         try {
-            Class clazz = Class.forName("com.elvis.leetcode.hashtable.leetcode01");
+            Class clazz = Class.forName("com.elvis.leetcode.hashtable.Leetcode01");
             Object obj = clazz.newInstance();
             Method method = clazz.getMethod("twoSum", int[].class, int.class);
             index = (int[]) method.invoke(obj,nums,target);

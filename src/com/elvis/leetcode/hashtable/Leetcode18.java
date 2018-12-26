@@ -26,7 +26,7 @@ import java.util.*;
  *   [-2,  0, 0, 2]
  * ]
  */
-public class leetcode18 {
+public class Leetcode18 {
     /**
      * int[] nums = {1,0,-1,0,-2,2};
      * @param nums

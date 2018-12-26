@@ -37,7 +37,7 @@ import java.util.Map;
  *
  * 思考：记录单词的首字母　根据相同的单词长度可以进行遍历　如果首字母相同则进行全字母遍历
  */
-public class leetcode30 {
+public class Leetcode30 {
     /**
      * 大神优化版本
      * @param s
