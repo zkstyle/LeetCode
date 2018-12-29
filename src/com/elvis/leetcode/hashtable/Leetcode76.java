@@ -79,6 +79,7 @@ public class Leetcode76 {
      * @return
      */
     public static String minWindow(String s, String t) {
+        //记录每个字母出现的次数
         int[] count = new int['z' - 'A' + 1];
         int uniq = 0;
         for (int i = 0; i < t.length(); ++i) {
