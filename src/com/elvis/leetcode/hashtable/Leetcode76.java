@@ -126,6 +126,8 @@ public class Leetcode76 {
     public static void main(String[] args) {
         String s = "ADOBECODEBANC";
         String t = "ABC";
+        Collection<String> c = new ArrayList();
+
         System.out.println(minWindow(s,t));
     }
 }

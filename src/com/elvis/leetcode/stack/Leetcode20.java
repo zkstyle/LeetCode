@@ -40,22 +40,33 @@ import java.util.Stack;
  * 输入: "{[]}"
  * 输出: true
  */
-public class leetcode20 {
-    //定义键值对map 存放括号　键值分别是左括号与右括号
-    private Map<Character,Character> map = null;
+public class Leetcode20 {
 
-    public static void pushStack(String s){
-
-    }
-
-    @Test
+    /**
+     *stack.peek()与stack.pop()区别
+     * 相同点：大家都返回栈顶的值。
+     * 不同点：peek 不改变栈的值(不删除栈顶的值)，pop会把栈顶的值删除。
+     * @param s
+     * @return
+     */
     public boolean isValid(String s) {
-        boolean flag = true;//判断是否符合条件的标志
-
-
-        return flag;
+        Stack<Character> stack = new Stack<>();
+        char[] chars = s.toCharArray();
+        for (char aChar : chars) {
+            if (stack.size() == 0) {
+                stack.push(aChar);
+            } else if (isSym(stack.peek(), aChar)) {
+                stack.pop();
+            } else {
+                stack.push(aChar);
+            }
+        }
+        return stack.size() == 0;
     }
 
+    private boolean isSym(char c1, char c2) {
+        return (c1 == '(' && c2 == ')') || (c1 == '[' && c2 == ']') || (c1 == '{' && c2 == '}');
+    }
 
     public static void main(String[] args) {
 
