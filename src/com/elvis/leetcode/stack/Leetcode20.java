@@ -43,6 +43,26 @@ import java.util.Stack;
 public class Leetcode20 {
 
     /**
+     * 5ms典范
+     * @param s
+     * @return
+     */
+    public boolean isValidPlus(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(')
+                stack.push(')');
+            else if (c == '{')
+                stack.push('}');
+            else if (c == '[')
+                stack.push(']');
+            else if (stack.isEmpty() || stack.pop() != c)
+                return false;
+        }
+        return stack.isEmpty();
+    }
+
+    /**
      *stack.peek()与stack.pop()区别
      * 相同点：大家都返回栈顶的值。
      * 不同点：peek 不改变栈的值(不删除栈顶的值)，pop会把栈顶的值删除。
