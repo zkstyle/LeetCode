@@ -1,5 +1,9 @@
 package com.elvis.leetcode.stack;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.stack
@@ -41,4 +45,25 @@ package com.elvis.leetcode.stack;
  * 输出："/a/b/c"
  */
 public class Leetcode71 {
+
+
+    /**
+     * 35 ms
+     * @param path
+     * @return
+     */
+    public String simplifyPath(String path) {
+        Stack<String> s = new Stack<>();
+        String[] p = path.split("/");
+        for (String t : p) {
+            if (!s.isEmpty() && t.equals("..")) {
+                s.pop();
+            } else if (!t.equals(".") && !t.equals("") && !t.equals("..")) {
+                s.push(t);
+            }
+        }
+        List<String> list = new ArrayList(s);
+        return "/" + String.join("/", list);
+
+    }
 }
