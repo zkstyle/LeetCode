@@ -2,9 +2,6 @@ package com.elvis.leetcode.linkedlist;
 
 import com.elvis.leetcode.linkedlist.listnode.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.linkedlist
