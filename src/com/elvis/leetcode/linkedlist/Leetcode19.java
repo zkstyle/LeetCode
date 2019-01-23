@@ -1,6 +1,7 @@
 package com.elvis.leetcode.linkedlist;
 
 import com.elvis.leetcode.linkedlist.listnode.ListNode;
+import org.w3c.dom.ls.LSException;
 
 /**
  * @BelongsProject: LeetCode
