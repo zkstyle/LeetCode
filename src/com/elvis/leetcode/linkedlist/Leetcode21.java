@@ -22,7 +22,7 @@ public class Leetcode21 {
      * @param l2
      * @return
      */
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode flag = new ListNode(0);
         ListNode firstflag = flag;
         while (l1 != null && l2 != null){
@@ -38,8 +38,6 @@ public class Leetcode21 {
         flag.next = l1 != null ? l1 : l2;
         return firstflag.next;
     }
-
-
     /**
      *
      * @param l1
@@ -55,5 +53,15 @@ public class Leetcode21 {
         //分治思想，每次拿一个小的出来，每次的动作相同
         l0.next = l1.val > l2.val ? mergeTwoLists(l1, l2.next) : mergeTwoLists(l1.next, l2);
         return l0;
+    }
+
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(1);
+        l1.next = new ListNode(2);
+        l1.next.next = new ListNode(4);
+        ListNode l2 = new ListNode(1);
+        l2.next = new ListNode(3);
+        l2.next.next = new ListNode(4);
+                mergeTwoLists(l1,l2);
     }
 }
