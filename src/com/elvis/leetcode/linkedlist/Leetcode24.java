@@ -34,7 +34,22 @@ public class Leetcode24 {
         return head;
     }
 
-
+    /**
+     * /* 1-2-3-4
+     *
+     * flag 为 0（0-1-2-3-4） ;
+     * tmp 为 1（1-2-3-4）
+     *       节点     链        对应操作
+     * 1, flag 0   0-2-3-4      flag.next=tmp.next;
+     *    tmp 1   1-2-3-4
+     * 2, flag 0   0-2-3-4      tmp.next=tmp.next.next;
+     *    tmp 1   1-3-4
+     * 3, flag 0   0-2-1-3-4    flag.next.next= tmp;
+     *    tmp 1   1-3-4
+     * 4, flag = tmp =节点1     完成
+     * @param head
+     * @return
+     */
     public static ListNode swapPairs(ListNode head) {
         if(head == null||head.next == null)
             return head;
