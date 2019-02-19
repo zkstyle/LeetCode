@@ -37,25 +37,25 @@ public class Leetcode25 {
         ListNode prev = null;
         ListNode cur = head;
         ListNode next = null;
-        ListNode check =head;
+        ListNode check = head;
         int canProceed = 0;
         int count = 0;
 
-        while(canProceed<k && check != null){
-            check=check.next;
+        while(canProceed < k && check != null){
+            check = check.next;
             canProceed++;
         }
 
-        if(canProceed==k){
-            while(count<k && cur != null){
+        if(canProceed == k){
+            while(count < k && cur != null){
                 next = cur.next;
-                cur.next=prev;
-                prev=cur;
-                cur=next;
+                cur.next = prev;
+                prev = cur;
+                cur = next;
                 count++;
             }
-            if(next!=null){
-                head.next=reverseKGroup(next,k);
+            if(next != null){
+                head.next = reverseKGroupPlus(next, k);
             }
             return prev;
         } else {
@@ -157,6 +157,6 @@ public class Leetcode25 {
         l1.next.next = new ListNode(3);
         l1.next.next.next = new ListNode(4);
         l1.next.next.next.next = new ListNode(5);
-        new Leetcode25().reverseKGroup(l1, 4);
+        new Leetcode25().reverseKGroupPlus(l1, 4);
     }
 }
