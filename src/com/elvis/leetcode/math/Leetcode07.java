@@ -62,7 +62,7 @@ public class Leetcode07 {
         while (x != 0){
             int pop = x % 10;
             x = x / 10;
-            long temp = pop + res * 10;
+            long temp = pop + res * 10L;
             if (temp > Integer.MAX_VALUE || temp < Integer.MIN_VALUE){
                 return 0;
             }

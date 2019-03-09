@@ -45,7 +45,6 @@ public class Leetcode09 {
             list.add(x % 10);
             x /= 10;
         }
-
         for (int i = 0; i < list.size() / 2; i++) {
             if (list.get(i) != list.get(list.size() - 1 - i)){
                 return false;
