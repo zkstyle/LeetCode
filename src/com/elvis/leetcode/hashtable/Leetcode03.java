@@ -50,7 +50,6 @@ public class Leetcode03 {
         }
         maxLength = (maxLength > map.size()) ? maxLength : map.size();
         return maxLength;
-
     }
 
     /**
