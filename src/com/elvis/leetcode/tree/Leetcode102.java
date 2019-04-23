@@ -24,7 +24,7 @@ public class Leetcode102 {
         addlevel(list,0,root);
         return list;
     }
-    public void addlevel(List<List<Integer>>list,int level,TreeNode node){
+    public void addlevel(List<List<Integer>> list,int level,TreeNode node){
         if(node==null) return;
         if(list.size()-1<level) list.add(new ArrayList<Integer>());
         list.get(level).add(node.val);
