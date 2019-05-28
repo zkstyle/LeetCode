@@ -1,6 +1,7 @@
 package dfs;
 
-import algorithms.tree.treenode.TreeNode;
+
+import tree.treenode.TreeNode;
 
 /**
  * @BelongsProject: LeetCode

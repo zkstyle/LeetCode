@@ -1,6 +1,7 @@
 package array;
 
-import algorithms.array.point.Interval;
+
+import array.point.Interval;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,6 +1,6 @@
 package queue;
 
-import algorithms.tree.treenode.TreeNode;
+import tree.treenode.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

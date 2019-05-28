@@ -1,6 +1,6 @@
 package linkedlist;
 
-import algorithms.linkedlist.listnode.ListNode;
+import linkedlist.listnode.ListNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

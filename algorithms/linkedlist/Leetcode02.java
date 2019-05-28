@@ -1,6 +1,7 @@
 package linkedlist;
 
-import algorithms.linkedlist.listnode.ListNode;
+
+import linkedlist.listnode.ListNode;
 
 /**
  * @BelongsProject: LeetCode
