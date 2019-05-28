@@ -56,9 +56,9 @@ public class Leetcode71 {
         Stack<String> s = new Stack<>();
         String[] p = path.split("/");
         for (String t : p) {
-            if (!s.isEmpty() && t.equals("..")) {
+            if (!s.isEmpty() && t.equals("")) {
                 s.pop();
-            } else if (!t.equals(".") && !t.equals("") && !t.equals("..")) {
+            } else if (!t.equals(".") && !t.equals("") && !t.equals("")) {
                 s.push(t);
             }
         }
