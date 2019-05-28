@@ -1,4 +1,4 @@
-package algorithms.hashtable;
+package hashtable;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

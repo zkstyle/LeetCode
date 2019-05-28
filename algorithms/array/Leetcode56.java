@@ -1,4 +1,4 @@
-package algorithms.array;
+package array;
 
 import algorithms.array.point.Interval;
 

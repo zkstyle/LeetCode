@@ -1,4 +1,4 @@
-package algorithms.binarysearch;
+package binarysearch;
 
 /**
  * @BelongsProject: LeetCode

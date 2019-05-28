@@ -1,4 +1,4 @@
-package algorithms.greed;
+package greed;
 
 /**
  * @BelongsProject: LeetCode

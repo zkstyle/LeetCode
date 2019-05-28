@@ -1,4 +1,4 @@
-package algorithms.bit;
+package bit;
 
 import java.util.ArrayList;
 import java.util.List;

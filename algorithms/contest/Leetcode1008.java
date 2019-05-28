@@ -1,4 +1,4 @@
-package algorithms.contest;
+package contest;
 
 import algorithms.tree.treenode.TreeNode;
 

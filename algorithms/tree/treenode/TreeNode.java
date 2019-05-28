@@ -1,4 +1,4 @@
-package algorithms.tree.treenode;
+package tree.treenode;
 
 /**
  * @BelongsProject: LeetCode

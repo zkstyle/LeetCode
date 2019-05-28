@@ -1,4 +1,4 @@
-package algorithms.queue;
+package queue;
 
 import algorithms.tree.treenode.TreeNode;
 

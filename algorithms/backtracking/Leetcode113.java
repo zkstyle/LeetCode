@@ -1,4 +1,4 @@
-package algorithms.backtracking;
+package backtracking;
 
 import algorithms.tree.treenode.TreeNode;
 

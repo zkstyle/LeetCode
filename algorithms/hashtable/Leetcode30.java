@@ -1,4 +1,4 @@
-package algorithms.hashtable;
+package hashtable;
 
 import org.omg.CORBA.OBJ_ADAPTER;
 

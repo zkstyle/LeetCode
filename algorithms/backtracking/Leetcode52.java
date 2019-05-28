@@ -1,4 +1,4 @@
-package algorithms.backtracking;
+package backtracking;
 
 /**
  * @BelongsProject: LeetCode

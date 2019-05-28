@@ -1,4 +1,4 @@
-package algorithms.jdk;
+package jdk;
 
 /**
  * @BelongsProject: LeetCode

@@ -1,4 +1,4 @@
-package algorithms.math;
+package math;
 
 /**
  * @BelongsProject: LeetCode

@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package recursion;
 
 import algorithms.tree.treenode.TreeNode;
 

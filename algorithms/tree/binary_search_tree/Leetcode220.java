@@ -1,4 +1,4 @@
-package algorithms.tree.binary_search_tree;
+package tree.binary_search_tree;
 
 import java.util.TreeSet;
 

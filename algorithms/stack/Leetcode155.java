@@ -1,4 +1,4 @@
-package algorithms.stack;
+package stack;
 
 /**
  * @BelongsProject: LeetCode

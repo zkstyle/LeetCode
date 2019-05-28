@@ -1,4 +1,4 @@
-package algorithms.contest;
+package contest;
 
 import static java.lang.Math.pow;
 

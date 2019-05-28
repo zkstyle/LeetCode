@@ -1,4 +1,4 @@
-package algorithms.math;
+package math;
 
 import java.util.ArrayList;
 import java.util.List;

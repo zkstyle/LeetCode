@@ -1,4 +1,4 @@
-package algorithms.greed;
+package greed;
 
 import java.util.ArrayList;
 import java.util.List;

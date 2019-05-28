@@ -1,4 +1,4 @@
-package algorithms.linkedlist.listnode;
+package linkedlist.listnode;
 
 /**
  * @BelongsProject: LeetCode

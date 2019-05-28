@@ -1,4 +1,4 @@
-package algorithms.array.point;
+package array.point;
 
 /**
  * @BelongsProject: LeetCode
