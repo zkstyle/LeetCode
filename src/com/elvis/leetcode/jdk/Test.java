@@ -12,5 +12,6 @@ public class Test {
     public static void main(String[] args) {
         Object object = new Object();
         String s = "kkkk";
+        System.out.println(s);
     }
 }
