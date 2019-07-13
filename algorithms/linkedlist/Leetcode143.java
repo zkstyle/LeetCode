@@ -23,39 +23,58 @@ import linkedlist.listnode.ListNode;
  */
 public class Leetcode143 {
     /**
-     * 思路： 将后半段的链表通过头插法保存起来
+     * 思路： 这道题可谓是集合了各种的链表操作，把这道题的每个步骤都理解清楚了之后，链表相关的大部分题应该都可以搞定了。建议在脑中多过两遍这个题 可以把本题分为3个步骤：
+     *
+     * 使用双指针将链表分成两段
+     * 将链表后半段进行翻转
+     * 将两段链表进行合并
+     * 另外有一些命名的规则，可以使代码更为清晰：
+     *
+     * p为遍历节点，如果有两个p1在前，p2在后
+     * next为遍历节点p的下一个节点，next1则为p1的下一个节点
+     * 如果有必要存head值，head2为第二段链表的规则
      * @param head
      */
     public void reorderList(ListNode head) {
-        if(head==null||head.next==null) return;
+        if (head == null || head.next == null) return;
 
-        //Find the middle of the list
-        ListNode p1=head;
-        ListNode p2=head;
-        while(p2.next!=null&&p2.next.next!=null){
-            p1=p1.next;
-            p2=p2.next.next;
+        ListNode p1 = head;
+        ListNode p2 = head;
+
+        // 找到链表的一半
+        while (p2.next != null && p2.next.next != null) {
+            p1 = p1.next;
+            p2 = p2.next.next;
         }
 
-        //Reverse the half after middle  1->2->3->4->5->6 to 1->2->3->6->5->4
-        ListNode preMiddle=p1;
-        ListNode preCurrent=p1.next;
-        while(preCurrent.next!=null){
-            ListNode current=preCurrent.next;
-            preCurrent.next=current.next;
-            current.next=preMiddle.next;
-            preMiddle.next=current;
+        // 将链表分为两段
+        p2 = p1.next;
+        p1.next = null;
+        p1 = head;
+
+        // 将后半段进行链表的翻转
+        ListNode head2 = p2;
+        ListNode next2;
+        while (p2.next != null) {
+            next2 = p2.next;
+            p2.next = next2.next;
+            next2.next = head2;
+            head2 = next2;
+        }
+        p2 = head2;
+
+        // 两条链表进行合并
+        ListNode next1;
+        while (p2 != null) {
+            next1 = p1.next;
+            next2 = p2.next;
+
+            p1.next = p2;
+            p2.next = next1;
+
+            p1 = next1;
+            p2 = next2;
         }
 
-        //Start reorder one by one  1->2->3->6->5->4 to 1->6->2->5->3->4
-        p1=head;
-        p2=preMiddle.next;
-        while(p1!=preMiddle){
-            preMiddle.next=p2.next;
-            p2.next=p1.next;
-            p1.next=p2;
-            p1=p2.next;
-            p2=preMiddle.next;
-        }
     }
 }

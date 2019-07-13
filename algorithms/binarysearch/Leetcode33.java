@@ -27,40 +27,33 @@ package binarysearch;
 public class Leetcode33 {
 
     /**
-     *
-     * @param A
+     * 二分查找　利用nums[mid],nums[high]大小关系判断mid位于左右的哪部分
+     * @param nums
      * @param target
      * @return
      */
-    public int search(int[] A, int target) {
-        if (A == null || A.length == 0){
+    public int search(int[] nums, int target) {
+        return search(nums, 0, nums.length - 1, target);
+    }
+
+    private int search(int[] nums, int low, int high, int target) {
+        if (low > high)
             return -1;
+        int mid = (low + high) / 2;
+        if (nums[mid] == target)
+            return mid;
+        if (nums[mid] < nums[high]) {
+            if (nums[mid] < target && target <= nums[high])
+                return search(nums, mid + 1, high, target);
+            else
+                return search(nums, low, mid - 1, target);
+        } else {
+            if (nums[low] <= target && target < nums[mid])
+                return search(nums, low, mid - 1, target);
+            else
+                return search(nums, mid + 1, high, target);
         }
-        int lo = 0;
-        int hi = A.length - 1;
-        while (lo < hi) {
-            int mid = (lo + hi) / 2;
-            if (A[mid] == target) return mid;
-
-            if (A[lo] <= A[mid]) {
-                if (target >= A[lo] && target < A[mid]) {
-                    hi = mid - 1;
-                } else {
-                    lo = mid + 1;
-                }
-            } else {
-                if (target > A[mid] && target <= A[hi]) {
-                    lo = mid + 1;
-                } else {
-                    hi = mid - 1;
-                }
-            }
-        }
-        return A[lo] == target ? lo : -1;
     }
 
-    public static void main(String[] args) {
-        int[] nums = {7,0,1,2,3};
-        new Leetcode33().search(nums, 0);
-    }
+
 }
