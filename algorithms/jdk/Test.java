@@ -9,6 +9,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicStampedReference;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @BelongsProject: LeetCode
@@ -34,7 +36,13 @@ public class Test {
         // 2 AtomicInteger
         AtomicInteger ac = new AtomicInteger(5);
 
+        // AQS
         AbstractQueuedSynchronizer synchronizer;
+
+        // 可重入锁　独占锁
+        ReentrantLock reentrantLock;
+
+        ReentrantReadWriteLock rrw;
     }
 
 
