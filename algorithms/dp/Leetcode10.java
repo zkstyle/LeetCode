@@ -8,7 +8,7 @@ package dp;
  * Description: 正则表达式匹配
  */
 public class Leetcode10 {
-    public boolean isMatch(String s, String p) {
+    public boolean isMatch１(String s, String p) {
         int m = s.length();
         int n = p.length();
         boolean[][] dp = new boolean[m + 1][n + 1];
@@ -33,6 +33,27 @@ public class Leetcode10 {
             }
         }
         return dp[m][n];
+    }
+
+    public boolean isMatch(String s, String p) {
+        return isMatchHelper(s, 0, p, 0, new byte[(s.length() + 1) * (p.length() + 1)]);
+    }
+    private boolean isMatchHelper(String s, int sIndex, String p, int pIndex, byte[] dp){
+        if(dp[sIndex * p.length() + pIndex] != 0){
+            return dp[sIndex * p.length() + pIndex] == 1;
+        }
+        if(pIndex == p.length()){
+            return sIndex == s.length();
+        }
+        boolean match;
+        boolean firstMatch = sIndex < s.length() && (p.charAt(pIndex) == '.' || p.charAt(pIndex) == s.charAt(sIndex));
+        if(pIndex + 1 < p.length() && p.charAt(pIndex + 1) == '*'){
+            match = isMatchHelper(s, sIndex, p, pIndex + 2, dp) || (firstMatch && isMatchHelper(s, sIndex + 1, p, pIndex, dp));
+        }else{
+            match = firstMatch && isMatchHelper(s, sIndex + 1, p, pIndex + 1, dp);
+        }
+        dp[sIndex * p.length() + pIndex] = (byte) (match ? 1 : 2);
+        return match;
     }
 
     public static void main(String[] args) {
