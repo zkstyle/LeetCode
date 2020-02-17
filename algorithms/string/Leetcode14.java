@@ -27,8 +27,10 @@ public class Leetcode14 {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length < 1) return "";
         if (strs.length == 1) return strs[0];
+        //StringBuilder的内置函数deleteCharAt() 或者用String截取函数substring()函数
         StringBuilder match = new StringBuilder(strs[0]);
         for (int i = 1; i < strs.length; i++) {
+            //重点：如果match不是当前的子串，则删除最后一位再次比较，直到取出子串为止
             while (!strs[i].startsWith(match.toString())) {
                 match.deleteCharAt(match.length() - 1);
                 if (match.length() < 1) return "";
