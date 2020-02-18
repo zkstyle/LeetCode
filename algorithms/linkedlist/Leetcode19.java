@@ -31,29 +31,27 @@ public class Leetcode19 {
      * @return
      */
     public static ListNode removeNthFromEnd(ListNode head, int n) {
+        //声明一个起始节点，dummy.next = head 用以表示head的前一个节点
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode first = dummy;
+        //初始位置从头结点前一个节点开始，可以轻松解决倒数第n个节点是头结点的情况
         ListNode second = dummy;
-        // Advances first pointer so that the gap between first and second is n nodes apart
-        for (int i = 1; i <= n + 1; i++) {
+        // 利用双指针　第一个指针先行n+1步　这样两个指针之间相差n+1步(因为初始位置指向dummy节点)
+        for (int i = 0; i <= n; i++) {
             first = first.next;
         }
-        // Move first to the end, maintaining the gap
+        /**
+         * 功能描述: 同时将两个指针向最后一个节点移动，当第一个指针节点移动到最后一个节点,
+         * 第二个指针节点刚好移动到倒数第n个节点的前一个节点（因为删除第n个节点需要找到它的前驱节点）
+         * 这样两个节点之间保持着n个节点差距
+         */
         while (first != null) {
             first = first.next;
             second = second.next;
         }
+        //删除第n个节点
         second.next = second.next.next;
         return dummy.next;
-    }
-
-    public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        removeNthFromEnd(head,2);
     }
 }
