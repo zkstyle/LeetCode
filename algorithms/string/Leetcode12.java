@@ -4,7 +4,7 @@ package string;
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.string
  * @Author: Elvis
- * @CreateTime: 2019-03-11 08:41
+ * @CreateTime: 2020-02-19 08:41
  * Description: Integer to Roman
  * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
  *
@@ -51,6 +51,14 @@ package string;
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
 public class Leetcode12 {
+    /**
+     * 功能描述: 在leetcode讨论区看到的大佬的神奇的思路
+     * 〈〉
+     * @Param: [num]
+     * @Return: java.lang.String
+     * @Author: elvis
+     * @Date: 20-2-19 上午9:33
+     */
     public String intToRoman(int num) {
         String M[] = {"", "M", "MM", "MMM"};
         String C[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
@@ -61,17 +69,33 @@ public class Leetcode12 {
 
     public String intToRoman2(int num) {
         int[] values = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+        // 将每一种数字单位表示出来　再for循环一一进行匹配关联
         String[] strs = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
 
         StringBuilder sb = new StringBuilder();
 
         for(int i=0;i<values.length;i++) {
             while(num >= values[i]) {
+                //逐一匹配　字符串一一append
                 num -= values[i];
                 sb.append(strs[i]);
             }
         }
         return sb.toString();
 
+    }
+
+    public String intToRoman3(int num) {
+        // 哈哈　俺自己的全遍历　列出所有的情况单位　以空间换时间
+        String[] str = {"MMM","MM","M","CM","D", "CD", "CCC","CC","C", "XC","L","XL","XXX","XX","X", "IX", "V", "IV","III","II","I"};
+        int[] nums = {3000,2000,1000,900,500,400,300,200,100,90,50,40,30,20,10,9,5,4,3,2,1};
+        String ans = "";
+        for (int i = 0; i< nums.length; i++){
+            if(num >= nums[i]){
+                num -= nums[i];
+                ans += str[i];
+            }
+        }
+        return ans;
     }
 }

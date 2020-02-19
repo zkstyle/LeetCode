@@ -1,8 +1,5 @@
 package string;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.string
@@ -33,26 +30,56 @@ import java.util.Map;
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
 public class Leetcode13 {
+    /**
+     * 功能描述: 总的来说　这种思路很奇巧　不是通过常规的字符判断
+     * 首先对每一个单个字符进行判断　对于可能有两种情况的罗马数字　比如IV I 是两种情况
+     * 对于I判断　如果大于等于５　则肯定是IV组合　进行减一操作　对V进行+5操作　这样IV = 5 - 1 = 4
+     */
     public int romanToInt(String s) {
-        int sum=0;
-        if(s.indexOf("IV")!=-1){sum-=2;}
-        if(s.indexOf("IX")!=-1){sum-=2;}
-        if(s.indexOf("XL")!=-1){sum-=20;}
-        if(s.indexOf("XC")!=-1){sum-=20;}
-        if(s.indexOf("CD")!=-1){sum-=200;}
-        if(s.indexOf("CM")!=-1){sum-=200;}
-
-        char c[]=s.toCharArray();
-
-        for( int count=0;count<=s.length()-1;count++){
-            if(c[count]=='M') sum+=1000;
-            if(c[count]=='D') sum+=500;
-            if(c[count]=='C') sum+=100;
-            if(c[count]=='L') sum+=50;
-            if(c[count]=='X') sum+=10;
-            if(c[count]=='V') sum+=5;
-            if(c[count]=='I') sum+=1;
+        int result = 0;
+        int length = s.length();
+        for (int i = length - 1; i > -1; i--) {
+            switch (s.charAt(i)) {
+                case 'I':
+                    result += result >= 5 ? -1 : 1;
+                    break;
+                case 'V':
+                    result += 5;
+                    break;
+                case 'X':
+                    result += result >= 50 ? -10 : 10;
+                    break;
+                case 'L':
+                    result += 50;
+                    break;
+                case 'C':
+                    result += result >= 500 ? -100 : 100;
+                    break;
+                case 'D':
+                    result += 500;
+                    break;
+                case 'M':
+                    result += 1000;
+                    break;
+            }
         }
-        return sum;
+        return result;
     }
+
+    public int romanToInt2(String s) {
+        String[] str = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] nums = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        int ans = 0, index = 0;
+        s += "..";  // 后期补丁..因为下面所用函数substring需要+一个str[i]长度　故延长两个单位
+        for (int i = 0; i < str.length; i++) {
+            //依据上题数字转罗马的思路　逐一对字符串截取判断
+            while (s.substring(index, index + str[i].length()).equals(str[i])) {
+                ans += nums[i];
+                // 若截取字符串符合条件　则更新下标
+                index += str[i].length();
+            }
+        }
+        return ans;
+    }
+
 }
