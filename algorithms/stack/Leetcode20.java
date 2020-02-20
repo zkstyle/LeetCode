@@ -1,15 +1,12 @@
 package stack;
 
-import org.junit.Test;
-
-import java.util.Map;
 import java.util.Stack;
 
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.stack
  * @Author: Elvis
- * @CreateTime: 2018-12-13 18:59
+ * @CreateTime: 2020-2-13 18:59
  * Description:
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
  *
@@ -43,26 +40,6 @@ import java.util.Stack;
 public class Leetcode20 {
 
     /**
-     * 5ms典范
-     * @param s
-     * @return
-     */
-    public boolean isValidPlus(String s) {
-        Stack<Character> stack = new Stack<>();
-        for (char c : s.toCharArray()) {
-            if (c == '(')
-                stack.push(')');
-            else if (c == '{')
-                stack.push('}');
-            else if (c == '[')
-                stack.push(']');
-            else if (stack.isEmpty() || stack.pop() != c)
-                return false;
-        }
-        return stack.isEmpty();
-    }
-
-    /**
      *stack.peek()与stack.pop()区别
      * 相同点：大家都返回栈顶的值。
      * 不同点：peek 不改变栈的值(不删除栈顶的值)，pop会把栈顶的值删除。
@@ -71,25 +48,19 @@ public class Leetcode20 {
      */
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
-        char[] chars = s.toCharArray();
-        for (char aChar : chars) {
-            if (stack.size() == 0) {
-                stack.push(aChar);
-            } else if (isSym(stack.peek(), aChar)) {
-                stack.pop();
-            } else {
-                stack.push(aChar);
+        for (int i = 0; i < s.length(); i++){
+            switch(s.charAt(i)){
+                //首先将判断是不是左括号　是左括号就把对应的右括号入栈
+                case '(':  stack.push(')'); break;
+                case '[':  stack.push(']'); break;
+                case '{':  stack.push('}'); break;
+                //如果是右括号　判断能否出栈　若stack为空　则不能出栈　若不为空则判断出栈元素是否与当前字符相等
+                default:   if (stack.isEmpty() || stack.pop() != s.charAt(i)) return false;
             }
+
         }
-        return stack.size() == 0;
-    }
-
-    private boolean isSym(char c1, char c2) {
-        return (c1 == '(' && c2 == ')') || (c1 == '[' && c2 == ']') || (c1 == '{' && c2 == '}');
-    }
-
-    public static void main(String[] args) {
-
+        //若为空　则说明一一匹配
+        return stack.isEmpty();
     }
 
 }

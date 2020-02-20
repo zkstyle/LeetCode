@@ -17,12 +17,13 @@ import linkedlist.listnode.ListNode;
 public class Leetcode21 {
 
     /**
-     *
+     *法一　迭代法
      * @param l1
      * @param l2
      * @return
      */
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        //声明一个新的节点　然后依次判断l1,l2节点大小　flag用于保存链表尾节点　firstflag用于保存头结点
         ListNode flag = new ListNode(0);
         ListNode firstflag = flag;
         while (l1 != null && l2 != null){
@@ -33,18 +34,20 @@ public class Leetcode21 {
                 flag.next = l2;
                 l2 = l2.next;
             }
+            //更新flag指向链表尾节点
             flag = flag.next;
         }
+        //将较长链表的剩余部分节点链接到新的链表尾部
         flag.next = l1 != null ? l1 : l2;
         return firstflag.next;
     }
     /**
-     *
      * @param l1
      * @param l2
      * @return
      */
     public ListNode mergeTwoListsPlus(ListNode l1, ListNode l2) {
+        // 递归出口　分治递归法
         if (l1 == null)
             return l2;
         if (l2 == null)
@@ -53,15 +56,5 @@ public class Leetcode21 {
         //分治思想，每次拿一个小的出来，每次的动作相同
         l0.next = l1.val > l2.val ? mergeTwoLists(l1, l2.next) : mergeTwoLists(l1.next, l2);
         return l0;
-    }
-
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(2);
-        l1.next.next = new ListNode(4);
-        ListNode l2 = new ListNode(1);
-        l2.next = new ListNode(3);
-        l2.next.next = new ListNode(4);
-                mergeTwoLists(l1,l2);
     }
 }
