@@ -3,8 +3,6 @@ LeetCode
 If you like this project, please leave me a star. ★
 ### LeetCode Algorithm　
 
-
-
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
@@ -17,5 +15,10 @@ If you like this project, please leave me a star. ★
 |　19 |　　　[ Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 　　[java](algorithms/linkedlist/Leetcode19.java)|　Medium |
 |　20 |　　　[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 　　[java](algorithms/stack/Leetcode20.java)|　Easy |
 |　21 |　　　[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode21.java)|　Easy |
+|　23 |　　　[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode23.java)|　Hard |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |
 
+### 剑指Offer
+| No | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|　03 |　　　[Integer to Roman](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
