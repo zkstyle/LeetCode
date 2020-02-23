@@ -5,6 +5,7 @@ If you like this project, please leave me a star. ★
 
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|　06 |　　　[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 　　[java](algorithms/string/Leetcode06.java)|　Medium |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
 |　13 |　　　[Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 　　[java](algorithms/string/Leetcode13.java)|　Easy |
 |　14 |　　　[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 　　[java](algorithms/string/Leetcode14.java)|　Easy |
@@ -21,4 +22,5 @@ If you like this project, please leave me a star. ★
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|　03 |　　　[Integer to Roman](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
+|　03 |　　　[ 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/SwordMeansOffer/SMO03.java)|　Easy |
+|　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/SwordMeansOffer/SMO50.java)|　Easy |
