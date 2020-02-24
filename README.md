@@ -6,6 +6,7 @@ If you like this project, please leave me a star. ★
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |　06 |　　　[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 　　[java](algorithms/string/Leetcode06.java)|　Medium |
+|　08 |　　　[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 　　[java](algorithms/string/Leetcode08.java)|　Medium |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
 |　13 |　　　[Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 　　[java](algorithms/string/Leetcode13.java)|　Easy |
 |　14 |　　　[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 　　[java](algorithms/string/Leetcode14.java)|　Easy |
