@@ -1,10 +1,10 @@
-package hashtable;
+package hashmap;
 
 import java.util.*;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-21 19:51
  * Description:

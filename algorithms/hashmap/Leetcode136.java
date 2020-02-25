@@ -1,8 +1,8 @@
-package hashtable;
+package hashmap;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-29 14:02
  * Description: 只出现一次的数字

@@ -5,6 +5,8 @@ If you like this project, please leave me a star. ★
 
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|　01 |　　　[Two Sum](https://leetcode.com/problems/two-sum/) | 　　[java](algorithms/hashmap/Leetcode01.java)|　Easy |
+|　02 |　　　[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 　　[java](algorithms/linkedlist/Leetcode02.java)|　Medium |
 |　06 |　　　[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 　　[java](algorithms/string/Leetcode06.java)|　Medium |
 |　08 |　　　[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 　　[java](algorithms/string/Leetcode08.java)|　Medium |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
@@ -17,11 +19,12 @@ If you like this project, please leave me a star. ★
 |　19 |　　　[ Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 　　[java](algorithms/linkedlist/Leetcode19.java)|　Medium |
 |　20 |　　　[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 　　[java](algorithms/stack/Leetcode20.java)|　Easy |
 |　21 |　　　[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode21.java)|　Easy |
+|　22 |　　　[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | 　　[java](algorithms/backtracking/Leetcode22.java)|　Medium |
 |　23 |　　　[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode23.java)|　Hard |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |
 
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|　03 |　　　[ 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/SwordMeansOffer/SMO03.java)|　Easy |
-|　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/SwordMeansOffer/SMO50.java)|　Easy |
+|　03 |　　　[ 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO03.java)|　Easy |
+|　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO50.java)|　Easy |

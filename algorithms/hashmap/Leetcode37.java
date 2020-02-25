@@ -1,4 +1,4 @@
-package hashtable;
+package hashmap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-25 20:37
  * Description:

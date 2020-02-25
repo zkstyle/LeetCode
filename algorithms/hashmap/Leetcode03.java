@@ -1,13 +1,11 @@
-package hashtable;
-
-import org.junit.Test;
+package hashmap;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-14 18:55
  * Description:

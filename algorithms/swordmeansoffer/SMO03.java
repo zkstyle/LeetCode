@@ -1,8 +1,8 @@
-package SwordMeansOffer;
+package swordmeansoffer;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: SwordMeansOffer
+ * @BelongsPackage: swordmeansoffer
  * @Author: elvis
  * @CreateTime: 2020-02-22 10:42
  * @Description: 剑指Offer面试题03

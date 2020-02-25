@@ -22,30 +22,23 @@ import java.util.List;
  * ]
  */
 public class Leetcode22 {
+    /**
+     * 回溯法　遍历所有可能　
+     */
+    List<String> res = new ArrayList<String>();
     public List<String> generateParenthesis(int n) {
-        List<String> res = new ArrayList<String>();
-        generate(res, "", 0, 0, n);
-
+        generate("", n,n);
         return res;
     }
     //count1统计“(”的个数，count2统计“)”的个数
-    public void generate(List<String> res , String ans, int count1, int count2, int n){
-
-        if(count1 > n || count2 > n) return;
-
-        if(count1 == n && count2 == n)  res.add(ans);
-
-
-        if(count1 >= count2){
-            String ans1 = new String(ans);
-            generate(res, ans+"(", count1+1, count2, n);
-            generate(res, ans1+")", count1, count2+1, n);
-
-        }
-    }
-
-    public static void main(String[] args) {
-        new Leetcode22().generateParenthesis(3);
+    public void generate(String ans, int count1, int count2){
+        //左括号的数量不能少于右括号的数量　否则不符合条件
+        if(count1 > count2) return;
+        if(count1 == 0 && count2 == 0)  res.add(ans);
+        //分别加上左括号与右括号　遍历所有可能　前提剩余括号数量大于0
+        if (count1 > 0)generate(ans+"(", count1-1, count2);
+        if (count2 > 0)generate(ans+")", count1, count2-1);
+        return;
     }
 
 }

@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-15 10:47
  * Description:

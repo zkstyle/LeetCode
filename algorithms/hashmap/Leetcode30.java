@@ -1,6 +1,4 @@
-package hashtable;
-
-import org.omg.CORBA.OBJ_ADAPTER;
+package hashmap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,7 +7,7 @@ import java.util.Map;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-20 13:00
  * Description:

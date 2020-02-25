@@ -1,6 +1,5 @@
 package linkedlist;
 
-
 import linkedlist.listnode.ListNode;
 
 /**
@@ -23,54 +22,30 @@ import linkedlist.listnode.ListNode;
  */
 public class Leetcode02 {
 
-
-    public static ListNode addTwoNumbersPlus(ListNode l1, ListNode l2){
-        ListNode rs = null;
-        ListNode last = null;
-        ListNode cur = null;
-        int val = 0;
-        while (null != l1 || null != l2){
-            if (null != l1){
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode list = new ListNode(0);
+        ListNode cur = list;
+        int val = 0; //进位标志位
+        while (l1 != null || l2 != null) {
+            /**
+             * 对l1 l2每一位相加　进行分析　
+             * 因为可能发生进位 对获取的值val取摩10
+             * 除以10则是产生的进位　两位个数相加　进位最多为1
+             */
+            if (l1 != null) {
                 val += l1.val;
                 l1 = l1.next;
             }
-            if (null != l2){
+            if (l2 != null) {
                 val += l2.val;
                 l2 = l2.next;
             }
-            cur = new ListNode(val % 10);
-            val = val / 10;
-            if (null == last){
-                rs = cur;
-            }else {
-                last.next = cur;
-            }
-            last = cur;
+            cur.next = new ListNode(val % 10);
+            val /= 10;
+            cur = cur.next;
         }
-        if (val > 0){
-            cur = new ListNode(val);
-            last.next = cur;
-        }
-        return rs;
+        // 最后一次可能产生进位　若val大于0补上
+        if (val > 0) cur.next = new ListNode(val);
+        return list.next;
     }
-
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(2);
-        ListNode l3 = new ListNode(4);
-        l1.next = l3;
-
-        ListNode l4 = new ListNode(3);
-        l1.next.next = l4;
-
-        ListNode l2 = new ListNode(5);
-        ListNode l5 = new ListNode(6);
-        l2.next = l5;
-
-        ListNode l6 = new ListNode(4);
-        l2.next.next = l6;
-
-        addTwoNumbersPlus(l1,l2);
-
-    }
-
 }

@@ -1,8 +1,8 @@
-package hashtable;
+package hashmap;
 
 /**
  * @BelongsProject: LeetCode
- * @BelongsPackage: com.elvis.leetcode.hashtable
+ * @BelongsPackage: com.elvis.leetcode.hashmap
  * @Author: Elvis
  * @CreateTime: 2018-12-28 13:58
  * Description: 最大矩形
