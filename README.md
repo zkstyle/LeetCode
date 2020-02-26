@@ -7,6 +7,8 @@ If you like this project, please leave me a star. ★
 |---| ----- | -------- | ---------- |
 |　01 |　　　[Two Sum](https://leetcode.com/problems/two-sum/) | 　　[java](algorithms/hashmap/Leetcode01.java)|　Easy |
 |　02 |　　　[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 　　[java](algorithms/linkedlist/Leetcode02.java)|　Medium |
+|　03 |　　　[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 　　[java](algorithms/hashmap/Leetcode03.java)|　Medium |
+|　05 |　　　[ Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 　　[java](algorithms/dp/Leetcode05.java)|　Medium |
 |　06 |　　　[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 　　[java](algorithms/string/Leetcode06.java)|　Medium |
 |　08 |　　　[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 　　[java](algorithms/string/Leetcode08.java)|　Medium |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
