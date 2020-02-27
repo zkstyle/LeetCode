@@ -18,18 +18,18 @@ import linkedlist.listnode.ListNode;
 public class Leetcode24 {
 
     /**
-     * 递归版
+     * 递归版 因为每两个相邻节点逆置都是相同的操作　故可以使用递归求解
      * @param head
      * @return
      */
     public ListNode swapPairsPlus(ListNode head) {
+        //相邻节点的逆置
         if (head == null || head.next == null) return head;
-
+        //temp保存头结点　逆置
         ListNode temp = head;
         head = head.next;
         temp.next = head.next;
         head.next = temp;
-
         head.next.next = swapPairs(head.next.next);
         return head;
     }
@@ -51,7 +51,7 @@ public class Leetcode24 {
      * @return
      */
     public static ListNode swapPairs(ListNode head) {
-        if(head == null||head.next == null)
+        if (head == null || head.next == null)
             return head;
         // save the reverse tmp node (1,3)
         ListNode tmp;
@@ -59,21 +59,17 @@ public class Leetcode24 {
         ListNode flag_pre = new ListNode(0);
         flag_pre.next = head;
         ListNode flag = flag_pre;
-        while(flag.next != null && flag.next.next != null) {
+        while (flag.next != null && flag.next.next != null) {
+            //tmp指向相邻节点的第一个节点
             tmp = flag.next;
+            //flag.next指向第二个节点
             flag.next = tmp.next;
+            //tmp.next断链指向下一对节点的第一个节点
             tmp.next = tmp.next.next;
+            //逆置节点 即flag.next指向tmp的前驱节点　0->2(flag) 1->3(tmp)->4 连接为0->2->1->3->4
             flag.next.next = tmp;
             flag = tmp;
         }
         return flag_pre.next;
-    }
-
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(2);
-        l1.next.next = new ListNode(3);
-        l1.next.next.next = new ListNode(4);
-        swapPairs(l1);
     }
 }

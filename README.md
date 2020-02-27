@@ -23,6 +23,8 @@ If you like this project, please leave me a star. ★
 |　21 |　　　[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode21.java)|　Easy |
 |　22 |　　　[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | 　　[java](algorithms/backtracking/Leetcode22.java)|　Medium |
 |　23 |　　　[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode23.java)|　Hard |
+|　24 |　　　[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 　　[java](algorithms/linkedlist/Leetcode24.java)|　Medium |
+|　26 |　　　[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 　　[java](algorithms/array/Leetcode26.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |
 
 ### 剑指Offer

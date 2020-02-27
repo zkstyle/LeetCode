@@ -44,50 +44,40 @@ package array;
 public class Leetcode26 {
 
     /**
-     * 6ms 典范
-     * @param nums
-     * @return
-     */
-    public int removeDuplicates_2(int[] nums) {
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
-        if (nums.length == 1) {
-            return nums.length;
-        }
-        int i = 1, j = 0;
-        while (i < nums.length) {
-            if (nums[i - 1] != nums[i]) {
-                nums[++j] = nums[i];
-            }
-            i++;
-        }
-        return j + 1;
-    }
-
-    /**
-     *  覆盖 times统计重复元素数 5ms
+     * 双指针法　两个指针　i指向需要落放元素的位置(排除重复位置)
+     * j指向遍历元素的下标
      * @param nums
      * @return
      */
     public int removeDuplicates(int[] nums) {
-        if (nums == null || nums.length == 0){
-            return 0;
+        if (nums == null || nums.length < 2) {
+            return nums.length;
         }
-        int times = 0;
-        int result = 1;
-        // save the last number
-        int tmp = nums[0];
-
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == tmp){
-                times++;
-            }else {
-                result++;
-                tmp = nums[i];
-                nums[i - times] = nums[i];
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            //如果相同就跳过重复项,如果不同说明跳过了重复项,把nums[j]放在nums[i+1]的后面
+            if (nums[i] != nums[j]) {
+                nums[++i] = nums[j];
             }
         }
-        return result;
+        return i + 1;
+    }
+
+    /**
+     *  覆盖 count统计重复元素数
+     * @param nums
+     * @return
+     */
+    public int removeDuplicates2(int[] nums) {
+        if(nums==null || nums.length<2){
+            return nums.length;
+        }
+        int count = 0;
+        for (int i = 1; i < nums.length; i++){
+            if (nums[i] == nums[i-1]) count++;
+            //count是重复元素个数　i-count是需要存放元素的下标
+            nums[i-count] = nums[i];
+        }
+        return nums.length-count;
     }
 }
