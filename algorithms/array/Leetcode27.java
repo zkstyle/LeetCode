@@ -30,20 +30,34 @@ package array;
  * 你不需要考虑数组中超出新长度后面的元素。
  */
 public class Leetcode27 {
+    /*
+    *覆盖法　根据查找到的val值的数量　进行赋值覆盖 nums[i - count] = nums[i];
+     */
     public int removeElement(int[] nums, int val) {
         int count = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == val){
+            if (nums[i] == val) {
                 count++;
-            }else {
+            } else {
                 nums[i - count] = nums[i];
             }
         }
         return nums.length - count;
     }
 
-    public static void main(String[] args) {
-        int[] nums = {0,1,2,2,3,0,4,2};
-        new Leetcode27().removeElement(nums, 2);
+    /*
+     * 利用双指针　当 nums[j]与给定的值相等时，递增 j以跳过该元素。只要 nums[j] !=val
+     * 我们就复制 nums[j]到 nums[i]并同时递增两个索引。重复这一过程，直到j到达数组的末尾，该数组的新长度为i。
+     */
+    public int removeElement02(int[] nums, int val) {
+        if (nums.length == 0) return 0;
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                nums[i] = nums[j];
+                i++;
+            }
+        }
+        return i;
     }
 }
