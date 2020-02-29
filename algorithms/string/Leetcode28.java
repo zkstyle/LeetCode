@@ -33,14 +33,14 @@ public class Leetcode28 {
      * @return
      */
     public int strStr(String haystack, String needle) {
-        if (needle.length() == 0){
+        if (needle.length() == 0) {
             return 0;
         }
         int m = haystack.length();
         int n = needle.length();
-        for (int i = 0; i <= m - n; i++){
+        for (int i = 0; i <= m - n; i++) {
             //从0一直遍历到m-n(因为needle字符串有长度)
-            if (haystack.substring(i, i + n).equals(needle)){
+            if (haystack.substring(i, i + n).equals(needle)) {
                 return i;
             }
         }
@@ -68,7 +68,7 @@ public class Leetcode28 {
                 // 遍历目标字符串, 和源字符串当前索引位置的字符串开始对比 都想同则return
                 for (int j = 0; j < n; j++) {
                     result = i;
-                    if (haystack.charAt(i+j) != needle.charAt(j)) {
+                    if (haystack.charAt(i + j) != needle.charAt(j)) {
                         result = -1;
                         break;
                     }
