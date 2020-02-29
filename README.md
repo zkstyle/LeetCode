@@ -28,6 +28,7 @@ If you like this project, please leave me a star. ★
 |　27 |　　　[Remove Element](https://leetcode.com/problems/remove-element/) | 　　[java](algorithms/array/Leetcode27.java)|　Easy |
 |　28 |　　　[Implement strStr()](https://leetcode.com/problems/implement-strstr/) | 　　[java](algorithms/string/Leetcode28.java)|　Easy |
 |　29 |　　　[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | 　　[java](algorithms/math/Leetcode29.java)|　Medium |
+|　30 |　　　[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | 　　[java](algorithms/hashmap/Leetcode30.java)|　Hard |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
