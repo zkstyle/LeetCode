@@ -19,6 +19,12 @@ package dp;
  */
 public class Leetcode53 {
 
+    /*
+    *  如果 sum > 0，则说明 sum 对结果有增益效果，则 sum 保留并加上当前遍历数字
+    *如果 sum <= 0，则说明 sum 对结果无增益效果，需要舍弃，则 sum 直接更新为当前遍历数字
+    *每次比较 sum 和 ans的大小，将最大值置为ans，遍历结束返回结果
+    *时间复杂度：O(n)O(n)
+     */
     public int maxSubArray(int[] nums) {
         int res = nums[0];
         int sum = 0;
@@ -31,4 +37,19 @@ public class Leetcode53 {
         }
         return res;
     }
+
+    /**
+     * 动态规划　dp[i]表示前i个数的最大值　if num[i-1] > 0 dp[i] = dp[i-1]+nums[i]
+     * @param nums
+     * @return
+     */
+    public int maxSubArray2(int[] nums) {
+        int n = nums.length, maxSum = nums[0];
+        for(int i = 1; i < n; ++i) {
+            if (nums[i - 1] > 0) nums[i] += nums[i - 1];
+            maxSum = Math.max(nums[i], maxSum);
+        }
+        return maxSum;
+    }
+
 }

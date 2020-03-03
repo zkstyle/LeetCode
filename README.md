@@ -29,7 +29,10 @@ If you like this project, please leave me a star. ★
 |　28 |　　　[Implement strStr()](https://leetcode.com/problems/implement-strstr/) | 　　[java](algorithms/string/Leetcode28.java)|　Easy |
 |　29 |　　　[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | 　　[java](algorithms/math/Leetcode29.java)|　Medium |
 |　30 |　　　[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | 　　[java](algorithms/hashmap/Leetcode30.java)|　Hard |
+|　34 |　　　[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode34.java)|　Medium |
+|　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
+|　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
