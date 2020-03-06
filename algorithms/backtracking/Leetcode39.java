@@ -1,7 +1,6 @@
 package backtracking;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -39,65 +38,37 @@ import java.util.List;
 public class Leetcode39 {
 
     /**
-     * dfs best
-     * @param candidates
-     * @param target
-     * @return
+     *　回溯法　注意剪枝
+     * 如果一个数位搜索起点都不能搜索到结果，那么比它还大的数肯定搜索不到结果，基于这个想法，我们可以对输入数组进行排序，以减少搜索的分支；
+     *
+     * 排序是为了提高搜索速度，非必要；
+     *
+     * 搜索问题一般复杂度较高，能剪枝就尽量需要剪枝。把候选数组排个序，遇到一个较大的数，
+     * 如果以这个数为起点都搜索不到结果，后面的数就更搜索不到结果了。
+     *
      */
+    List<List<Integer>> lists = new ArrayList<>();
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        if(candidates==null || candidates.length<1 ||target<=0){
-            return new ArrayList<List<Integer>>();
-        }
-
-        ArrayList<List<Integer>> ret = new ArrayList<List<Integer>>();
-        dfs(ret, candidates, target, new ArrayList<Integer>(),0);
-        return ret;
-    }
-
-    public void dfs(ArrayList<List<Integer>> ret, int[] nums, int target, ArrayList<Integer> one, int cur){
-        if(0==target){
-            ret.add(new ArrayList<Integer>(one));
-            return;
-        }
-        else{
-            for(int i=cur; i<nums.length; i++){
-                if(nums[i]<=target){
-                    one.add(nums[i]);
-                    dfs(ret,nums,target-nums[i],one,i);
-                    one.remove(one.size()-1);
-                }
-            }
-        }
-    }
-
-    /*************************************************/
-    /**
-     * 回溯法
-     * @param candidates
-     * @param target
-     * @return
-     */
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<List<Integer>> lists = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
-        Arrays.sort(candidates);
-        generateSums(lists, list, candidates, target,0);
+        back(candidates,list,target,0);
         return lists;
     }
-
-    private void generateSums(List<List<Integer>> lists, List<Integer> tmp, int[] candidates, int target, int num){
-        //递归的终点
-        if(target==0){
-            lists.add(tmp);
+    private void back(int[] candidates, List<Integer> list ,int target,int row) {
+        if (target == 0) {
+            lists.add(new ArrayList<>(list));
             return;
         }
-        if(target<candidates[0]) return;
-        for(int i = num; i < candidates.length && candidates[i] <= target; i++){
-            //深拷贝
-            List<Integer> list = new ArrayList<>(tmp);
-            list.add(candidates[i]);
-            //递归运算，将i传递至下一次运算是为了避免结果重复。
-            generateSums(lists, list, candidates, target-candidates[i], i);
+        for (int i = row; i < candidates.length; i++) {
+            //若target减小到0一下　则需要回溯
+            if (target < 0) break;
+            //剪枝　若从i开始　nums[i]>target 则会面不需要再遍历
+            if (target >= candidates[i]){
+                list.add(candidates[i]);
+                //递归运算，将i传递至下一次运算是为了避免结果重复。
+                back(candidates, list, target - candidates[i], i);
+                list.remove(list.size() - 1);
+            }
+
         }
     }
 
