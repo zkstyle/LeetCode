@@ -8,7 +8,7 @@ package dp;
  * Description: 正则表达式匹配
  */
 public class Leetcode10 {
-    public boolean isMatch１(String s, String p) {
+    public boolean isMatch1(String s, String p) {
         int m = s.length();
         int n = p.length();
         boolean[][] dp = new boolean[m + 1][n + 1];

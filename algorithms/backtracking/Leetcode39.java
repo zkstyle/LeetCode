@@ -55,6 +55,7 @@ public class Leetcode39 {
     }
     private void back(int[] candidates, List<Integer> list ,int target,int row) {
         if (target == 0) {
+
             lists.add(new ArrayList<>(list));
             return;
         }

@@ -24,6 +24,11 @@ package string;
  * 所有输入只包含小写字母 a-z 。
  */
 public class Leetcode14 {
+    /*
+    *   就是以其中一个字符串为模板　对其他字符串进行判断
+    *   是不是strs[i].startsWith(match.toString()
+    *   如果不是　删除最后一个字符　一直循环下去　直到符合条件
+     */
     public String longestCommonPrefix(String[] strs) {
         if (strs.length < 1) return "";
         if (strs.length == 1) return strs[0];

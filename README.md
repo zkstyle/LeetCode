@@ -33,7 +33,13 @@ If you like this project, please leave me a star. ★
 |　34 |　　　[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode34.java)|　Medium |
 |　35 |　　　[Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 　　[java](algorithms/binarysearch/Leetcode35.java)|　Easy |
 |　39 |　　　[Combination Sum](https://leetcode.com/problems/combination-sum/) | 　　[java](algorithms/backtracking/Leetcode39.java)|　Medium |
+|　40 |　　　[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | 　　[java](algorithms/backtracking/Leetcode40.java)|　Medium |
+|　46 |　　　[Permutations](https://leetcode.com/problems/permutations/) | 　　[java](algorithms/backtracking/Leetcode46.java)|　Medium |
+|　47 |　　　[Permutations II](https://leetcode.com/problems/permutations-ii/) | 　　[java](algorithms/backtracking/Leetcode47.java)|　Medium |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
+|　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
+|　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |
+|　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
