@@ -3,7 +3,6 @@ package tree;
 import tree.treenode.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Stack;
 
@@ -30,67 +29,45 @@ import java.util.Stack;
 public class Leetcode94 {
 
     /**
-     * 递归调用
+     * 递归调用 定义list 首先root若为null 直接返回list
+     *          若不为空　然后分别遍历左子树　添加root.val 再遍历右子树
      * @param root
      * @return
      */
+    private List<Integer> list = new ArrayList<>();
+
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<Integer>();
-        if (root == null) {
-            return list;
-        }
+        if (root == null) return list;
         if (root.left != null) {
-            list.addAll(inorderTraversal(root.left));
+            inorderTraversal(root.left);
         }
         list.add(root.val);
         if (root.right != null) {
-            list.addAll(inorderTraversal(root.right));
+            inorderTraversal(root.right);
         }
         return list;
+
     }
 
     /**
-     * 迭代循环
+     * 迭代循环　利用stack进行迭代　先放root根节点　再让左子树进栈　
+     *          左子树先出栈　再将右子树入栈
      * @param root
      * @return
      */
     public List<Integer> inorderTraversal2(TreeNode root) {
-        List<Integer> list = new  ArrayList<>();
-        if(root == null) {
-            return list;
-        }
-
+        List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-
-        stack.add(root);
-
-        TreeNode cur = null;
-
-        HashSet<TreeNode> set = new HashSet<>();
-
-        while(!stack.isEmpty()) {
-            if(stack.peek().left != null && !set.contains(stack.peek().left)) {
-                cur = stack.peek().left;
-                stack.push(cur);
-                set.add(cur);
-            }else if(stack.peek().right != null) {
-                cur = stack.pop();
-                list.add(cur.val);
-                stack.push(cur.right);
-            }else {
-                cur = stack.pop();
-                list.add(cur.val);
+        TreeNode curr = root;
+        while (curr != null || !stack.isEmpty()) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
             }
+            curr = stack.pop();
+            res.add(curr.val);
+            curr = curr.right;
         }
-
-        return list;
-    }
-
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.left = null;
-        root.right = new TreeNode(2);
-        root.right.left = new TreeNode(3);
-        new Leetcode94().inorderTraversal2(root);
+        return res;
     }
 }

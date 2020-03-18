@@ -43,6 +43,10 @@ If you like this project, please leave me a star. ★
 |　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |
 |　66 |　　　[Plus One](https://leetcode.com/problems/plus-one/) | 　　[java](algorithms/array/Leetcode66.java)|　Easy |
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
+|　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
+|　94 |　　　[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode94.java)|　Medium |
+|　95 |　　　[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | 　　[java](algorithms/tree/Leetcode95.java)|　Medium |
+|　98 |　　　[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | 　　[java](algorithms/tree/Leetcode98.java)|　Medium |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
