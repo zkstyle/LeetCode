@@ -38,6 +38,8 @@ If you like this project, please leave me a star. ★
 |　46 |　　　[Permutations](https://leetcode.com/problems/permutations/) | 　　[java](algorithms/backtracking/Leetcode46.java)|　Medium |
 |　47 |　　　[Permutations II](https://leetcode.com/problems/permutations-ii/) | 　　[java](algorithms/backtracking/Leetcode47.java)|　Medium |
 |　49 |　　　[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 　　[java](algorithms/hashmap/Leetcode49.java)|　Medium |
+|　50 |　　　[Pow(x, n)](https://leetcode.com/problems/powx-n/) | 　　[java](algorithms/math/Leetcode50.java)|　Medium |
+|　51 |　　　[N-Queens](https://leetcode.com/problems/n-queens/) | 　　[java](algorithms/backtracking/Leetcode51.java)|　Hard |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
 |　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |

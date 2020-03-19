@@ -10,7 +10,7 @@ package math;
 public class Leetcode50 {
 
     /**
-     * simple
+     * 思路：递归调用　power(x,n) = power(x,n/2)^2 * x(n为奇数) 偶数就不需要乘以x
      * @param x
      * @param n
      * @return
@@ -20,6 +20,7 @@ public class Leetcode50 {
         else return power(x, n);
     }
     private static double power(double x, int n) {
+        //递归出口
         if (n == 0) return 1;
         double v = power(x, n / 2);
         if (n % 2 == 0) return v * v;
