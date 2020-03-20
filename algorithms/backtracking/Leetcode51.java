@@ -43,39 +43,39 @@ public class Leetcode51 {
      *          判断当前位置可以放置皇后　放置后将位置标志为true表示已经放置过
      *          回溯完　再标志为false 并移除上一次放置的值
      */
-    private List<List<String>> res=new ArrayList<>();
-        public List<List<String>> solveNQueens(int n) {
-            //new boolean[2*n-1] 因为有2*n-1条斜对角线
-            helper(0,n,new boolean[n],new boolean[2*n-1],new boolean[2*n-1],new ArrayList<>());
-            return res;
-        }
-        private void helper(int row,int n,boolean[] cols,boolean[] d1,boolean[] d2,List<String> list){
-            if(row==n){
-                res.add(new ArrayList<>(list));
-                return;
-            }
-            for(int col=0;col<n;col++){
-                int d1Num=col+row;
-                //斜对角线坐标差值相等 i1-i2=j1-j2 ==> i1-j1=i2-j2
-                int d2Num=col-row+n-1;
-                //判断是否冲突
-                if(!cols[col]&&!d1[d1Num]&&!d2[d2Num]){
-                    char[] temp=new char[n];
-                    Arrays.fill(temp,'.');
-                    temp[col]='Q';
-                    cols[col]=true;
-                    d1[d1Num]=true;
-                    d2[d2Num]=true;
-                    list.add(new String(temp));
-                    helper(row+1,n,cols,d1,d2,list);
-                    //回溯
-                    cols[col]=false;
-                    d1[d1Num]=false;
-                    d2[d2Num]=false;
-                    list.remove(list.size()-1);
-                }
-            }
-        }
+    private List<List<String>> res = new ArrayList<>();
 
+    public List<List<String>> solveNQueens(int n) {
+        //new boolean[2*n-1] 因为有2*n-1条斜对角线
+        helper(0, n, new boolean[n], new boolean[2 * n - 1], new boolean[2 * n - 1], new ArrayList<>());
+        return res;
+    }
 
+    private void helper(int row, int n, boolean[] cols, boolean[] d1, boolean[] d2, List<String> list) {
+        if (row == n) {
+            res.add(new ArrayList<>(list));
+            return;
+        }
+        for (int col = 0; col < n; col++) {
+            int d1Num = col + row;
+            //斜对角线坐标差值相等 i1-i2=j1-j2 ==> i1-j1=i2-j2
+            int d2Num = col - row + n - 1;
+            //判断是否冲突
+            if (!cols[col] && !d1[d1Num] && !d2[d2Num]) {
+                char[] temp = new char[n];
+                Arrays.fill(temp, '.');
+                temp[col] = 'Q';
+                cols[col] = true;
+                d1[d1Num] = true;
+                d2[d2Num] = true;
+                list.add(new String(temp));
+                helper(row + 1, n, cols, d1, d2, list);
+                //回溯
+                cols[col] = false;
+                d1[d1Num] = false;
+                d2[d2Num] = false;
+                list.remove(list.size() - 1);
+            }
+        }
+    }
 }

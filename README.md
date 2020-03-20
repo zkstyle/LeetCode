@@ -40,6 +40,7 @@ If you like this project, please leave me a star. ★
 |　49 |　　　[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 　　[java](algorithms/hashmap/Leetcode49.java)|　Medium |
 |　50 |　　　[Pow(x, n)](https://leetcode.com/problems/powx-n/) | 　　[java](algorithms/math/Leetcode50.java)|　Medium |
 |　51 |　　　[N-Queens](https://leetcode.com/problems/n-queens/) | 　　[java](algorithms/backtracking/Leetcode51.java)|　Hard |
+|　52 |　　　[N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 　　[java](algorithms/backtracking/Leetcode52.java)|　Hard |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
 |　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |
@@ -56,5 +57,8 @@ If you like this project, please leave me a star. ★
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|　03 |　　　[ 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO03.java)|　Easy |
+|　03 |　　　[数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO03.java)|　Easy |
+|　04 |　　　[二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO04.java)|　Easy |
+|　05 |　　　[替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO05.java)|　Easy |
+|　06 |　　　[从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO06.java)|　Easy |
 |　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO50.java)|　Easy |
