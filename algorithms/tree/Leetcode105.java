@@ -2,7 +2,7 @@ package tree;
 
 import tree.treenode.TreeNode;
 
-import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @BelongsProject: LeetCode
@@ -32,21 +32,26 @@ public class Leetcode105 {
     int index = 0;
 
     /**
-     * 1ms典范
+     * 递归构建二叉树　首先对与先序序列preorder[0]肯定是根节点
+     * 然后拿根节点值取中序序列找到该节点　该节点左边的值是左子树的值　该节点右边的值为右子树的值
+     * 然后分别继续递归构造二叉树
      * @param preorder
      * @param inorder
      * @return
      */
-    public TreeNode buildTree2(int[] preorder, int[] inorder) {
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (inorder.length == 0) {
             return null;
         }
         return build(preorder,inorder,0,inorder.length - 1);
     }
 
+    /**
+     *以根节点的值以及搜索下标搜索根节点坐标
+     */
     public int serach(int [] inorder ,int str ,int end , int data){
         for ( int i = end ; i >= str ; i --){
-            if ( inorder[i] == data){
+            if (inorder[i] == data){
                 return i;
             }
         }
@@ -67,35 +72,25 @@ public class Leetcode105 {
         return node;
     }
 
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-
-        if(preorder.length == 0){
-            return null;
-        }
-        TreeNode root = null, left, right;
-        if(preorder.length == 1){
-            return new TreeNode(inorder[0]);
-        }
-        int rootVal = preorder[0];
-        for(int i = 0; i < inorder.length; i++){
-
-            if(inorder[i] == rootVal){
-                root =  new TreeNode(inorder[i]);
-
-                root.left = buildTree(Arrays.copyOfRange(preorder, 1,i+1), Arrays.copyOfRange(inorder, 0,i));
-                root.right = buildTree(Arrays.copyOfRange(preorder, i+1, preorder.length),
-                        Arrays.copyOfRange(inorder, i + 1,inorder.length));
-
-            }
-
-        }
-
+    /**
+     * 和上面揭发类似　不同的是将中序序列存入到hashmap字典中　
+     * 然后每一次在字典中搜索中序序列对应的根节点下标
+     */
+    HashMap<Integer, Integer> dic = new HashMap<>();
+    int[] po;
+    public TreeNode buildTree2(int[] preorder, int[] inorder) {
+        po = preorder;
+        for(int i = 0; i < inorder.length; i++)
+            dic.put(inorder[i], i);
+        return recur(0, 0, inorder.length - 1);
+    }
+    TreeNode recur(int pre_root, int in_left, int in_right) {
+        if(in_left > in_right) return null;
+        TreeNode root = new TreeNode(po[pre_root]);
+        int i = dic.get(po[pre_root]);
+        root.left = recur(pre_root + 1, in_left, i - 1);
+        root.right = recur(pre_root + i - in_left + 1, i + 1, in_right);
         return root;
     }
 
-    public static void main(String[] args) {
-        int[] preorder = {3,9,10,20,15,7};
-        int[] inorder = {10,9,3,15,20,7};
-        new Leetcode105().buildTree2(preorder,inorder);
-    }
 }
