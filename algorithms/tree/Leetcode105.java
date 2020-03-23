@@ -24,8 +24,8 @@ import java.util.HashMap;
  *     3
  *    / \
  *   9  20
- *     /  \
- *    15   7
+ *  /   / \
+ * 10 15   7
  */
 public class Leetcode105 {
 
@@ -49,26 +49,26 @@ public class Leetcode105 {
     /**
      *以根节点的值以及搜索下标搜索根节点坐标
      */
-    public int serach(int [] inorder ,int str ,int end , int data){
-        for ( int i = end ; i >= str ; i --){
-            if (inorder[i] == data){
+    public int serach(int[] inorder, int str, int end, int data) {
+        for (int i = end; i >= str; i--) {
+            if (inorder[i] == data) {
                 return i;
             }
         }
         return -1;
     }
 
-    private TreeNode build(int[] preorder,int[] inorder,int left,int right) {
-        if (left > right || index >= preorder.length){
+    private TreeNode build(int[] preorder, int[] inorder, int left, int right) {
+        if (left > right || index >= preorder.length) {
             return null;
         }
-        int j = serach(inorder,left,right,preorder[index]);
+        int j = serach(inorder, left, right, preorder[index]);
         TreeNode node = new TreeNode(preorder[index]);
         //buildleft
-        index ++;
-        node.left =build(preorder,inorder,left,j-1);
+        index++;
+        node.left = build(preorder, inorder, left, j - 1);
         //buildright
-        node.right =build(preorder,inorder,j + 1,right);
+        node.right = build(preorder, inorder, j + 1, right);
         return node;
     }
 

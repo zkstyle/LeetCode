@@ -27,14 +27,18 @@ import tree.treenode.TreeNode;
  */
 public class Leetcode111 {
 
+    /**
+     * 需要考虑特殊情况　若左子树或右子树为空　则最小深度为左子树或右子树的最小深度
+     * 先获取左右子树各自深度
+     * @param root
+     * @return
+     */
     public int minDepth(TreeNode root) {
-        if (root == null) {
-            return 0;
-        } else {
-            if (root.left != null && root.right != null) {
-                return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
-            }
-            return Math.max(minDepth(root.left), minDepth(root.right)) + 1;
-        }
+        if(root == null) return 0;
+        int m1 = minDepth(root.left);
+        int m2 = minDepth(root.right);
+        //1.如果左孩子和右孩子有为空的情况，直接返回m1+m2+1(其中m1或m2为0)
+        //2.如果都不为空，返回较小深度+1
+        return root.left == null || root.right == null ? m1 + m2 + 1 : Math.min(m1,m2) + 1;
     }
 }

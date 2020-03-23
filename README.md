@@ -50,7 +50,10 @@ If you like this project, please leave me a star. ★
 |　94 |　　　[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode94.java)|　Medium |
 |　95 |　　　[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | 　　[java](algorithms/tree/Leetcode95.java)|　Medium |
 |　98 |　　　[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | 　　[java](algorithms/tree/Leetcode98.java)|　Medium |
+|　102 |　　　[ Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | 　　[java](algorithms/tree/Leetcode102.java)|　Medium |
 |　105 |　　　[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode105.java)|　Medium |
+|　110 |　　　[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | 　　[java](algorithms/dfs/Leetcode110.java)|　Easy |
+|　111 |　　　[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | 　　[java](algorithms/dfs/Leetcode111.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |

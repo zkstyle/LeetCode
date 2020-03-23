@@ -41,18 +41,40 @@ import tree.treenode.TreeNode;
  */
 public class Leetcode110 {
 
-    public boolean isBalanced(TreeNode root) {
-        if (root == null) return true;
-        int leftH = root.left == null ? 0 : height(root.left);
-        int rightH = root.right == null ? 0 : height(root.right);
+    //计算左子树右子树高度差　不能大于1
+    int maxHeightDiff = 0;
 
-        return Math.abs(leftH - rightH) <= 1 && isBalanced(root.left) && isBalanced(root.right);
+    /**
+     * 定义traversTree　返回值为左右子树的高度差　大于1返回false
+     */
+    public boolean isBalanced(TreeNode root) {
+
+        int height = traversTree(root);
+
+        if (maxHeightDiff > 1) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
-    public int height(TreeNode root) {
-        if (root == null)
-            return 0;
-
-        return 1 + Math.max(height(root.left), height(root.right));
+    public int traversTree(TreeNode node) {
+        //如果根节点为空　显然是符合平衡二叉树
+        if (node == null) {
+            return 1;
+        }
+        //分别获取左右子树高度
+        int left = traversTree(node.left);
+        int right = traversTree(node.right);
+        //每次更新左右子树高度差　
+        if (Math.abs(left - right) > maxHeightDiff) {
+            maxHeightDiff = Math.abs(left - right);
+        }
+        //更新左右子树高度
+        if (left > right) {
+            return left + 1;
+        } else {
+            return right + 1;
+        }
     }
 }
