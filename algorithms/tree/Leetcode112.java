@@ -26,6 +26,14 @@ import tree.treenode.TreeNode;
  */
 public class Leetcode112 {
 
+    /**
+     * 思路：若当前节点不是叶子节点　且右子树或左子树为空直接返回false 如上面二叉树左子树中节点4的右子树
+     * 判断左右子树同时为空说明是叶子节点　判断sum - root.val == 0(剩余部分是否等于节点值)
+     * 然后递归判断左子树与右子树　只要有一条路径即可　逻辑或连接
+     * @param root
+     * @param sum
+     * @return
+     */
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) {
             return false;

@@ -54,6 +54,8 @@ If you like this project, please leave me a star. ★
 |　105 |　　　[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode105.java)|　Medium |
 |　110 |　　　[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | 　　[java](algorithms/dfs/Leetcode110.java)|　Easy |
 |　111 |　　　[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | 　　[java](algorithms/dfs/Leetcode111.java)|　Easy |
+|　112 |　　　[Path Sum](https://leetcode.com/problems/path-sum/) | 　　[java](algorithms/tree/Leetcode112.java)|　Easy |
+|　113 |　　　[Path Sum II](https://leetcode.com/problems/path-sum-ii/) | 　　[java](algorithms/tree/Leetcode113.java)|　Medium |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
