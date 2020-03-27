@@ -21,6 +21,13 @@ import linkedlist.listnode.ListNode;
  */
 public class Leetcode82 {
 
+    /**
+     * 递归法　若当前节点值不等于下一个节点值　直接递归head.next = deleteDuplicates(head.next)
+     * 否则　while循环删除节点　返回deleteDuplicates(head.next)　这里区别于83题　返回的是head.next因为head还是保留了一个重复值
+     * 因为82题要求删除所有重复元素　故参数为head.next
+     * @param head
+     * @return
+     */
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
             return null;
@@ -38,13 +45,29 @@ public class Leetcode82 {
         return head;
     }
 
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(1);
-        l1.next.next = new ListNode(1);
-        l1.next.next.next = new ListNode(4);
-        l1.next.next.next.next = new ListNode(5);
-//        l1.next.next.next.next = new ListNode(5);
-        ListNode l2 = new Leetcode82().deleteDuplicates(l1);
+    /**
+     * 迭代法　　申明一个dummy节点　dummy.next指向head
+     * cur指向dummy　while循环判断cur.next,cur.next.next不为空
+     * 如果下一个节点值与下下个节点值相等　申明temp节点指向cur.next
+     * while循环删除重复节点　最后temp节点指向唯一的重复节点　cur.next = temp.next删除最后一个重复节点
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates2(ListNode head) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode cur = dummy;
+        while (cur.next != null && cur.next.next != null) {
+            if (cur.next.val == cur.next.next.val) {
+                ListNode temp = cur.next;
+                while (temp != null && temp.next != null && temp.val == temp.next.val ) {
+                    temp = temp.next;
+                }
+                cur.next = temp.next;
+            }
+            else
+                cur = cur.next;
+        }
+        return dummy.next;
     }
 }

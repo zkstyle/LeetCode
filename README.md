@@ -45,17 +45,23 @@ If you like this project, please leave me a star. ★
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
 |　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |
 |　66 |　　　[Plus One](https://leetcode.com/problems/plus-one/) | 　　[java](algorithms/array/Leetcode66.java)|　Easy |
+|　67 |　　　[Add Binary](https://leetcode.com/problems/add-binary/) | 　　[java](algorithms/string/Leetcode67.java)|　Easy |
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
+|　82 |　　　[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode82.java)|　Medium |
+|　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
 |　94 |　　　[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode94.java)|　Medium |
 |　95 |　　　[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | 　　[java](algorithms/tree/Leetcode95.java)|　Medium |
 |　98 |　　　[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | 　　[java](algorithms/tree/Leetcode98.java)|　Medium |
-|　102 |　　　[ Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | 　　[java](algorithms/tree/Leetcode102.java)|　Medium |
+|　102 |　　　[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | 　　[java](algorithms/tree/Leetcode102.java)|　Medium |
 |　105 |　　　[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode105.java)|　Medium |
 |　110 |　　　[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | 　　[java](algorithms/dfs/Leetcode110.java)|　Easy |
 |　111 |　　　[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | 　　[java](algorithms/dfs/Leetcode111.java)|　Easy |
 |　112 |　　　[Path Sum](https://leetcode.com/problems/path-sum/) | 　　[java](algorithms/tree/Leetcode112.java)|　Easy |
 |　113 |　　　[Path Sum II](https://leetcode.com/problems/path-sum-ii/) | 　　[java](algorithms/tree/Leetcode113.java)|　Medium |
+|　118 |　　　[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | 　　[java](algorithms/array/Leetcode118.java)|　Easy |
+|　119 |　　　[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | 　　[java](algorithms/array/Leetcode119.java)|　Easy |
+|　125 |　　　[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 　　[java](algorithms/string/Leetcode125.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |

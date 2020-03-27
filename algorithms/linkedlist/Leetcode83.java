@@ -21,6 +21,12 @@ import linkedlist.listnode.ListNode;
  */
 public class Leetcode83 {
 
+    /**
+     * 递归法　若当前节点值不等于下一个节点值　直接递归head.next = deleteDuplicates(head.next)
+     * 否则　while循环删除节点　返回deleteDuplicates(head)　这里head已经删除了重复节点值
+     * @param head
+     * @return
+     */
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null){
             return null;
@@ -36,12 +42,22 @@ public class Leetcode83 {
         return head;
     }
 
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(1);
-        l1.next.next = new ListNode(2);
-//        l1.next.next.next = new ListNode(3);
-//        l1.next.next.next.next = new ListNode(3);
-        ListNode l2 = new Leetcode83().deleteDuplicates(l1);
+    /**
+     * 迭代法　cur指向头结点　while循环判断cur.next不为空
+     * 如果当前节点值等于下一个节点值　cur.next=cur.next.next
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates2(ListNode head) {
+        if (head==null) return head;
+        ListNode cur = head;
+        while(cur.next!=null){
+            if(cur.val==cur.next.val){
+                cur.next=cur.next.next;
+            }else{
+                cur = cur.next;
+            }
+        }
+        return head;
     }
 }
