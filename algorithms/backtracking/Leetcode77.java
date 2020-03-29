@@ -13,19 +13,24 @@ import java.util.List;
  */
 public class Leetcode77 {
 
+    /**
+     * 回溯法遍历　对于组合计算　首选回溯法　遍历所有情况　但是需要注意的是剪枝
+     * 减少不必要的回溯　提高回溯的效率
+     */
     List<List<Integer>> lists = new ArrayList<>();
+
     public List<List<Integer>> combine(int n, int k) {
         back(new ArrayList<>(), n, k, 1);
         return lists;
     }
 
-    private void back(List<Integer> list, int n, int k, int row){
-        if (k == list.size()){
+    private void back(List<Integer> list, int n, int k, int row) {
+        if (k == list.size()) {
             lists.add(new ArrayList<>(list));
             return;
         }
 
-        for( int i = row; i <= n; i++){
+        for (int i = row; i <= n; i++) {
             //剩余的数已经不足以k - list.size()(已经添加的数)
             if (n - i + 1 < k - list.size())
                 return;
@@ -35,7 +40,4 @@ public class Leetcode77 {
         }
     }
 
-    public static void main(String[] args) {
-        new Leetcode77().combine(4,2);
-    }
 }

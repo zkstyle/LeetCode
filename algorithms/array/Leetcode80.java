@@ -24,10 +24,6 @@ package array;
  * 函数应返回新长度 length = 7, 并且原数组的前五个元素被修改为 0, 0, 1, 1, 2, 3, 3 。
  *
  * 你不需要考虑数组中超出新长度后面的元素。
- *
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class Leetcode80 {
 
@@ -40,23 +36,18 @@ public class Leetcode80 {
      *                 i++;
      *             }
      *           }
-     * @param nums
-     * @return
+     * 使用快慢指针　快指针j指向当前遍历元素　慢指针指向因为重复元素需要放置的元素位置
+     * nums[j] != nums[i - 2]比对的是删除重复元素后实际位置
      */
     public int removeDuplicates(int[] nums) {
         int i = 0;
-        for (int n : nums){
-            if (i < 2 || n != nums[i-2]){
-                nums[i] = n;
+        for (int j = 0; j < nums.length; j++) {
+            if (i < 2 || nums[j] != nums[i - 2]) {
+                nums[i] = nums[j];
                 i++;
             }
         }
         return i;
-    }
-
-    public static void main(String[] args) {
-        int[] num = {0,0,1,1,1,1,2,3,3};
-        new Leetcode80().removeDuplicates(num);
     }
 
 }

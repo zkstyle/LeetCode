@@ -47,6 +47,9 @@ If you like this project, please leave me a star. ★
 |　66 |　　　[Plus One](https://leetcode.com/problems/plus-one/) | 　　[java](algorithms/array/Leetcode66.java)|　Easy |
 |　67 |　　　[Add Binary](https://leetcode.com/problems/add-binary/) | 　　[java](algorithms/string/Leetcode67.java)|　Easy |
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
+|　73 |　　　[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 　　[java](algorithms/array/Leetcode73.java)|　Medium |
+|　77 |　　　[Combinations](https://leetcode.com/problems/combinations/) | 　　[java](algorithms/backtracking/Leetcode77.java)|　Medium |
+|　80 |　　　[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | 　　[java](algorithms/array/Leetcode80.java)|　Medium |
 |　82 |　　　[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode82.java)|　Medium |
 |　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
@@ -63,6 +66,7 @@ If you like this project, please leave me a star. ★
 |　119 |　　　[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | 　　[java](algorithms/array/Leetcode119.java)|　Easy |
 |　125 |　　　[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 　　[java](algorithms/string/Leetcode125.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
+|　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
