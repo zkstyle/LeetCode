@@ -49,9 +49,11 @@ If you like this project, please leave me a star. ★
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
 |　73 |　　　[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 　　[java](algorithms/array/Leetcode73.java)|　Medium |
 |　77 |　　　[Combinations](https://leetcode.com/problems/combinations/) | 　　[java](algorithms/backtracking/Leetcode77.java)|　Medium |
+|　78 |　　　[Subsets](https://leetcode.com/problems/subsets/) | 　　[java](algorithms/backtracking/Leetcode78.java)|　Medium |
 |　80 |　　　[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | 　　[java](algorithms/array/Leetcode80.java)|　Medium |
 |　82 |　　　[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode82.java)|　Medium |
 |　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
+|　92 |　　　[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode92.java)|　Medium |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
 |　94 |　　　[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode94.java)|　Medium |
 |　95 |　　　[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | 　　[java](algorithms/tree/Leetcode95.java)|　Medium |
@@ -66,7 +68,9 @@ If you like this project, please leave me a star. ★
 |　119 |　　　[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | 　　[java](algorithms/array/Leetcode119.java)|　Easy |
 |　125 |　　　[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 　　[java](algorithms/string/Leetcode125.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
+|　131 |　　　[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 　　[java](algorithms/backtracking/Leetcode131.java)|　Medium |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
+|　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
@@ -78,4 +82,6 @@ If you like this project, please leave me a star. ★
 |　04 |　　　[二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO04.java)|　Easy |
 |　05 |　　　[替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO05.java)|　Easy |
 |　06 |　　　[从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO06.java)|　Easy |
+|　47 |　　　[礼物的最大价值](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO47.java)|　Medium |
+
 |　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO50.java)|　Easy |

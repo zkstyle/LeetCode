@@ -24,39 +24,41 @@ import java.util.List;
  */
 public class Leetcode131 {
 
-    List<List<String>> res=new ArrayList<List<String>>();
-    String str;
-    int len;
-
+    /**
+     * 算法思路　回溯算法　首先定义一个判断回文串函数isPalindrome
+     *          回溯遍历字符串　若start~i为回文串则保存　否则i++继续遍历
+     * @param s
+     * @return
+     */
     public List<List<String>> partition(String s) {
-        str=s;
-        len=s.length()-1;
-        find(new ArrayList<>(),0);
+        List<List<String>> res = new ArrayList<>();
+        if (s == null || s.length() == 0) return res;
+        char[] chars = s.toCharArray();
+        backtrack(chars, res, new ArrayList<String>(), 0, 0);
         return res;
     }
 
-    //主函数
-    public void find(List<String> list,int index) {
-        if(index==len+1){
+    private void backtrack(char[] chars, List<List<String>> res, ArrayList<String> list, int start, int index) {
+        if (start == chars.length) {
             res.add(new ArrayList<>(list));
             return;
         }
-        int i=index;
-        while(i<=len){
-            if(isRever(index,i)){
-                list.add(str.substring(index,i+1));
-                find(list,i+1);
-                list.remove(list.size()-1);
-            }
-            i++;
+        for (int i = index; i < chars.length; i++) {
+            //若不是回文串　继续遍历
+            if (!isPalindrome(chars, start, i)) continue;
+            list.add(new String(chars, start, i - start + 1));
+            //回溯接着i后面继续找寻回文串
+            backtrack(chars, res, list, i + 1, i + 1);
+            list.remove(list.size() - 1);
         }
     }
-    //判断是否是回文字符串
-    public boolean isRever(int i,int j){
-        while(i<=j){
-            if(str.charAt(i)!=str.charAt(j)) return false;
-            i++;
-            j--;
+
+    private boolean isPalindrome(char[] chars, int low, int high) {
+
+        while (low < high) {
+            if (chars[low] != chars[high]) return false;
+            --high;
+            ++low;
         }
         return true;
     }

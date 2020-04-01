@@ -1,4 +1,4 @@
-package bit;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,24 +30,26 @@ import java.util.List;
  */
 public class Leetcode78 {
 
+    /**
+     * 算法思路　深度搜索+回溯思想　
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-        if(nums.length == 0) return res;
+        if (nums.length == 0) return res;
         res.add(new ArrayList<>());
-        dfs(0,nums,res,new ArrayList<>());
+        dfs(0, nums, res, new ArrayList<>());
         return res;
     }
-    public void dfs(int curIdx,int[] nums,List<List<Integer>> res,List<Integer> l){
-        for(int i = curIdx;i < nums.length;i++){
+
+    public void dfs(int curIdx, int[] nums, List<List<Integer>> res, List<Integer> l) {
+        for (int i = curIdx; i < nums.length; i++) {
             l.add(nums[i]);
+            //每次添加组合值
             res.add(new ArrayList<>(l));
-            dfs(i + 1,nums,res,l);
+            dfs(i + 1, nums, res, l);
             l.remove(l.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        int[] num = {1,2,3};
-        new Leetcode78().subsets(num);
     }
 }
