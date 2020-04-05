@@ -24,19 +24,22 @@ package dp;
  *      偷窃到的最高金额 = 2 + 9 + 1 = 12 。
  */
 public class Leetcode198 {
+
+    /**
+     * 动态规划思想　dp[i]表示前i个房屋所能偷到的最大价值
+     *              dp[i]=Math.max(dp[i-1],dp[i-2]+prices[i])
+     *              前i个房屋最大价值要么是前i-2个房屋最大价值+第i个房屋价值　要么是前i-1个房屋最大价值
+     *              二者进行比较　取较大的值
+     * @param nums
+     * @return
+     */
     public int rob(int[] nums) {
         int n = nums.length;
-        if (n == 0) return 0;
-        if (n == 1) return nums[0];
-        if (n == 2) return nums[1] > nums[0] ? nums[1] : nums[0];
-        int[] dp = new int[n];
-        dp[0] = nums[0];
-        dp[1] = Math.max(nums[0], nums[1]);
-        for (int i = 2; i < n; i++){
-            dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);
+        if (n <= 1) return n == 0 ? 0 : nums[0];
+        nums[1] = nums[1] > nums[0] ? nums[1] : nums[0];
+        for (int i = 2; i < nums.length; i++) {
+            nums[i] = Math.max(nums[i] + nums[i - 2], nums[i - 1]);
         }
-
-        return dp[n-1];
+        return nums[n - 1];
     }
-
 }

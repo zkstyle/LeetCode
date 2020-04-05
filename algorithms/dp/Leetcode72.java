@@ -33,6 +33,18 @@ package dp;
  * exection -> execution (插入 'u')
  */
 public class Leetcode72 {
+
+    /**
+     * 【思路】
+     *
+     * 令dp[i][j]为：当遍历到字符串word1的第i个字符，遍历到字符串word2的第j个字符时，转换所需要的最少操作次数为dp[i][j]
+     * 若word1[i]==word2[j]，那么当前不需要进行任何操作，有dp[i][j]=dp[i-1][j-1]
+     * 若word1[i]!=word2[j]不相等，j就有三种操作：
+     * 如果把字符word1[i] 替换成与 word2[j] 相等，则有 dp[i][j] = dp[i-1][j-1] + 1
+     * 如果在字符串word1末尾插入一个与word2[j]相等的字符，则有dp[i][j] = dp[i][j-1] + 1
+     * 如果把字符word1[i]删除，则有dp[i][j]=dp[i-1][j]+1
+     * 那么我们应该选择一种操作，使得dp[i][j]的值最小，即有dp[i][j] = min(dp[i-1][j-1]，dp[i][j-1]，dp[[i-1][j]]) + 1
+     */
     public int minDistance(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();

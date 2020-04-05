@@ -26,6 +26,13 @@ package dp;
  */
 public class Leetcode121 {
 
+    /**
+     * 定义最小价格变量minValue 保存当前最小价格
+     * 若当前价格prices[i] < minValue 那么显然当前最大值dp[i]=dp[i-1]
+     * 否则　price[i] - minValue > max(最大利润)　更新max
+     * @param prices
+     * @return
+     */
     public int maxProfit(int[] prices) {
         int max = Integer.MIN_VALUE;
         int minValue = Integer.MAX_VALUE;
