@@ -20,10 +20,15 @@ package dp;
  * 解释: 13 = 4 + 9.
  */
 public class Leetcode279 {
+    /**
+     * 动态规划　首先找最小划分次数　最坏的情况无非是全1组合　不存在无法组合情况
+     * 然后每次更新dp[i] 找寻最小次数　dp[i] = Math.min(dp[i], dp[i-j*j]+1);
+     * @param n 给定正整数n
+     * @return
+     */
     public int numSquares(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 0;
-
         for(int i = 1; i<= n ; i++){
             dp[i] = i; //默认其最大值组合，1+1+1+1+...
             for(int j = 1; i-j*j >= 0; j++){

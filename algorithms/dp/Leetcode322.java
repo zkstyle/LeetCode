@@ -55,9 +55,9 @@ public class Leetcode322 {
     public int coinChange2(int[] coins, int amount) {
         if (amount < 1 || coins == null || coins.length == 0) return 0;
         Arrays.sort(coins);
-        int[] ans = new int[]{Integer.MAX_VALUE};
+        int[] ans = new int[]{amount + 1};
         dfs(coins, amount, coins.length - 1, 0, ans);
-        return ans[0] == Integer.MAX_VALUE ? -1 : ans[0];
+        return ans[0] == amount + 1 ? -1 : ans[0];
     }
 
     /**

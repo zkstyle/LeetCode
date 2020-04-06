@@ -33,17 +33,25 @@ package dp;
  * 输出: 28
  */
 public class Leetcode62 {
+    /**
+     * 简单的动态规划　
+     * @param m　行数
+     * @param n  列数
+     * @return　路径方法总数
+     */
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (i == 0 || j == 0)
+                if (i == 0 || j == 0)   //初始化边界值为1 只有一条路
                     dp[i][j] = 1;
                 else {
+                    //不为边界时　路径综合等于dp[i - 1][j] + dp[i][j - 1]
                     dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
                 }
             }
         }
         return dp[m - 1][n - 1];
     }
+
 }

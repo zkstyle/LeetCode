@@ -43,6 +43,9 @@ If you like this project, please leave me a star. ★
 |　52 |　　　[N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 　　[java](algorithms/backtracking/Leetcode52.java)|　Hard |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
+|　61 |　　　[Rotate List](https://leetcode.com/problems/rotate-list/) | 　　[java](algorithms/linkedlist/Leetcode61.java)|　Medium |
+|　62 |　　　[Unique Paths](https://leetcode.com/problems/unique-paths/) | 　　[java](algorithms/dp/Leetcode62.java)|　Medium |
+|　63 |　　　[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | 　　[java](algorithms/dp/Leetcode63.java)|　Medium |
 |　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |
 |　66 |　　　[Plus One](https://leetcode.com/problems/plus-one/) | 　　[java](algorithms/array/Leetcode66.java)|　Easy |
 |　67 |　　　[Add Binary](https://leetcode.com/problems/add-binary/) | 　　[java](algorithms/string/Leetcode67.java)|　Easy |
@@ -76,8 +79,10 @@ If you like this project, please leave me a star. ★
 |　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
+|　264 |　　　[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | 　　[java](algorithms/dp/Leetcode264.java)|　Medium | 
 |　279 |　　　[Perfect Squares](https://leetcode.com/problems/perfect-squares/) | 　　[java](algorithms/dp/Leetcode279.java)|　Medium |
 |　322 |　　　[Coin Change](https://leetcode.com/problems/coin-change/) | 　　[java](algorithms/dp/Leetcode322.java)|　Medium |
+|　494 |　　　[Target Sum](https://leetcode.com/problems/target-sum/) | 　　[java](algorithms/dp/Leetcode494.java)|　Medium | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
