@@ -1,8 +1,5 @@
 package math;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.math
@@ -31,56 +28,24 @@ import java.util.List;
  */
 public class Leetcode09 {
 
-    /**
-     * 107ms 93% solution
-     * @param x
-     * @return
-     */
     public boolean isPalindrome(int x) {
-        if (x < 0){
-            return false;
+        if (x < 0 || (x != 0 && x % 10 == 0)) return false;
+        int res = 0;
+        while (x > res) {
+            res = res * 10 + x % 10;
+            x = x / 10;
         }
-        List<Integer> list = new ArrayList<>();
-        while (x != 0){
-            list.add(x % 10);
-            x /= 10;
-        }
-        for (int i = 0; i < list.size() / 2; i++) {
-            if (list.get(i) != list.get(list.size() - 1 - i)){
-                return false;
-            }
-        }
-        return true;
+        return res == x || res/10 == x;
     }
 
-    /**
-     *
-     * @param x
-     * @return
-     */
-    public boolean isPalindrome_String(int x) {
-        if(x<0){
-            return false;
+    public boolean isPalindrome2(int x) {
+        if(x<0) return false;
+        String s=String.valueOf(x);
+        for(int i =0,j=s.length()-1;i<j;){
+            while(s.charAt(i)!=s.charAt(j)) return false;
+            i++;
+            j--;
         }
-        String str=String.valueOf(x);
-        char []s=str.toCharArray();
-        if(s.length==1){
-            return true;
-        }
-
-        int j=str.length()-1;
-        for(int i=0;i<str.length();i++){
-            if(s[i]==s[j]){
-                j--;
-            }else{
-                return false;
-            }
-            if(j<i){
-                return true;
-            }
-
-        }
-
-        return false;
+        return true;
     }
 }

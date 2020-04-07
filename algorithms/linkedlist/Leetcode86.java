@@ -19,25 +19,41 @@ import linkedlist.listnode.ListNode;
  */
 public class Leetcode86 {
 
+    /**
+     * 基本思路　首先定义两个带哑结点链表指针　分别保存小于x与大于等于x的节点　
+     * 遍历链表进行分割 最后为避免形成环形链表　断链after链表尾指针
+     */
     public ListNode partition(ListNode head, int x) {
-        ListNode dummyHead1 = new ListNode(0);
-        ListNode dummyHead2 = new ListNode(0);
-        ListNode node1 = dummyHead1;
-        ListNode node2 = dummyHead2;
+        ListNode before_head = new ListNode(0);
+        ListNode before = before_head;
+        ListNode after_head = new ListNode(0);
+        ListNode after = after_head;
+
         while (head != null) {
+
+            // If the original list node is lesser than the given x,
+            // assign it to the before list.
             if (head.val < x) {
-                node1.next = head;
-                head = head.next;
-                node1 = node1.next;
-                node1.next = null;
+                before.next = head;
+                before = before.next;
             } else {
-                node2.next = head;
-                head = head.next;
-                node2 = node2.next;
-                node2.next = null;
+                // If the original list node is greater or equal to the given x,
+                // assign it to the after list.
+                after.next = head;
+                after = after.next;
             }
+
+            // 遍历
+            head = head.next;
         }
-        node1.next = dummyHead2.next;
-        return dummyHead1.next;
+
+        // head = 1->4->3->2->5->2, x = 3　after指针指向before最后一个节点2 需要断链
+        after.next = null;
+
+        // Once all the nodes are correctly assigned to the two lists,
+        // combine them to form a single list which would be returned.
+        before.next = after_head.next;
+
+        return before_head.next;
     }
 }

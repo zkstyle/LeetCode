@@ -8,9 +8,11 @@ If you like this project, please leave me a star. ★
 |　01 |　　　[Two Sum](https://leetcode.com/problems/two-sum/) | 　　[java](algorithms/hashmap/Leetcode01.java)|　Easy |
 |　02 |　　　[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 　　[java](algorithms/linkedlist/Leetcode02.java)|　Medium |
 |　03 |　　　[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 　　[java](algorithms/hashmap/Leetcode03.java)|　Medium |
-|　05 |　　　[ Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 　　[java](algorithms/dp/Leetcode05.java)|　Medium |
+|　05 |　　　[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 　　[java](algorithms/dp/Leetcode05.java)|　Medium |
 |　06 |　　　[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 　　[java](algorithms/string/Leetcode06.java)|　Medium |
+|　07 |　　　[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 　　[java](algorithms/math/Leetcode07.java)|　Easy |
 |　08 |　　　[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 　　[java](algorithms/string/Leetcode08.java)|　Medium |
+|　09 |　　　[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 　　[java](algorithms/math/Leetcode09.java)|　Easy |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
 |　13 |　　　[Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 　　[java](algorithms/string/Leetcode13.java)|　Easy |
 |　14 |　　　[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 　　[java](algorithms/string/Leetcode14.java)|　Easy |
@@ -18,7 +20,7 @@ If you like this project, please leave me a star. ★
 |　16 |　　　[3Sum-closest](https://leetcode.com/problems/3sum-closest/) | 　　[java](algorithms/array/Leetcode16.java)|　Medium |
 |　17 |　　　[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 　　[java](algorithms/dfs/Leetcode1７.java)|　Medium |
 |　18 |　　　[4Sum](https://leetcode.com/problems/4sum/) | 　　[java](algorithms/array/Leetcode18.java)|　Medium |
-|　19 |　　　[ Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 　　[java](algorithms/linkedlist/Leetcode19.java)|　Medium |
+|　19 |　　　[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 　　[java](algorithms/linkedlist/Leetcode19.java)|　Medium |
 |　20 |　　　[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 　　[java](algorithms/stack/Leetcode20.java)|　Easy |
 |　21 |　　　[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode21.java)|　Easy |
 |　22 |　　　[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | 　　[java](algorithms/backtracking/Leetcode22.java)|　Medium |
@@ -57,6 +59,7 @@ If you like this project, please leave me a star. ★
 |　80 |　　　[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | 　　[java](algorithms/array/Leetcode80.java)|　Medium |
 |　82 |　　　[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode82.java)|　Medium |
 |　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
+|　86 |　　　[Partition List](https://leetcode.com/problems/partition-list/) | 　　[java](algorithms/linkedlist/Leetcode86.java)|　Medium |
 |　92 |　　　[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode92.java)|　Medium |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
 |　94 |　　　[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode94.java)|　Medium |

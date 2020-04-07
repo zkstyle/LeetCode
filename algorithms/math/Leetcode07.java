@@ -26,48 +26,24 @@ package math;
  * 请根据这个假设，如果反转后整数溢出那么就返回 0。
  */
 public class Leetcode07 {
-
     /**
-     * 21ms
+     * 解题思路　首先很简单依次取模获取个位、十位、百位数字　然后求解
+     *需要注意的是翻转之后　可能会超出int最大范围　所以需要越界判断
      * @param x
      * @return
      */
     public int reverse(int x) {
-        int max = Integer.MAX_VALUE / 10;
-        int min = Integer.MIN_VALUE / 10;
-        int maxPop = Integer.MAX_VALUE % 10;
-        int minPop = Integer.MIN_VALUE % 10;
-        int res = 0;
-        while (x != 0){
-            int pop = x % 10;
-            x = x / 10;
-            if (res > max || (res == max && pop > maxPop)){
+        int ans = 0;
+        int flag = x < 0 ? -1 : 1;//保存正负号
+        x = x < 0 ? -x : x;
+        while (x > 0) {
+            //越界判断
+            if (ans > Integer.MAX_VALUE / 10 || (ans == Integer.MAX_VALUE / 10 && x % 10 > Integer.MAX_VALUE % 10))
                 return 0;
-            }
-            if (res < min || (res == min && pop < minPop)){
-                return 0;
-            }
-            res = res * 10 + pop;
+            ans = ans * 10 + x % 10;
+            x /= 10;
         }
-        return res;
+        return flag * ans;
     }
 
-    /**
-     * 22ms
-     * @param x
-     * @return
-     */
-    public int reverse_2(int x) {
-        int res = 0;
-        while (x != 0){
-            int pop = x % 10;
-            x = x / 10;
-            long temp = pop + res * 10L;
-            if (temp > Integer.MAX_VALUE || temp < Integer.MIN_VALUE){
-                return 0;
-            }
-            res = (int)temp;
-        }
-        return res;
-    }
 }
