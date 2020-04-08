@@ -28,6 +28,10 @@ package math;
  */
 public class Leetcode09 {
 
+    /**
+     * 假设给定1234321 依次获取值　res为累加值　x为剩余值　当x<=res时　退出循环
+     * res == x || res/10 == x成立则为真　res/10==x是因为　res=1234 x=123
+     */
     public boolean isPalindrome(int x) {
         if (x < 0 || (x != 0 && x % 10 == 0)) return false;
         int res = 0;
@@ -38,6 +42,9 @@ public class Leetcode09 {
         return res == x || res/10 == x;
     }
 
+    /**
+     * 将x转为字符串　再用两个指针指向首位　遍历判断
+     */
     public boolean isPalindrome2(int x) {
         if(x<0) return false;
         String s=String.valueOf(x);

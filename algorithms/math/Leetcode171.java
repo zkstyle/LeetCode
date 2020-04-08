@@ -26,11 +26,17 @@ package math;
  */
 public class Leetcode171 {
 
+    /**
+     * 其实这就是一种二十六进制的模拟计算　每一次求最低位数值
+     * 再加上上一次结果乘以26
+     * @param s
+     * @return
+     */
     public int titleToNumber(String s) {
-        int result = 0;
+        int res = 0;
         for (int i = 0; i < s.length(); i++) {
-            result = result * 26 + (s.charAt(i) - 64);
+            res = res * 26 + (s.charAt(i) - 'A' + 1);
         }
-        return result;
+        return res;
     }
 }

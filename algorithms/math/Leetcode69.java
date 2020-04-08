@@ -26,7 +26,9 @@ package math;
 public class Leetcode69 {
 
     /**
-     * return sqrt(x)
+     * 二分法求解　时间复杂度log N
+     * 每次判断mid*mid与x的大小　依据大小二分查找　因为这一次不能用等于判断
+     * 因为   mid*mid <= x < (mid+1)*(mid+1)时　找到sqrt(x) 故该条件用于判断是否找到根号x
      * @param x
      * @return
      */
@@ -50,7 +52,21 @@ public class Leetcode69 {
         return res;
     }
 
-    public static void main(String[] args) {
-        int s = new Leetcode69().mySqrt(9);
+    /**
+     * 应用牛顿法解决平方根问题　令f(x)=x^2-a
+     * f(x)约等于f(x0)+(x-x0)*f'(x0)
+     * 令f(x)=0 ==> f(x0)+(x-x0)*f'(x0) = 0
+     *  ==> x=x0-f(x0)/f'(x0) ==>化简得　x = (x0 + a/x0)/2
+     *  故迭代公式为　x0 = (x0 + a/x0) / 2
+     * @param a
+     * @return
+     */
+    public int mySqrt_newton(int a) {
+        long x = a;
+        while (x * x > a) {
+            x = (x + a / x) / 2;
+        }
+        return (int) x;
     }
+
 }

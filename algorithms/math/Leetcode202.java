@@ -26,51 +26,27 @@ import java.util.Set;
 public class Leetcode202 {
 
     /**
-     * best
+     * 定义一个set存放每一次计算结果　每一次循环结算后判断set中是否包含res 不包含就添加进去
+     * 否则返回false
      * @param n
-     * @return
+     * @return 是否是快乐数
      */
-    public boolean isHappy1(int n) {
-        int x = n;
-        int sum = 0;
-        if(n == 1) return true;
-        while(sum != 1) {
-            sum = 0;
-            while(x != 0) {
-                int y = x % 10;
-                sum += y * y;
-                x = x / 10;
+    public boolean isHappy(int n) {
+        int res = 0;
+        Set<Integer> set = new HashSet<>();
+        set.add(n);
+        while (n != 1) {
+            res = 0;
+            while (n != 0) {
+                res += (n % 10) * (n % 10);
+                n /= 10;
             }
-            if(sum == n) return false;
-            if(sum == 4) return false;
-            x = sum;
+            n = res;
+            if (set.contains(res)) {
+                return false;
+            }
+            set.add(res);
         }
         return true;
-    }
-
-    public boolean isHappy(int n) {
-        Set<Integer> set = new HashSet<>();
-        return find(n, set);
-
-    }
-    private boolean find(int n, Set<Integer> set){
-        int sum = 0;
-        while (n != 0){
-            sum += (n % 10) * (n % 10);
-            n /=  10;
-        }
-        if (sum == 1){
-            return true;
-        }
-        n = sum;
-        if(!set.contains(n)){
-            set.add(n);
-            return find(n, set);
-        }
-        return false;
-    }
-
-    public static void main(String[] args) {
-        new Leetcode202().isHappy(19);
     }
 }

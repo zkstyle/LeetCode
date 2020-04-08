@@ -33,12 +33,19 @@ package math;
  */
 public class Leetcode168 {
 
-    public String convertToTitle(int n){
+    /**
+     * 有26个字母　因为取模结果为0~25 故为一一对应　每次先n-- 再取最低位数值
+     * n%26+'A'就是每一次最低位的字符　
+     * sb每次拼接完　n = n / 26
+     * @param n
+     * @return
+     */
+    public String convertToTitle(int n) {
         String sb = "";
-        while(n!=0){
-            n-=1;
-            sb = ((char)(n%26+'A')) + sb;
-            n/=26;
+        while (n != 0) {
+            n -= 1;
+            sb = ((char) (n % 26 + 'A')) + sb;
+            n /= 26;
         }
         return sb;
     }

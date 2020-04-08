@@ -51,6 +51,7 @@ If you like this project, please leave me a star. ★
 |　64 |　　　[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | 　　[java](algorithms/dp/Leetcode64.java)|　Medium |
 |　66 |　　　[Plus One](https://leetcode.com/problems/plus-one/) | 　　[java](algorithms/array/Leetcode66.java)|　Easy |
 |　67 |　　　[Add Binary](https://leetcode.com/problems/add-binary/) | 　　[java](algorithms/string/Leetcode67.java)|　Easy |
+|　69 |　　　[Sqrt(x)](https://leetcode.com/problems/sqrtx/) | 　　[java](algorithms/math/Leetcode69.java)|　Easy |
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
 |　72 |　　　[Edit Distance](https://leetcode.com/problems/edit-distance/) | 　　[java](algorithms/dp/Leetcode72.java)|　Hard |
 |　73 |　　　[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 　　[java](algorithms/array/Leetcode73.java)|　Medium |
@@ -78,7 +79,11 @@ If you like this project, please leave me a star. ★
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　131 |　　　[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 　　[java](algorithms/backtracking/Leetcode131.java)|　Medium |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
+|　168 |　　　[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 　　[java](algorithms/math/Leetcode168.java)|　Easy |
+|　171 |　　　[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | 　　[java](algorithms/math/Leetcode171.java)|　Easy |
+|　172 |　　　[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | 　　[java](algorithms/math/Leetcode172.java)|　Easy |
 |　198 |　　　[House Robber](https://leetcode.com/problems/house-robber/) | 　　[java](algorithms/dp/Leetcode198.java)|　Easy |   
+|　202 |　　　[Happy Number](https://leetcode.com/problems/happy-number/) | 　　[java](algorithms/math/Leetcode202.java)|　Easy |
 |　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
