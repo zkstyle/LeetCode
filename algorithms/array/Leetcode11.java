@@ -1,7 +1,5 @@
 package array;
 
-import java.util.Stack;
-
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.array
@@ -20,7 +18,11 @@ import java.util.Stack;
 public class Leetcode11 {
 
     /**
-     * 利用双指针 分别进行左右遍历
+     * 利用双指针 分别进行左右遍历　首先若height[left] < height[right]
+     *          根据木桶效应　以短板高度　计算容纳水的体积　height[left] * (right - left)　然后更新最大值
+     *          反之一样　以右边高度为准
+     *          至于指针更新肯定是更新低的一侧　因为长度一定　限定体积的是高度　否则即使找到更高的高度也没有用处
+     *          因为以短板高度作为容水高度
      * @param height
      * @return
      */
@@ -30,11 +32,12 @@ public class Leetcode11 {
         int res = 0;
         int left = 0;
         int right = height.length - 1;
-        while (left < right){
-            if (height[left] < height[right]){
+        while (left < right) {
+            if (height[left] < height[right]) {
+                //更新最大值　以较低的height[left]作为高度
                 res = Math.max(res, height[left] * (right - left));
                 left++;
-            }else {
+            } else {
                 res = Math.max(res, height[right] * (right - left));
                 right--;
             }

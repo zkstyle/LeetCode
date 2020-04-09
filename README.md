@@ -13,6 +13,7 @@ If you like this project, please leave me a star. ★
 |　07 |　　　[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 　　[java](algorithms/math/Leetcode07.java)|　Easy |
 |　08 |　　　[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 　　[java](algorithms/string/Leetcode08.java)|　Medium |
 |　09 |　　　[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 　　[java](algorithms/math/Leetcode09.java)|　Easy |
+|　11 |　　　[Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 　　[java](algorithms/array/Leetcode11.java)|　Medium |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
 |　13 |　　　[Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 　　[java](algorithms/string/Leetcode13.java)|　Easy |
 |　14 |　　　[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 　　[java](algorithms/string/Leetcode14.java)|　Easy |
@@ -61,6 +62,7 @@ If you like this project, please leave me a star. ★
 |　82 |　　　[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode82.java)|　Medium |
 |　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
 |　86 |　　　[Partition List](https://leetcode.com/problems/partition-list/) | 　　[java](algorithms/linkedlist/Leetcode86.java)|　Medium |
+|　91 |　　　[Decode Ways](https://leetcode.com/problems/decode-ways/) | 　　[java](algorithms/dp/Leetcode91.java)|　Medium |
 |　92 |　　　[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode92.java)|　Medium |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
 |　94 |　　　[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 　　[java](algorithms/tree/Leetcode94.java)|　Medium |
@@ -82,11 +84,14 @@ If you like this project, please leave me a star. ★
 |　168 |　　　[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 　　[java](algorithms/math/Leetcode168.java)|　Easy |
 |　171 |　　　[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | 　　[java](algorithms/math/Leetcode171.java)|　Easy |
 |　172 |　　　[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | 　　[java](algorithms/math/Leetcode172.java)|　Easy |
+|　191 |　　　[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 　　[java](algorithms/bit/Leetcode191.java)|　Easy |
 |　198 |　　　[House Robber](https://leetcode.com/problems/house-robber/) | 　　[java](algorithms/dp/Leetcode198.java)|　Easy |   
+|　201 |　　　[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | 　　[java](algorithms/bit/Leetcode201.java)|　Medium |
 |　202 |　　　[Happy Number](https://leetcode.com/problems/happy-number/) | 　　[java](algorithms/math/Leetcode202.java)|　Easy |
 |　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
+|　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
 |　264 |　　　[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | 　　[java](algorithms/dp/Leetcode264.java)|　Medium | 
 |　279 |　　　[Perfect Squares](https://leetcode.com/problems/perfect-squares/) | 　　[java](algorithms/dp/Leetcode279.java)|　Medium |
 |　322 |　　　[Coin Change](https://leetcode.com/problems/coin-change/) | 　　[java](algorithms/dp/Leetcode322.java)|　Medium |
