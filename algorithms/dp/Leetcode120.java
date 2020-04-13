@@ -26,22 +26,21 @@ import java.util.List;
  */
 public class Leetcode120 {
 
-    // 动态规划
-    // 状态定义 dp[i][j] 包含 dp[i][j]的最小值
-    // 地推方程 dp[i][j] = min{dp[i + 1][j], dp[i + 1][j + 1] } + nums[i][j]
+    /**
+     * 自底向上动态规划思路　dp[i]表示由下一行dp结果结合当前行　获得的最小路径和　i指代列数
+     * dp[i] = Math.min(dp[i],dp[i-1])+ triangle.get(level).get(i)
+     * 这里左边dp[i]所在行数比右边dp[i] dp[i+1]行数小1
+     * 每一行都更新dp[i] 长度也从row-1 ~ 0
+     */
     public int minimumTotal(List<List<Integer>> triangle) {
-        if (triangle == null || triangle.get(0) == null) return 0;
-        int m = triangle.size(), n = triangle.size();
-        int[] a = new int[n];
-        for (int i = 0; i < n; i++)
-            a[i] = triangle.get(n - 1).get(i);
-        for (int i = n - 2; i >= 0; i--) {
-            List<Integer> cur = triangle.get(i);
-            for(int j = 0; j < i + 1; j++) {
-                a[j] = a[j] < a[j + 1] ? a[j]  : a[j + 1];
-                a[j] += cur.get(j);
+        int row = triangle.size();
+        int[] dp = new int[row + 1];
+        for (int level = row - 1; level >= 0; level--) {
+            for (int i = 0; i <= level; i++) {   //第i行有i+1个数字
+                dp[i] = Math.min(dp[i], dp[i + 1]) + triangle.get(level).get(i);
             }
         }
-        return a[0];
+        return dp[0];
     }
+
 }

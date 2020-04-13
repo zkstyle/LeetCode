@@ -33,6 +33,7 @@ If you like this project, please leave me a star. ★
 |　29 |　　　[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | 　　[java](algorithms/math/Leetcode29.java)|　Medium |
 |　30 |　　　[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | 　　[java](algorithms/hashmap/Leetcode30.java)|　Hard |
 |　31 |　　　[Next Permutation](https://leetcode.com/problems/next-permutation/) | 　　[java](algorithms/array/Leetcode31.java)|　Medium |
+|　33 |　　　[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode33.java)|　Medium |
 |　34 |　　　[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode34.java)|　Medium |
 |　35 |　　　[Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 　　[java](algorithms/binarysearch/Leetcode35.java)|　Easy |
 |　39 |　　　[Combination Sum](https://leetcode.com/problems/combination-sum/) | 　　[java](algorithms/backtracking/Leetcode39.java)|　Medium |
@@ -46,6 +47,7 @@ If you like this project, please leave me a star. ★
 |　52 |　　　[N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 　　[java](algorithms/backtracking/Leetcode52.java)|　Hard |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
+|　60 |　　　[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | 　　[java](algorithms/backtracking/Leetcode60.java)|　Medium |
 |　61 |　　　[Rotate List](https://leetcode.com/problems/rotate-list/) | 　　[java](algorithms/linkedlist/Leetcode61.java)|　Medium |
 |　62 |　　　[Unique Paths](https://leetcode.com/problems/unique-paths/) | 　　[java](algorithms/dp/Leetcode62.java)|　Medium |
 |　63 |　　　[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | 　　[java](algorithms/dp/Leetcode63.java)|　Medium |
@@ -76,11 +78,15 @@ If you like this project, please leave me a star. ★
 |　113 |　　　[Path Sum II](https://leetcode.com/problems/path-sum-ii/) | 　　[java](algorithms/tree/Leetcode113.java)|　Medium |
 |　118 |　　　[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | 　　[java](algorithms/array/Leetcode118.java)|　Easy |
 |　119 |　　　[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | 　　[java](algorithms/array/Leetcode119.java)|　Easy |
+|　120 |　　　[Triangle](https://leetcode.com/problems/triangle/) | 　　[java](algorithms/dp/Leetcode120.java)|　Medium |
 |　121 |　　　[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 　　[java](algorithms/dp/Leetcode121.java)|　Easy |
 |　125 |　　　[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 　　[java](algorithms/string/Leetcode125.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　131 |　　　[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 　　[java](algorithms/backtracking/Leetcode131.java)|　Medium |   
+|　151 |　　　[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | 　　[java](algorithms/string/Leetcode151.java)|　Medium |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
+|　162 |　　　[Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 　　[java](algorithms/binarysearch/Leetcode162.java)|　Medium |   
+|　167 |　　　[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 　　[java](algorithms/binarysearch/Leetcode167.java)|　Easy |   
 |　168 |　　　[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 　　[java](algorithms/math/Leetcode168.java)|　Easy |
 |　171 |　　　[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | 　　[java](algorithms/math/Leetcode171.java)|　Easy |
 |　172 |　　　[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | 　　[java](algorithms/math/Leetcode172.java)|　Easy |
@@ -89,6 +95,7 @@ If you like this project, please leave me a star. ★
 |　201 |　　　[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | 　　[java](algorithms/bit/Leetcode201.java)|　Medium |
 |　202 |　　　[Happy Number](https://leetcode.com/problems/happy-number/) | 　　[java](algorithms/math/Leetcode202.java)|　Easy |
 |　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
+|　213 |　　　[House Robber II](https://leetcode.com/problems/house-robber-ii/) | 　　[java](algorithms/dp/Leetcode213.java)|　Medium |
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
