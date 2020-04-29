@@ -114,7 +114,9 @@ If you like this project, please leave me a star. ★
 |　03 |　　　[数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO03.java)|　Easy |
 |　04 |　　　[二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO04.java)|　Easy |
 |　05 |　　　[替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO05.java)|　Easy |
-|　06 |　　　[从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO06.java)|　Easy |
+|　06 |　　　[从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO09.java)|　Easy |
+|　09 |　　　[用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO10.java)|　Easy |
+|　10 |　　　[青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO06.java)|　Easy |
+|　14 |　　　[剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO14.java)|　Medium |
 |　47 |　　　[礼物的最大价值](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO47.java)|　Medium |
-
 |　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO50.java)|　Easy |
