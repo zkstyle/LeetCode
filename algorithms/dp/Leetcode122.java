@@ -32,17 +32,18 @@ package dp;
  * 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
  */
 public class Leetcode122 {
+
+    /**
+     *在这种情况下，我们可以简单地继续在斜坡上爬升并持续增加从连续交易中获得的利润，而不是在谷之后寻找每个峰值。
+     * 最后，我们将有效地使用峰值和谷值，但我们不需要跟踪峰值和谷值对应的成本以及最大利润，但我们可以直接继续增加
+     * 数组的连续数字之间的差值，如果第二个数字大于第一个数字，我们获得的总和将是最大利润。这种方法将简化解决方案。
+     */
     public int maxProfit(int[] prices) {
-        if (prices.length < 2) return 0;
-        int[] dp = new int[prices.length];
-        for (int i = 1; i < prices.length; i++){
-            dp[i] = prices[i] - prices[i - 1];
+        int maxprofit = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > prices[i - 1])
+                maxprofit += prices[i] - prices[i - 1];
         }
-        int res = 0;
-        for (int i = 1; i < dp.length; i++){
-            if (dp[i] > 0)
-                res += dp[i];
-        }
-        return res;
+        return maxprofit;
     }
 }
