@@ -86,8 +86,10 @@ If you like this project, please leave me a star. ★
 |　125 |　　　[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 　　[java](algorithms/string/Leetcode125.java)|　Easy |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　131 |　　　[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 　　[java](algorithms/backtracking/Leetcode131.java)|　Medium |   
+|　134 |　　　[Gas Station](https://leetcode.com/problems/gas-station/) | 　　[java](algorithms/greed/Leetcode134.java)|　Medium |   
 |　141 |　　　[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 　　[java](algorithms/linkedlist/Leetcode141.java)|　Easy |   
 |　142 |　　　[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | 　　[java](algorithms/linkedlist/Leetcode142.java)|　Medium |   
+|　146 |　　　[LRU Cache](https://leetcode.com/problems/lru-cache/) | 　　[java](algorithms/hashmap/Leetcode146.java)|　Medium |   
 |　151 |　　　[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | 　　[java](algorithms/string/Leetcode151.java)|　Medium |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
 |　162 |　　　[Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 　　[java](algorithms/binarysearch/Leetcode162.java)|　Medium |   
