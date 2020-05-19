@@ -27,21 +27,12 @@ public class Leetcode11 {
      * @return
      */
     public int maxArea(int[] height) {
-        int len = height.length - 1;
-        // calculate all length area
-        int res = 0;
-        int left = 0;
-        int right = height.length - 1;
-        while (left < right) {
-            if (height[left] < height[right]) {
-                //更新最大值　以较低的height[left]作为高度
-                res = Math.max(res, height[left] * (right - left));
-                left++;
-            } else {
-                res = Math.max(res, height[right] * (right - left));
-                right--;
-            }
+        int l = 0, r = height.length - 1, max = 0;
+        while (l < r) {
+            int area = (r - l) * (height[l] > height[r] ? height[r--] : height[l++]);
+            max = area > max ? area : max;
+
         }
-        return res;
+        return max;
     }
 }

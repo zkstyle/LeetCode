@@ -48,4 +48,29 @@ public class Leetcode02 {
         if (val > 0) cur.next = new ListNode(val);
         return list.next;
     }
+
+    /**
+     * 声明一个哑结点　一个cur节点用于添加新节点
+     * x,y保存当前节点val 若为空默认补0
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode p = l1, q = l2, cur = dummy;
+        int carry = 0;
+        while (p != null || q != null) {
+            int x = p == null ? 0 : p.val;
+            int y = q == null ? 0 : q.val;
+            int sum = x + y + carry;
+            carry = sum > 9 ? 1 : 0;
+            cur.next = new ListNode(sum % 10);
+            cur = cur.next;
+            if (p != null) p = p.next;
+            if (q != null) q = q.next;
+        }
+        if (carry > 0) cur.next = new ListNode(carry);
+        return dummy.next;
+    }
 }

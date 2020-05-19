@@ -90,6 +90,7 @@ If you like this project, please leave me a star. ★
 |　141 |　　　[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 　　[java](algorithms/linkedlist/Leetcode141.java)|　Easy |   
 |　142 |　　　[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | 　　[java](algorithms/linkedlist/Leetcode142.java)|　Medium |   
 |　146 |　　　[LRU Cache](https://leetcode.com/problems/lru-cache/) | 　　[java](algorithms/hashmap/Leetcode146.java)|　Medium |   
+|　148 |　　　[Sort List](https://leetcode.com/problems/sort-list/) | 　　[java](algorithms/linkedlist/Leetcode148.java)|　Medium |   
 |　151 |　　　[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | 　　[java](algorithms/string/Leetcode151.java)|　Medium |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
 |　162 |　　　[Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 　　[java](algorithms/binarysearch/Leetcode162.java)|　Medium |   
@@ -103,6 +104,8 @@ If you like this project, please leave me a star. ★
 |　202 |　　　[Happy Number](https://leetcode.com/problems/happy-number/) | 　　[java](algorithms/math/Leetcode202.java)|　Easy |
 |　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
 |　213 |　　　[House Robber II](https://leetcode.com/problems/house-robber-ii/) | 　　[java](algorithms/dp/Leetcode213.java)|　Medium |
+|　217 |　　　[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 　　[java](algorithms/hashmap/Leetcode217.java)|　Easy |
+|　219 |　　　[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 　　[java](algorithms/hashmap/Leetcode219.java)|　Easy |
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
