@@ -25,20 +25,24 @@ public class Leetcode22 {
     /**
      * 回溯法　遍历所有可能　
      */
-    List<String> res = new ArrayList<String>();
     public List<String> generateParenthesis(int n) {
-        generate("", n,n);
-        return res;
+        List<String> list = new ArrayList<>();
+        generate(n, list, "", 0, 0);
+        return list;
     }
-    //count1统计“(”的个数，count2统计“)”的个数
-    public void generate(String ans, int count1, int count2){
-        //左括号的数量不能少于右括号的数量　否则不符合条件
-        if(count1 > count2) return;
-        if(count1 == 0 && count2 == 0)  res.add(ans);
-        //分别加上左括号与右括号　遍历所有可能　前提剩余括号数量大于0
-        if (count1 > 0)generate(ans+"(", count1-1, count2);
-        if (count2 > 0)generate(ans+")", count1, count2-1);
-        return;
+
+    private void generate(int n, List<String> list, String ans, int left, int right) {
+        if (ans.length() == 2 * n) {
+            list.add(ans);
+            return;
+        }
+        if (left < right) return;
+        if (left < n) {
+            generate(n, list, ans + "(", left + 1, right);
+        }
+        if (right < n) {
+            generate(n, list, ans + ")", left, right + 1);
+        }
     }
 
 }
