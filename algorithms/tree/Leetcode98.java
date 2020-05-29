@@ -42,7 +42,7 @@ public class Leetcode98{
      * 本质上是中序遍历　每一次保存上一次遍历的节点值
      * 中序遍历递归调用　每一次都检验当前值是否大于上一次的last值　即root.val > root.left.val or root.val < root.right.val
      */
-    double last = -Double.MAX_VALUE;
+    double last = Double.MIN_VALUE;
     public boolean isValidBST(TreeNode root) {
         if (root == null) {
             return true;

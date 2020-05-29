@@ -27,32 +27,25 @@ public class Leetcode48 {
         }
     }
 
+    /**
+     * 首先将矩阵以中垂线对称折叠　再以斜对角线折叠　完成旋转目标
+     * @param matrix
+     */
     public void rotate(int[][] matrix) {
-        int n = matrix.length;
-        float translate = (n - 1) / 2.0f;
-        int last;
-        int col, row;
-        for (int i = 0; i < n / 2; i++) { // 圈
-            for (int j = i; j < n - i - 1; j++) { // 边
-                last = matrix[i][j];
-                row = i;
-                col = j;
-                for (int k = 0; k < 3; k++) { // 点
-                    //  pre_point
-                    int pre_col = row;
-                    int pre_row = (int) (2 * translate - col);
-
-                    matrix[row][col] = matrix[pre_row][pre_col];
-                    row = pre_row;
-                    col = pre_col;
-                }
-                matrix[row][col] = last;
+        int len = matrix.length;
+        int mid = (len - 1) / 2;
+        for (int i = 0; i < len; i++)
+            for (int j = 0; j <= mid; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[i][len - 1 - j];
+                matrix[i][len - 1 - j] = temp;
             }
-        }
-    }
 
-    public static void main(String[] args) {
-        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
-        new Leetcode48().rotate(matrix);
+        for (int i = 0; i < len; i++)
+            for (int j = 0; j < len - 1 - i; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[len - 1 - j][len - 1 - i];
+                matrix[len - 1 - j][len - 1 - i] = temp;
+            }
     }
 }

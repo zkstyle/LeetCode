@@ -62,28 +62,32 @@ public class Leetcode36 {
     /**
      * 最优14ms
      */
-    public boolean isValidSudokuBest(char[][] board) {
-         for(int i = 0; i < 9; i++){
-	    	   for(int j = 0; j < 9; j++){
-	    		   if(board[i][j] == '.')continue;
-	    		   for(int k = 8; k > j; k-- )
-	    			   if(board[i][j] == board[i][k])
-	    				   return false;
-	    		   for(int k = 8; k > i; k--)
-	    			   if(board[i][j] == board[k][j])
-	    				   return false;
-	    		   for(int k = i + 1; k % 3 != 0; k ++){
-	    			   for(int h = j /3 *3;h < j / 3 *3 + 3; h ++ )
-	    				   if(board[i][j] == board[k][h])
-	    					   return false;
-	    		   }
-	    	   }
-	       }
-	       return true;
+    public boolean isValidSudoku(char[][] board) {
+        int[] rows = new int[9];
+        int[] cols = new int[9];
+        int[] blocks = new int[9];
+        for (int r = 0; r < 9; ++r) {
+            for (int c = 0; c < 9; ++c) {
+                if (board[r][c] != '.') {
+                    int x = 1 << (board[r][c] - '1');
+                    if ((rows[r] & x) > 0) return false;
+                    rows[r] |= x;
+
+                    if ((cols[c] & x) != 0) return false;
+                    cols[c] |= x;
+
+                    int i = (r / 3 * 3) + (c / 3);
+                    if ((blocks[i] & x) != 0) return false;
+                    blocks[i] |= x;
+                }
+            }
+        }
+        return true;
     }
 
     /**
-     * own-version Plus 大佬算法
+     * 将行列以及该位置的数以特定格式保存到hashmap中
+     * 然后每次判断是否存在
      * @param board
      * @return
      */
@@ -117,98 +121,5 @@ public class Leetcode36 {
         }
         return true;
     }
-    /**
-     * own-version Plus
-     * @param board
-     * @return
-     */
-    public static boolean isValidSudokuPlus(char[][] board) {
-        /**
-         * 判断方式：　所在九宫格是否有重复元素以及同行同列是否重复
-         */
-        Set<String> map = new HashSet<>();
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (board[i][j] == '.'){
-                    continue;
-                }
-                String string = "Row" + String.valueOf(board[i][j]) + i;
-                if (map.contains(string)) {
-                    return false;
-                }
-                map.add(string);
-                string = "Col" + String.valueOf(board[i][j]) + j;
-                if (map.contains(string)) {
-                    return false;
-                }
-                map.add(string);
-                string = "RC" + String.valueOf(board[i][j]) + ((i / 3) * 3 + j / 3);
-                if (map.contains(string)) {
-                    return false;
-                }
-                map.add(string);
-            }
-        }
-        return true;
-    }
-    /**
-     * own-version
-     * @param board
-     * @return
-     */
-    public static boolean isValidSudoku(char[][] board) {
-        /**
-         * isValidSudoku 标志变量　控制返回值
-         * int boardRow 行数长度
-         * int boardCol 列数长度
-         * Map<Integer, Integer[]> map 哈希表　键是数独数字　值是对应的下标
-         * Integer digit 获取当前元素的数值型值
-         * Integer[] value = {i, j}; 记录当前数字下标
-         * 判断方式：　所在九宫格是否有重复元素以及同行同列是否重复
-         */
-        if (board.length == 0)
-            return true;
-        boolean isValidSudoku = true;
-        Map<Integer, List<Integer[]>> map = new HashMap<>();
 
-        int boardRow = board.length;
-        int boardCol = board[0].length;
-        for (int i = 0; i < boardRow; i++) {
-            for (int j = 0; j < boardCol; j++) {
-                if (Character.isDigit(board[i][j])){
-                    Integer digit = Character.getNumericValue(board[i][j]);
-                    Integer[] value = {i, j};
-                    if (map.containsKey(digit)){
-                        for (Integer[] index : map.get(digit)){
-                            if (index[0] == i || index[1] == j || (index[0]/3 == i/3 && index[1]/3 == j/3)){
-                                return false;
-                            }
-                        }
-                        List<Integer[]> list = map.get(digit);
-                        list.add(value);
-                        map.put(digit, list);
-                    }else {
-                        List<Integer[]> list = new ArrayList<>();
-                        list.add(value);
-                        map.put(digit, list);
-                    }
-                }
-            }
-        }
-        return isValidSudoku;
-    }
-    public static void main(String[] args) {
-        char[][] board = {
-                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '7', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '.', '9'},
-        };
-        System.out.println(isValidSudoku(board));
-    }
 }

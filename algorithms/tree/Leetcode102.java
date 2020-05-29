@@ -64,12 +64,12 @@ public class Leetcode102 {
         List<List<Integer>> lists = new ArrayList<List<Integer>>();
         if (root == null) return lists;
 
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         int level = 0;
         while ( !queue.isEmpty() ) {
             // start the current level
-            lists.add(new ArrayList<Integer>());
+            lists.add(new ArrayList<>());
 
             // number of elements in the current level
             int level_length = queue.size();

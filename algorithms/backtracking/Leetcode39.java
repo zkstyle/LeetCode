@@ -55,12 +55,11 @@ public class Leetcode39 {
     }
     private void back(int[] candidates, List<Integer> list ,int target,int row) {
         if (target == 0) {
-
             lists.add(new ArrayList<>(list));
             return;
         }
         for (int i = row; i < candidates.length; i++) {
-            //若target减小到0一下　则需要回溯
+            //若target减小到0以下　则需要回溯
             if (target < 0) break;
             //剪枝　若从i开始　nums[i]>target 则会面不需要再遍历
             if (target >= candidates[i]){

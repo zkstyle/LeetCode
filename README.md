@@ -36,6 +36,7 @@ If you like this project, please leave me a star. ★
 |　33 |　　　[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode33.java)|　Medium |
 |　34 |　　　[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode34.java)|　Medium |
 |　35 |　　　[Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 　　[java](algorithms/binarysearch/Leetcode35.java)|　Easy |
+|　38 |　　　[Count and Say](https://leetcode.com/problems/count-and-say/) | 　　[java](algorithms/string/Leetcode38.java)|　Easy |
 |　39 |　　　[Combination Sum](https://leetcode.com/problems/combination-sum/) | 　　[java](algorithms/backtracking/Leetcode39.java)|　Medium |
 |　40 |　　　[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | 　　[java](algorithms/backtracking/Leetcode40.java)|　Medium |
 |　42 |　　　[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 　　[java](algorithms/doublepointer/Leetcode42.java)|　Hard |
@@ -98,6 +99,7 @@ If you like this project, please leave me a star. ★
 |　168 |　　　[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 　　[java](algorithms/math/Leetcode168.java)|　Easy |
 |　171 |　　　[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | 　　[java](algorithms/math/Leetcode171.java)|　Easy |
 |　172 |　　　[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | 　　[java](algorithms/math/Leetcode172.java)|　Easy |
+|　189 |　　　[Rotate Array](https://leetcode.com/problems/rotate-array/) | 　　[java](algorithms/array/Leetcode189.java)|　Easy |
 |　191 |　　　[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 　　[java](algorithms/bit/Leetcode191.java)|　Easy |
 |　198 |　　　[House Robber](https://leetcode.com/problems/house-robber/) | 　　[java](algorithms/dp/Leetcode198.java)|　Easy |   
 |　201 |　　　[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | 　　[java](algorithms/bit/Leetcode201.java)|　Medium |

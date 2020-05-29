@@ -35,4 +35,22 @@ public class Leetcode55 {
 
         return minEnd == 0;
     }
+
+    /**
+     * dp 每次保存上一次的结果　对于位置i 判断能不能到达　dp[i]=1 if dp[j]==1&&(i-j)<=nums[j]
+     */
+    public boolean canJumpDP(int[] nums) {
+        int len = nums.length;
+        int[] dp = new int[len];
+        dp[0] = 1;
+        for (int i = 1; i < len; i++) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (dp[j] == 1 && (i - j) <= nums[j]) {
+                    dp[i] = 1;
+                    break;
+                }
+            }
+        }
+        return dp[len - 1] == 1;
+    }
 }
