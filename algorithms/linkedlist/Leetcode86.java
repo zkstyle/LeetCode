@@ -56,4 +56,37 @@ public class Leetcode86 {
 
         return before_head.next;
     }
+
+
+    /**
+     * 法二　直接原地修改重组链表
+     * 1. 先声明一个哑结点　然后声明一个one节点　one节点用来指向小于目标值的最后一个节点 并循环找到one所在位置
+     * 2.　再声明two节点　指向one 并循环判断找到下一个one节点后一段大于x节点的最后一个节点
+     * 3. 节点分为3段　[A(小于x的节点链表，最后一个节点引用是one)][B(大于x的一段节点链表，最后一个节点引用是two)][C(未遍历节点)]
+     * 4. 目标是将C中第一个节点(小于x)插入到[A,B]之间　步骤如下
+     * @param head　头结点
+     * @param x　目标值
+     * @return
+     */
+    public ListNode partition2(ListNode head, int x) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode one = dummy;
+        while (one.next != null && one.next.val < x)
+            one = one.next;
+
+        ListNode two = one;
+        while (two.next != null) {
+            if (two.next.val < x) {
+                ListNode temp = two.next;
+                two.next = temp.next;
+                temp.next = one.next;
+                one.next = temp;
+                one = temp;
+            } else
+                two = two.next;
+        }
+        return dummy.next;
+    }
 }

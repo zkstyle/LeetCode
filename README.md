@@ -47,6 +47,7 @@ If you like this project, please leave me a star. ★
 |　51 |　　　[N-Queens](https://leetcode.com/problems/n-queens/) | 　　[java](algorithms/backtracking/Leetcode51.java)|　Hard |
 |　52 |　　　[N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 　　[java](algorithms/backtracking/Leetcode52.java)|　Hard |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
+|　56 |　　　[Merge Intervals](https://leetcode.com/problems/merge-intervals/) | 　　[java](algorithms/array/Leetcode56.java)|　Medium |
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
 |　60 |　　　[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | 　　[java](algorithms/backtracking/Leetcode60.java)|　Medium |
 |　61 |　　　[Rotate List](https://leetcode.com/problems/rotate-list/) | 　　[java](algorithms/linkedlist/Leetcode61.java)|　Medium |
@@ -59,12 +60,16 @@ If you like this project, please leave me a star. ★
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
 |　72 |　　　[Edit Distance](https://leetcode.com/problems/edit-distance/) | 　　[java](algorithms/dp/Leetcode72.java)|　Hard |
 |　73 |　　　[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 　　[java](algorithms/array/Leetcode73.java)|　Medium |
+|　75 |　　　[Sort Colors](https://leetcode.com/problems/sort-colors/) | 　　[java](algorithms/array/Leetcode75.java)|　Medium |
 |　77 |　　　[Combinations](https://leetcode.com/problems/combinations/) | 　　[java](algorithms/backtracking/Leetcode77.java)|　Medium |
 |　78 |　　　[Subsets](https://leetcode.com/problems/subsets/) | 　　[java](algorithms/backtracking/Leetcode78.java)|　Medium |
+|　79 |　　　[Word Search](https://leetcode.com/problems/word-search/) | 　　[java](algorithms/dfs/Leetcode79.java)|　Medium |
 |　80 |　　　[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | 　　[java](algorithms/array/Leetcode80.java)|　Medium |
 |　82 |　　　[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode82.java)|　Medium |
 |　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
+|　84 |　　　[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | 　　[java](algorithms/stack/Leetcode84.java)|　Hard |
 |　86 |　　　[Partition List](https://leetcode.com/problems/partition-list/) | 　　[java](algorithms/linkedlist/Leetcode86.java)|　Medium |
+|　88 |　　　[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 　　[java](algorithms/array/Leetcode88.java)|　Easy |
 |　91 |　　　[Decode Ways](https://leetcode.com/problems/decode-ways/) | 　　[java](algorithms/dp/Leetcode91.java)|　Medium |
 |　92 |　　　[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode92.java)|　Medium |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |

@@ -22,6 +22,15 @@ package array;
  */
 public class Leetcode88 {
 
+    /**
+     * 采用倒序赋值　首先nums1数组容量>=n+m 所以nums1倒数前n个位置为空
+     * 从len=m+n-1最后一个位置赋值
+     * 首先m>0&&n>0时　对nums1 nums2元素依次判断大小　并赋值
+     * @param nums1
+     * @param m 数组nums1中实际元素个数
+     * @param nums2
+     * @param n　数组nums2中实际元素个数
+     */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if (nums2 == null || nums2.length == 0)
             return;
