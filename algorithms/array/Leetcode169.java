@@ -21,15 +21,19 @@ package array;
  */
 public class Leetcode169 {
 
+    /**
+     * 采用抵消思想　两个不同的数相互抵消
+     * 最坏的情况　众数n 非众数n-1 抵消之后　还剩下一个众数值
+     */
     public int majorityElement(int[] nums) {
         int count = 1;
         int res = nums[0];
-        for (int i = 1; i < nums.length; i++){
-            if (nums[i] == res){
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == res) {
                 count++;
             } else {
                 count--;
-                if (count == 0){
+                if (count == 0) {
                     res = nums[i + 1];
                 }
             }

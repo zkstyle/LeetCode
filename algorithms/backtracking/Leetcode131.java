@@ -34,7 +34,7 @@ public class Leetcode131 {
         List<List<String>> res = new ArrayList<>();
         if (s == null || s.length() == 0) return res;
         char[] chars = s.toCharArray();
-        backtrack(chars, res, new ArrayList<String>(), 0, 0);
+        backtrack(chars, res, new ArrayList<>(), 0, 0);
         return res;
     }
 
@@ -54,7 +54,6 @@ public class Leetcode131 {
     }
 
     private boolean isPalindrome(char[] chars, int low, int high) {
-
         while (low < high) {
             if (chars[low] != chars[high]) return false;
             --high;
@@ -62,5 +61,4 @@ public class Leetcode131 {
         }
         return true;
     }
-
 }

@@ -98,17 +98,25 @@ If you like this project, please leave me a star. ★
 |　146 |　　　[LRU Cache](https://leetcode.com/problems/lru-cache/) | 　　[java](algorithms/hashmap/Leetcode146.java)|　Medium |   
 |　148 |　　　[Sort List](https://leetcode.com/problems/sort-list/) | 　　[java](algorithms/linkedlist/Leetcode148.java)|　Medium |   
 |　151 |　　　[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | 　　[java](algorithms/string/Leetcode151.java)|　Medium |   
+|　152 |　　　[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | 　　[java](algorithms/dp/Leetcode152.java)|　Medium |   
+|　155 |　　　[Min Stack](https://leetcode.com/problems/min-stack/) | 　　[java](algorithms/stack/Leetcode155.java)|　Easy |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
 |　162 |　　　[Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 　　[java](algorithms/binarysearch/Leetcode162.java)|　Medium |   
 |　167 |　　　[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 　　[java](algorithms/binarysearch/Leetcode167.java)|　Easy |   
 |　168 |　　　[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 　　[java](algorithms/math/Leetcode168.java)|　Easy |
+|　169 |　　　[Majority Element](https://leetcode.com/problems/majority-element/) | 　　[java](algorithms/array/Leetcode169.java)|　Easy |
 |　171 |　　　[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | 　　[java](algorithms/math/Leetcode171.java)|　Easy |
 |　172 |　　　[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | 　　[java](algorithms/math/Leetcode172.java)|　Easy |
+|　179 |　　　[Largest Number](https://leetcode.com/problems/largest-number/) | 　　[java](algorithms/array/Leetcode179.java)|　Medium |
+|　187 |　　　[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | 　　[java](algorithms/hashmap/Leetcode187.java)|　Medium |
+|　188 |　　　[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | 　　[java](algorithms/dp/Leetcode188.java)|　Hard |
 |　189 |　　　[Rotate Array](https://leetcode.com/problems/rotate-array/) | 　　[java](algorithms/array/Leetcode189.java)|　Easy |
+|　190 |　　　[Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 　　[java](algorithms/bit/Leetcode190.java)|　Easy |
 |　191 |　　　[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 　　[java](algorithms/bit/Leetcode191.java)|　Easy |
 |　198 |　　　[House Robber](https://leetcode.com/problems/house-robber/) | 　　[java](algorithms/dp/Leetcode198.java)|　Easy |   
 |　201 |　　　[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | 　　[java](algorithms/bit/Leetcode201.java)|　Medium |
 |　202 |　　　[Happy Number](https://leetcode.com/problems/happy-number/) | 　　[java](algorithms/math/Leetcode202.java)|　Easy |
+|　204 |　　　[Count Primes](https://leetcode.com/problems/count-primes/) | 　　[java](algorithms/math/Leetcode204.java)|　Easy |
 |　206 |　　　[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode206.java)|　Easy |   
 |　213 |　　　[House Robber II](https://leetcode.com/problems/house-robber-ii/) | 　　[java](algorithms/dp/Leetcode213.java)|　Medium |
 |　217 |　　　[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 　　[java](algorithms/hashmap/Leetcode217.java)|　Easy |
@@ -118,7 +126,9 @@ If you like this project, please leave me a star. ★
 |　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
 |　264 |　　　[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | 　　[java](algorithms/dp/Leetcode264.java)|　Medium | 
 |　279 |　　　[Perfect Squares](https://leetcode.com/problems/perfect-squares/) | 　　[java](algorithms/dp/Leetcode279.java)|　Medium |
+|　287 |　　　[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | 　　[java](algorithms/binarysearch/Leetcode287.java)|　Medium |
 |　322 |　　　[Coin Change](https://leetcode.com/problems/coin-change/) | 　　[java](algorithms/dp/Leetcode322.java)|　Medium |
+|　328 |　　　[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode328.java)|　Medium |
 |　494 |　　　[Target Sum](https://leetcode.com/problems/target-sum/) | 　　[java](algorithms/dp/Leetcode494.java)|　Medium | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
