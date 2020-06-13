@@ -1,4 +1,4 @@
-package math;
+package bit;
 
 /**
  * @BelongsProject: LeetCode
@@ -21,6 +21,20 @@ package math;
  */
 public class Leetcode268 {
 
+    /**
+     * 数学计算方法　用总和减去每一个数　最后得到的数一定是缺失的数
+     */
+    public int missingNumber1(int[] nums) {
+        int n = nums.length;
+        int res = n * (n + 1) / 2;
+        for (int x : nums) res -= x;
+        return res;
+    }
+
+    /**
+     * 异或运算　有数字 nums[0~n] 缺失其中一个数　
+     * 那么这n个数与下标0~n异或　相同的数相互抵消归零　最后剩下的就是缺失的数
+     */
     public int missingNumber(int[] nums) {
         int res = nums.length;
         for (int i = 0; i < nums.length; i++){

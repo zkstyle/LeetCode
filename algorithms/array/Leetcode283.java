@@ -20,16 +20,21 @@ package array;
  */
 public class Leetcode283 {
 
+    /**
+     * 我们创建两个指针i和j，第一次遍历的时候指针j用来记录当前有多少非0元素。
+     * 即遍历的时候每遇到一个非0元素就将其往数组左边挪，第一次遍历完后，j指针的下标就指向了最后一个非0元素下标。
+     * 第二次遍历的时候，起始位置就从j开始到结束，将剩下的这段区域内的元素全部置为0。
+     */
     public void moveZeroes(int[] nums) {
-        int index = 0;
+        if (nums == null) return;
+        int j = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
-                nums[index] = nums[i];
-                ++index;
+                nums[j++] = nums[i];
             }
         }
-        for (int k = index; k < nums.length; k++) {
-            nums[k] = 0;
+        for (int i = j; i < nums.length; i++) {
+            nums[i] = 0;
         }
     }
 }

@@ -31,6 +31,9 @@ import java.util.List;
  */
 public class Leetcode107 {
 
+    /**
+     * 还是和之前的层序遍历一样　只是每次存放的层数为 levels.size()-1 - level 倒序插入
+     */
     List<List<Integer>> levels = new ArrayList<>();
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         helper(root,0);
@@ -39,19 +42,36 @@ public class Leetcode107 {
     private void helper(TreeNode root,int level){
         if(root == null ) return;
         if(level == levels.size())
-            levels.add(0,new ArrayList <Integer>());
+            levels.add(0,new ArrayList <>());
         if(root.left != null)
             helper(root.left,level+1);
         if(root.right != null) helper(root.right,level+1);
         levels.get(levels.size()-1-level).add(root.val);
     }
 
-    public static void main(String[] args) {
-        TreeNode treeNode = new TreeNode(3);
-        treeNode.left = new TreeNode(9);
-        treeNode.right = new TreeNode(20);
-        treeNode.right.left = new TreeNode(15);
-        treeNode.right.right = new TreeNode(7);
-        new Leetcode107().levelOrderBottom(treeNode);
+    /**
+     * 首先获取最大层数　也就是树的最大深度
+     * 然后将当前root.val存放在最大level中
+     * 第二层放在level-1层中　依次存放
+     */
+    List<List<Integer>> lists = new ArrayList<>();
+
+    public List<List<Integer>> levelOrderBottom2(TreeNode root) {
+        int h = getH(root);
+        for (int i = 0; i < h; i++) lists.add(new ArrayList<>());
+        level(root, h - 1);
+        return lists;
+    }
+
+    private void level(TreeNode root, int level) {
+        if (root == null) return;
+        lists.get(level).add(root.val);
+        level(root.left, level - 1);
+        level(root.right, level - 1);
+    }
+
+    int getH(TreeNode root) {
+        if (root == null) return 0;
+        return Math.max(getH(root.left) + 1, getH(root.right) + 1);
     }
 }
