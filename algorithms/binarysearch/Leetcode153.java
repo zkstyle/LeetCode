@@ -25,48 +25,26 @@ package binarysearch;
  */
 public class Leetcode153 {
 
+    /**
+     * 旋转排序数组 nums可以被拆分为 2 个排序数组 nums1 , nums2 ，
+     * 并且 nums1任一元素 >= nums2任一元素；因此，考虑二分法寻找此两数组的分界点 nums[i] (即第 2 个数组的首个元素)。
+     * 设置 left, right 指针在 nums数组两端，mid为每次二分的中点：
+     * 当 nums[mid] > nums[right]时，mid 一定在第 1 个排序数组中，ii 一定满足 mid < i <= right，因此执行 left = mid + 1；
+     * 当 nums[mid] < nums[right] 时，mid一定在第 2 个排序数组中，ii 一定满足 left < i <= mid，因此执行 right = mid；
+     **/
     public int findMin(int[] nums) {
-        /*
-         * 不得不吐槽一句，题目明明说了在某点旋转，给的测试用例[1, 2, 3]什么意思，这是在哪点旋
-         * 转的？
-         */
-        if (nums.length == 1 || nums[0] < nums[nums.length - 1]) {
-            return nums[0];
-        }
-        return backTrace(nums, 0, nums.length - 1);
-    }
-    /*
-     * 说下大概思路，找个点二分数组，其中必有一个数组最后一个元素小于第一个元素，这时我们求的最小
-     * 值就在其中，递归即可。当然会有种特殊情况，就是恰好分出来的数组都是有序的，那就说明最小值就
-     * 是后一个数组的第一个值。所以运气够好的话，一次二分就能找到了，这也是复杂度为什么不足lgn的
-     * 原因。
-     */
-    private int backTrace(int[] nums, int start, int end) {
-        int mid = (start + end) / 2;
-        if (nums[start] > nums[mid]) {
-            return backTrace(nums, start, mid);
-        }
-        if (nums[mid + 1] > nums[end]) {
-            return backTrace(nums, mid + 1, end);
-        }
-        return nums[mid + 1];
-    }
+        int low = 0;
+        int high = nums.length - 1;
 
-    class Solution {
-        public int findMin(int[] nums) {
-            int low = 0;
-            int high = nums.length - 1;
-
-            while (low < high) {
-                int mid = low + (high - low)/2;
-                if (nums[mid] > nums[high]) {
-                    low = mid + 1;
-                } else {
-                    high = mid;
-                }
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (nums[mid] > nums[high]) {
+                low = mid + 1;
+            } else {
+                high = mid;
             }
-
-            return nums[low];
         }
+
+        return nums[low];
     }
 }

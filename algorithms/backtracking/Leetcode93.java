@@ -70,4 +70,5 @@ public class Leetcode93 {
         if (i - begin > 1 && s.charAt(begin) == '0') return false;
         return Integer.valueOf(s.substring(begin, i)) < 256;
     }
+
 }

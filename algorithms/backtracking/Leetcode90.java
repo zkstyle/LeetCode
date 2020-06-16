@@ -29,28 +29,31 @@ import java.util.List;
  */
 public class Leetcode90 {
 
-    List<List<Integer>> res = new ArrayList();
+    List<List<Integer>> lists = new ArrayList<>();
 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        Arrays.sort(nums);
-        dfs(nums, 0, new ArrayList());
-        return res;
+        Arrays.sort(nums);  //排序　因为重复元素
+        back(nums, new ArrayList(), 0);
+        return lists;
     }
 
-    private void dfs(int[] nums, int i, List<Integer> tmp) {
-        res.add(new ArrayList(tmp));
-        int j = i;
-        for (; i < nums.length; i++) {
-            while (i < nums.length && i != j && nums[i] == nums[i - 1]) i++;
-            if (i == nums.length) break;
-            tmp.add(nums[i]);
-            dfs(nums, i + 1, tmp);
-            tmp.remove(tmp.size() - 1);
+    /**
+     * 首先每次都添加list结果到lists中
+     * 循环添加数组元素　首先判断剪枝　若i>idx(起始位置)且等于前一个元素　则跳过
+     * 添加元素　回溯　移除元素
+     * @param nums 数组
+     * @param list　存储满足条件结果
+     * @param idx　每次dfs起始下标
+     */
+    private void back(int[] nums, List<Integer> list, int idx) {
+
+        lists.add(new ArrayList(list));
+
+        for (int i = idx; i < nums.length; i++) {
+            if (i > idx && nums[i] == nums[i - 1]) continue;
+            list.add(nums[i]);
+            back(nums, list, i + 1);
+            list.remove(list.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        int[] num = {1,2,2};
-        new Leetcode90().subsetsWithDup(num);
     }
 }

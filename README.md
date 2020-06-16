@@ -71,6 +71,7 @@ If you like this project, please leave me a star. ★
 |　84 |　　　[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | 　　[java](algorithms/stack/Leetcode84.java)|　Hard |
 |　86 |　　　[Partition List](https://leetcode.com/problems/partition-list/) | 　　[java](algorithms/linkedlist/Leetcode86.java)|　Medium |
 |　88 |　　　[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 　　[java](algorithms/array/Leetcode88.java)|　Easy |
+|　90 |　　　[Subsets II](https://leetcode.com/problems/subsets-ii/) | 　　[java](algorithms/backtracking/Leetcode90.java)|　Medium |
 |　91 |　　　[Decode Ways](https://leetcode.com/problems/decode-ways/) | 　　[java](algorithms/dp/Leetcode91.java)|　Medium |
 |　92 |　　　[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode92.java)|　Medium |
 |　93 |　　　[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | 　　[java](algorithms/backtracking/Leetcode93.java)|　Medium |
@@ -87,6 +88,8 @@ If you like this project, please leave me a star. ★
 |　112 |　　　[Path Sum](https://leetcode.com/problems/path-sum/) | 　　[java](algorithms/tree/Leetcode112.java)|　Easy |
 |　113 |　　　[Path Sum II](https://leetcode.com/problems/path-sum-ii/) | 　　[java](algorithms/tree/Leetcode113.java)|　Medium |
 |　114 |　　　[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | 　　[java](algorithms/tree/Leetcode114.java)|　Medium |
+|　116 |　　　[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | 　　[java](algorithms/tree/Leetcode116.java)|　Medium |
+|　117 |　　　[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | 　　[java](algorithms/tree/Leetcode117.java)|　Medium |
 |　118 |　　　[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | 　　[java](algorithms/array/Leetcode118.java)|　Easy |
 |　119 |　　　[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | 　　[java](algorithms/array/Leetcode119.java)|　Easy |
 |　120 |　　　[Triangle](https://leetcode.com/problems/triangle/) | 　　[java](algorithms/dp/Leetcode120.java)|　Medium |
@@ -102,6 +105,8 @@ If you like this project, please leave me a star. ★
 |　148 |　　　[Sort List](https://leetcode.com/problems/sort-list/) | 　　[java](algorithms/linkedlist/Leetcode148.java)|　Medium |   
 |　151 |　　　[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | 　　[java](algorithms/string/Leetcode151.java)|　Medium |   
 |　152 |　　　[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | 　　[java](algorithms/dp/Leetcode152.java)|　Medium |   
+|　153 |　　　[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | 　　[java](algorithms/binarysearch/Leetcode153.java)|　Medium |   
+|　154 |　　　[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | 　　[java](algorithms/binarysearch/Leetcode154.java)|　Hard |   
 |　155 |　　　[Min Stack](https://leetcode.com/problems/min-stack/) | 　　[java](algorithms/stack/Leetcode155.java)|　Easy |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
 |　162 |　　　[Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 　　[java](algorithms/binarysearch/Leetcode162.java)|　Medium |   
@@ -110,6 +115,7 @@ If you like this project, please leave me a star. ★
 |　169 |　　　[Majority Element](https://leetcode.com/problems/majority-element/) | 　　[java](algorithms/array/Leetcode169.java)|　Easy |
 |　171 |　　　[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | 　　[java](algorithms/math/Leetcode171.java)|　Easy |
 |　172 |　　　[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | 　　[java](algorithms/math/Leetcode172.java)|　Easy |
+|　174 |　　　[Dungeon Game](https://leetcode.com/problems/dungeon-game/) | 　　[java](algorithms/dp/Leetcode174.java)|　Hard |
 |　179 |　　　[Largest Number](https://leetcode.com/problems/largest-number/) | 　　[java](algorithms/array/Leetcode179.java)|　Medium |
 |　187 |　　　[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | 　　[java](algorithms/hashmap/Leetcode187.java)|　Medium |
 |　188 |　　　[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | 　　[java](algorithms/dp/Leetcode188.java)|　Hard |
@@ -117,6 +123,7 @@ If you like this project, please leave me a star. ★
 |　190 |　　　[Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 　　[java](algorithms/bit/Leetcode190.java)|　Easy |
 |　191 |　　　[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 　　[java](algorithms/bit/Leetcode191.java)|　Easy |
 |　198 |　　　[House Robber](https://leetcode.com/problems/house-robber/) | 　　[java](algorithms/dp/Leetcode198.java)|　Easy |   
+|　200 |　　　[Number of Islands](https://leetcode.com/problems/number-of-islands/) | 　　[java](algorithms/dfs/Leetcode200.java)|　Medium |   
 |　201 |　　　[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | 　　[java](algorithms/bit/Leetcode201.java)|　Medium |
 |　202 |　　　[Happy Number](https://leetcode.com/problems/happy-number/) | 　　[java](algorithms/math/Leetcode202.java)|　Easy |
 |　204 |　　　[Count Primes](https://leetcode.com/problems/count-primes/) | 　　[java](algorithms/math/Leetcode204.java)|　Easy |
@@ -140,6 +147,7 @@ If you like this project, please leave me a star. ★
 |　287 |　　　[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | 　　[java](algorithms/binarysearch/Leetcode287.java)|　Medium |
 |　290 |　　　[Word Pattern](https://leetcode.com/problems/word-pattern/) | 　　[java](algorithms/hashmap/Leetcode290.java)|　Easy |
 |　313 |　　　[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | 　　[java](algorithms/doublepointer/Leetcode313.java)|　Medium |
+|　316 |　　　[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | 　　[java](algorithms/stack/Leetcode316.java)|　Hard |
 |　322 |　　　[Coin Change](https://leetcode.com/problems/coin-change/) | 　　[java](algorithms/dp/Leetcode322.java)|　Medium |
 |　328 |　　　[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode328.java)|　Medium |
 |　338 |　　　[Counting Bits](https://leetcode.com/problems/counting-bits/) | 　　[java](algorithms/bit/Leetcode338.java)|　Medium |
