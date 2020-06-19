@@ -163,10 +163,22 @@ If you like this project, please leave me a star. ★
 |　380 |　　　[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | 　　[java](algorithms/hashmap/Leetcode380.java)|　Medium |
 |　386 |　　　[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | 　　[java](algorithms/dfs/Leetcode386.java)|　Medium |
 |　387 |　　　[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 　　[java](algorithms/hashmap/Leetcode387.java)|　Easy |
+|　398 |　　　[Random Pick Index](https://leetcode.com/problems/random-pick-index/) | 　　[java](algorithms/array/Leetcode398.java)|　Medium |
+|　409 |　　　[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | 　　[java](algorithms/string/Leetcode409.java)|　Easy |
+|　414 |　　　[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | 　　[java](algorithms/array/Leetcode414.java)|　Easy |
 |　415 |　　　[Add Strings](https://leetcode.com/problems/add-strings/) | 　　[java](algorithms/string/Leetcode415.java)|　Easy |
+|　441 |　　　[Arranging Coins](https://leetcode.com/problems/arranging-coins/) | 　　[java](algorithms/binarysearch/Leetcode441.java)|　Easy |
+|　442 |　　　[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 　　[java](algorithms/array/Leetcode442.java)|　Medium |
+|　447 |　　　[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/) | 　　[java](algorithms/hashmap/Leetcode447.java)|　Easy |
+|　448 |　　　[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | 　　[java](algorithms/array/Leetcode448.java)|　Easy |
+|　453 |　　　[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | 　　[java](algorithms/math/Leetcode453.java)|　Easy |
 |　454 |　　　[4Sum II](https://leetcode.com/problems/4sum-ii/) | 　　[java](algorithms/hashmap/Leetcode454.java)|　Medium |
-|　494 |　　　[Target Sum](https://leetcode.com/problems/target-sum/) | 　　[java](algorithms/dp/Leetcode494.java)|　Medium | 
+|　494 |　　　[Target Sum](https://leetcode.com/problems/target-sum/) | 　　[java](algorithms/dp/Leetcode494.java)|　Easy | 
+|　496 |　　　[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | 　　[java](algorithms/hashmap/Leetcode496.java)|　Easy | 
+|　500 |　　　[Keyboard Row](https://leetcode.com/problems/keyboard-row/) | 　　[java](algorithms/hashmap/Leetcode500.java)|　Medium | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
+|　556 |　　　[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | 　　[java](algorithms/string/Leetcode556.java)|　Medium |
+|　567 |　　　[Permutation in String](https://leetcode.com/problems/permutation-in-string/) | 　　[java](algorithms/hashmap/Leetcode567.java)|　Medium |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
 ### 剑指Offer
