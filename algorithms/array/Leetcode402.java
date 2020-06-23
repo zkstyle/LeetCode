@@ -1,7 +1,5 @@
 package array;
 
-import java.util.Stack;
-
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.array
@@ -30,7 +28,7 @@ import java.util.Stack;
  * 输出: "0"
  * 解释: 从原数字移除所有的数字，剩余为空就是0。
  */
-public class Leetcode404 {
+public class Leetcode402 {
     public String removeKdigits(String s, int k) {
         if(k==0) return s;
         char cs[] = s.toCharArray();

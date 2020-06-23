@@ -20,8 +20,7 @@ public class Leetcode258 {
 
     /**
      * xyz = x+y+z => xyz-(x+y+z) = 99x+9y
-     * @param num
-     * @return
+     * x*100+y*10+z=x*99+y*9+x+y+z
      */
     public int addDigits(int num) {
         return (num-1)%9+1;

@@ -6,45 +6,45 @@ package math;
  * @Author: Elvis
  * @CreateTime: 2019-04-23 16:15
  * Description:
- * Write a program to check whether a given number is an ugly number.
+ * 编写一个程序判断给定的数是否为丑数。
  *
- * Ugly numbers are positive numbers whose prime factors only include 2, 3, 5.
+ * 丑数就是只包含质因数 2, 3, 5 的正整数。
  *
- * Example 1:
+ * 示例 1:
  *
- * Input: 6
- * Output: true
- * Explanation: 6 = 2 × 3
- * Example 2:
+ * 输入: 6
+ * 输出: true
+ * 解释: 6 = 2 × 3
+ * 示例 2:
  *
- * Input: 8
- * Output: true
- * Explanation: 8 = 2 × 2 × 2
- * Example 3:
+ * 输入: 8
+ * 输出: true
+ * 解释: 8 = 2 × 2 × 2
+ * 示例 3:
  *
- * Input: 14
- * Output: false
- * Explanation: 14 is not ugly since it includes another prime factor 7.
- * Note:
+ * 输入: 14
+ * 输出: false
+ * 解释: 14 不是丑数，因为它包含了另外一个质因数 7。
+ * 说明：
  *
- * 1 is typically treated as an ugly number.
- * Input is within the 32-bit signed integer range: [−231,  231 − 1].
+ * 1 是丑数。
+ * 输入不会超过 32 位有符号整数的范围: [−231,  231 − 1]
  */
 public class Leetcode263 {
-    public boolean isUgly(int num) {
-        if(num <= 0) return false;
 
-        while(true) {
-            if (num % 2 == 0){
-                num /= 2;
-            }else if (num % 3 == 0){
-                num /= 3;
-            }else if (num % 5 == 0){
-                num /= 5;
-            }else {
-                break;
+    /**
+     *根据定义， 任何一个丑叔都可以写成 n = 2^i * 3^j * 5^k （i,j,k都是幂，三个数都为0的时候，为丑数1的情况）
+     * 于是我们按照2,3,5 的顺序依次循环除，当除到不是当前因数的倍数时，进行下一个因素的整数，这样，最后剩下的数为1则为丑数
+     */
+    public boolean isUgly(int num) {
+        if (num <= 0) return false;
+        int[] factor = new int[]{2, 3, 5};
+        for (int i : factor) {
+            while (num % i == 0) {
+                num = num / i;
             }
         }
-        return num == 1;
+        if (num == 1) return true;
+        return false;
     }
 }

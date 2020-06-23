@@ -138,8 +138,14 @@ If you like this project, please leave me a star. ★
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
 |　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
+|　234 |　　　[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode234.java)|　Easy |
+|　237 |　　　[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode237.java)|　Easy |
+|　238 |　　　[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 　　[java](algorithms/array/Leetcode238.java)|　Medium |
 |　242 |　　　[Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 　　[java](algorithms/hashmap/Leetcode242.java)|　Easy |
+|　257 |　　　[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | 　　[java](algorithms/dfs/Leetcode257.java)|　Easy |
+|　258 |　　　[Add Digits](https://leetcode.com/problems/add-digits/) | 　　[java](algorithms/math/Leetcode258.java)|　Easy |
 |　260 |　　　[Single Number III](https://leetcode.com/problems/single-number-iii/) | 　　[java](algorithms/bit/Leetcode260.java)|　Medium |
+|　263 |　　　[Ugly Number](https://leetcode.com/problems/ugly-number/) | 　　[java](algorithms/math/Leetcode263.java)|　Easy | 
 |　264 |　　　[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | 　　[java](algorithms/dp/Leetcode264.java)|　Medium | 
 |　268 |　　　[Missing Number](https://leetcode.com/problems/missing-number/) | 　　[java](algorithms/bit/Leetcode268.java)|　Easy | 
 |　279 |　　　[Perfect Squares](https://leetcode.com/problems/perfect-squares/) | 　　[java](algorithms/dp/Leetcode279.java)|　Medium |
@@ -164,6 +170,7 @@ If you like this project, please leave me a star. ★
 |　386 |　　　[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | 　　[java](algorithms/dfs/Leetcode386.java)|　Medium |
 |　387 |　　　[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 　　[java](algorithms/hashmap/Leetcode387.java)|　Easy |
 |　398 |　　　[Random Pick Index](https://leetcode.com/problems/random-pick-index/) | 　　[java](algorithms/array/Leetcode398.java)|　Medium |
+|　404 |　　　[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 　　[java](algorithms/tree/Leetcode404.java)|　Easy |
 |　409 |　　　[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | 　　[java](algorithms/string/Leetcode409.java)|　Easy |
 |　414 |　　　[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | 　　[java](algorithms/array/Leetcode414.java)|　Easy |
 |　415 |　　　[Add Strings](https://leetcode.com/problems/add-strings/) | 　　[java](algorithms/string/Leetcode415.java)|　Easy |
@@ -179,6 +186,10 @@ If you like this project, please leave me a star. ★
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　556 |　　　[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | 　　[java](algorithms/string/Leetcode556.java)|　Medium |
 |　567 |　　　[Permutation in String](https://leetcode.com/problems/permutation-in-string/) | 　　[java](algorithms/hashmap/Leetcode567.java)|　Medium |
+|　589 |　　　[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | 　　[java](algorithms/tree/Leetcode589.java)|　Easy |
+|　593 |　　　[Valid Square](https://leetcode.com/problems/valid-square/) | 　　[java](algorithms/math/Leetcode593.java)|　Medium |
+|　594 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | 　　[java](algorithms/hashmap/Leetcode594.java)|　Easy |
+|　611 |　　　[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | 　　[java](algorithms/array/Leetcode611.java)|　Medium |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
 ### 剑指Offer

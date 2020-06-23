@@ -2,9 +2,7 @@ package tree;
 
 import tree.treenode.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @BelongsProject: LeetCode
@@ -68,6 +66,9 @@ public class Leetcode94 {
             res.add(curr.val);
             curr = curr.right;
         }
+        Integer[] ans=new Integer[2];
+        Map<Integer,Integer> map=new HashMap<>();
+        ans=map.keySet().toArray(ans);
         return res;
     }
 }

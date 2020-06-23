@@ -31,6 +31,11 @@ import java.util.List;
  */
 public class Leetcode257 {
 
+    /**
+     * 最直观的方法是使用递归。在递归遍历二叉树时，需要考虑当前的节点和它的孩子节点。如果当前的节点不是叶子节点，则在当前的路径末尾添加该节点，
+     * 并递归遍历该节点的每一个孩子节点。如果当前的节点是叶子节点，则在当前的路径末尾添加该节点后，就得到了一条从根节点到叶子节点的路径，
+     * 可以把该路径加入到答案中。
+     */
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> list = new ArrayList<>();
         if (root == null) return list;
@@ -38,8 +43,8 @@ public class Leetcode257 {
         return list;
     }
 
-    private void dfs(TreeNode root, List<String> list, String s){
-        if (root.left == null && root.right == null){
+    private void dfs(TreeNode root, List<String> list, String s) {
+        if (root.left == null && root.right == null) {
             list.add(s + root.val);
             return;
         }
