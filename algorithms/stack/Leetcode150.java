@@ -46,9 +46,7 @@ public class Leetcode150 {
     int pos = -1;
 
     /**
-     * best
-     * @param tokens
-     * @return
+     * 递归解法　倒序从最后一个字符串开始　遇到操作符就递归计算　调用eval()获取数值
      */
     public int evalRPN1(String[] tokens) {
         this.tokens = tokens;
@@ -61,46 +59,49 @@ public class Leetcode150 {
         if ("+".equals(token)) return eval() + eval();
         if ("-".equals(token)) return -1 * eval() + eval();
         if ("*".equals(token)) return eval() * eval();
-        if ("/".equals(token)) {int d = eval(); return eval() / d;}
+        if ("/".equals(token)) {
+            int d = eval();
+            return eval() / d;
+        }
         return Integer.parseInt(token);
     }
 
     /**
-     * personal
+     * 利用栈结构　进行逆波兰表达式求解
+     * 每次对String字符串判断　若是数字则入栈　若是操作符则弹出两个数字
      * @param tokens
      * @return
      */
     public int evalRPN(String[] tokens) {
-        Stack<String> stack = new Stack<>();
-        int num1, num2;
-        for (int i = 0; i < tokens.length; i++) {
-            if (Character.isDigit(tokens[i].charAt(0)) || ((tokens[i].length() > 1) && Character.isDigit(tokens[i].charAt(1)))){
-                stack.push(tokens[i]);
-            } else {
-                num2 = Integer.valueOf(stack.pop());
-                num1 = Integer.valueOf(stack.pop());
-                switch (tokens[i]) {
-                    case "+":
-                        stack.push(String.valueOf(num1 + num2));
-                        break;
-                    case "-":
-                        stack.push(String.valueOf(num1 - num2));
-                        break;
-                    case "*":
-                        stack.push(String.valueOf(num1 * num2));
-                        break;
-                    case "/":
-                        stack.push(String.valueOf(num1 / num2));
-                        break;
-
-                }
+        Stack<Integer> stack = new Stack<>();
+        int a, b;
+        for (String s : tokens) {
+            switch (s) {
+                case "+":
+                    b = stack.pop();
+                    a = stack.pop();
+                    stack.push(a + b);
+                    break;
+                case "-":
+                    b = stack.pop();
+                    a = stack.pop();
+                    stack.push(a - b);
+                    break;
+                case "*":
+                    b = stack.pop();
+                    a = stack.pop();
+                    stack.push(a * b);
+                    break;
+                case "/":
+                    b = stack.pop();
+                    a = stack.pop();
+                    stack.push(a / b);
+                    break;
+                default:
+                    stack.push(Integer.parseInt(s));
             }
         }
-            return Integer.parseInt(stack.peek());
-        }
 
-    public static void main(String[] args) {
-        String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
-        new Leetcode150().evalRPN(tokens);;
+        return stack.pop();
     }
 }

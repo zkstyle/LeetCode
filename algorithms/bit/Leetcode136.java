@@ -1,4 +1,4 @@
-package hashmap;
+package bit;
 
 /**
  * @BelongsProject: LeetCode
@@ -22,16 +22,16 @@ package hashmap;
  * 输出: 4
  */
 public class Leetcode136 {
+
+    /**
+     * 因为 x^x==0 ==> 将所有的数异或得到只出现一次的数
+     */
     public static int singleNumber(int[] nums) {
         int result = 0;
-        for(int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             result ^= nums[i];
         }
         return result;
     }
 
-    public static void main(String[] args) {
-        int[] nums = {2,2,1};
-        System.out.println(singleNumber(nums));
-    }
 }

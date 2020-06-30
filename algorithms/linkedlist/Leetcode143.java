@@ -77,4 +77,35 @@ public class Leetcode143 {
         }
 
     }
+
+    public void reorderList2(ListNode head) {
+        if (head == null || head.next == null || head.next.next == null) return;
+        ListNode fast = head, slow = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode phead = slow.next;
+        fast = phead;
+        slow.next = null;
+        ListNode cur;
+        //reverse
+        while (fast.next != null) {
+            cur = fast.next;
+            fast.next = cur.next;
+            cur.next = phead;
+            phead = cur;
+        }
+        slow = head;
+        fast = phead;
+        //合并
+        while (phead != null) {
+            phead = fast.next;
+            fast.next = slow.next;
+            slow.next = fast;
+            slow = fast.next;
+            fast = phead;
+        }
+    }
+
 }

@@ -25,7 +25,7 @@ public class Leetcode137 {
 
     public int singleNumber(int[] nums) {
         int ones = 0, twos = 0, threes = 0;
-        for(int num : nums){
+        for (int num : nums) {
             twos |= ones & num;
             ones ^= num;
             threes = ones & twos;
@@ -35,8 +35,4 @@ public class Leetcode137 {
         return ones;
     }
 
-    public static void main(String[] args) {
-        int[] nums ={4,1,4,1,4,1,99};
-        new Leetcode137().singleNumber(nums);
-    }
 }
