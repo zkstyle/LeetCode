@@ -30,12 +30,22 @@ import java.util.Set;
  */
 public class Leetcode575 {
 
+    /**
+     * 若糖果种类大于数组长度一半　就直接返回数组一半长度　因为要平分糖果　最多就是数组长度的一半
+     * 若糖果数量小于数组长度一半　则返回糖果数量
+     */
     public int distributeCandies(int[] candies) {
         Set<Integer> set=new HashSet<>();
         for(int n:candies)  set.add(n);
         return set.size()<=candies.length/2?set.size():candies.length/2;
     }
 
+    /**
+     * 以空间换时间　采用数组标记的方法　因为数组的数限制在-100000 - +100000
+     * 申请一个2000001大小的数组　对于每一个数首先+100000 以保证下标大于等于0
+     * 遍历数组　同时通过visited数组标记　若没有访问过　则ans++ 表示增加一种糖果　同时标记为true 表示已经访问过了
+     * 并且判断若糖果种类大于数组一般长度half 则直接返回ans
+     */
     public int distributeCandies2(int[] candies) {
         int half = candies.length/2;
         int ans = 0;
@@ -44,11 +54,11 @@ public class Leetcode575 {
             candy += 100000;
             if (!visited[candy]) {
                 ans++;
+                visited[candy] = true;
                 if (ans == half) {
                     return ans;
                 }
             }
-            visited[candy] = true;
         }
 
         return ans;

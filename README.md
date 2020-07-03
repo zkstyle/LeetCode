@@ -209,6 +209,14 @@ If you like this project, please leave me a star. ★
 |　594 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | 　　[java](algorithms/hashmap/Leetcode594.java)|　Easy |
 |　611 |　　　[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | 　　[java](algorithms/array/Leetcode611.java)|　Medium |
 |　643 |　　　[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 　　[java](algorithms/array/Leetcode643.java)|　Easy |
+|　645 |　　　[Set Mismatch](https://leetcode.com/problems/set-mismatch/) | 　　[java](algorithms/set/Leetcode645.java)|　Easy |
+|　771 |　　　[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 　　[java](algorithms/hashmap/Leetcode771.java)|　Easy |
+|　795 |　　　[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | 　　[java](algorithms/array/Leetcode795.java)|　Medium |
+|　841 |　　　[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | 　　[java](algorithms/backtracking/Leetcode841.java)|　Medium |
+|　860 |　　　[Lemonade Change](https://leetcode.com/problems/lemonade-change/) | 　　[java](algorithms/greed/Leetcode860.java)|　Easy |
+|　866 |　　　[Prime Palindrome](https://leetcode.com/problems/prime-palindrome/) | 　　[java](algorithms/math/Leetcode866.java)|　Medium |
+|　896 |　　　[Monotonic Array](https://leetcode.com/problems/monotonic-array/) | 　　[java](algorithms/array/Leetcode896.java)|　Easy |
+|　898 |　　　[Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | 　　[java](algorithms/bit/Leetcode898.java)|　Medium |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
 ### 剑指Offer

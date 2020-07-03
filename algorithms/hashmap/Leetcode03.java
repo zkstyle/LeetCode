@@ -1,5 +1,6 @@
 package hashmap;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -54,6 +55,26 @@ public class Leetcode03 {
             maxLength = Math.max(maxLength, i - start + 1);
         }
         return maxLength;
+    }
+
+    /**
+     * 数组hash 访问更快
+     */
+    public int lengthOfLongestSubstring(String s) {
+        if (s.length() == 0) return 0;
+        int maxlength = 0;
+        int start = 0;
+        int[] dict = new int[128];
+        Arrays.fill(dict, -1);
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (dict[c] != -1) {
+                start = Math.max(dict[c] + 1, start);
+            }
+            dict[c] = i;
+            maxlength = Math.max(maxlength, i - start + 1);
+        }
+        return maxlength;
     }
 
 }
