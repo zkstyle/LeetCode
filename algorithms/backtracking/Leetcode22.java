@@ -27,21 +27,25 @@ public class Leetcode22 {
      */
     public List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
-        generate(n, list, "", 0, 0);
+        generate(n, list, new StringBuilder(), 0, 0);
         return list;
     }
 
-    private void generate(int n, List<String> list, String ans, int left, int right) {
+    private void generate(int n, List<String> list, StringBuilder ans, int left, int right) {
         if (ans.length() == 2 * n) {
-            list.add(ans);
+            list.add(ans.toString());
             return;
         }
         if (left < right) return;
         if (left < n) {
-            generate(n, list, ans + "(", left + 1, right);
+            ans.append('(');
+            generate(n, list, ans, left + 1, right);
+            ans.deleteCharAt(ans.length() - 1);
         }
         if (right < n) {
-            generate(n, list, ans + ")", left, right + 1);
+            ans.append(')');
+            generate(n, list, ans, left, right + 1);
+            ans.deleteCharAt(ans.length() - 1);
         }
     }
 

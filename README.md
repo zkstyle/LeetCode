@@ -13,6 +13,7 @@ If you like this project, please leave me a star. ★
 |　07 |　　　[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 　　[java](algorithms/math/Leetcode07.java)|　Easy |
 |　08 |　　　[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 　　[java](algorithms/string/Leetcode08.java)|　Medium |
 |　09 |　　　[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 　　[java](algorithms/math/Leetcode09.java)|　Easy |
+|　10 |　　　[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | 　　[java](algorithms/dp/Leetcode10.java)|　Hard |
 |　11 |　　　[Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 　　[java](algorithms/array/Leetcode11.java)|　Medium |
 |　12 |　　　[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 　　[java](algorithms/string/Leetcode12.java)|　Medium |
 |　13 |　　　[Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 　　[java](algorithms/string/Leetcode13.java)|　Easy |
@@ -27,6 +28,7 @@ If you like this project, please leave me a star. ★
 |　22 |　　　[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | 　　[java](algorithms/backtracking/Leetcode22.java)|　Medium |
 |　23 |　　　[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | 　　[java](algorithms/linkedlist/Leetcode23.java)|　Hard |
 |　24 |　　　[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 　　[java](algorithms/linkedlist/Leetcode24.java)|　Medium |
+|　25 |　　　[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | 　　[java](algorithms/linkedlist/Leetcode25.java)|　Hard |
 |　26 |　　　[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 　　[java](algorithms/array/Leetcode26.java)|　Easy |
 |　27 |　　　[Remove Element](https://leetcode.com/problems/remove-element/) | 　　[java](algorithms/array/Leetcode27.java)|　Easy |
 |　28 |　　　[Implement strStr()](https://leetcode.com/problems/implement-strstr/) | 　　[java](algorithms/string/Leetcode28.java)|　Easy |

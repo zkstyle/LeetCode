@@ -25,21 +25,23 @@ public class Leetcode17 {
 
     public List<String> letterCombinations(String digits) {
         List<String> ans = new ArrayList<>();
-        if (digits != null && digits.length() > 0) dfs(ans, "", digits);
+        if (digits != null && digits.length() > 0) dfs(digits, new StringBuilder(), ans);
         return ans;
     }
 
-    public void dfs(List<String> ans, String cur, String digits) {
+    private void dfs(String digits, StringBuilder cur, List<String> ans) {
         //cur表示深搜算法获取当前组合字符串
         if (cur.length() == digits.length()) {
-            ans.add(cur);
+            ans.add(cur.toString());
             return;
         }
         //获取digits的第1,2,3个数字对应map数组中的索引,因为已经优化，是一一对应即(1->1,2->2)
         int index = digits.charAt(cur.length()) - '2';
         //对每一个的当前数字的包含字母进行遍历 那么长度自然也是map对应数字的字符串长度
         for (int i = 0; i < map[index].length(); i++) {
-            dfs(ans, cur + map[index].charAt(i), digits);
+            cur.append(map[index].charAt(i));
+            dfs(digits, cur, ans);
+            cur.deleteCharAt(cur.length() - 1);
         }
     }
 }

@@ -28,135 +28,25 @@ import linkedlist.listnode.ListNode;
 public class Leetcode25 {
 
     /**
-     * 4ms典范
-     * @param head
-     * @param k
-     * @return
+     * 采用递归解法　比较方法处理每k个节点的链接问题
+     * 首先每次先找到第k个节点　nh为下一个head 保存第k+1个节点
+     * 将1~k个节点翻转　cur next nnext
+     * 每次将next节点next指针指向cur 依次后移　最后返回ans首节点(翻转后)
      */
-    public ListNode reverseKGroupPlus(ListNode head, int k) {
-        ListNode prev = null;
-        ListNode cur = head;
-        ListNode next = null;
-        ListNode check = head;
-        int canProceed = 0;
-        int count = 0;
-
-        while(canProceed < k && check != null){
-            check = check.next;
-            canProceed++;
+    public ListNode reverseKGroup(ListNode head, int k) {
+        if (k <= 1) return head;
+        ListNode ans = head;
+        for (int i = 1; i < k && ans != null; i++) ans = ans.next;
+        if (ans == null) return head;
+        ListNode nh = ans.next, cur = head, next = cur.next;
+        while (next != nh) {
+            ListNode nnext = next.next;
+            next.next = cur;
+            cur = next;
+            next = nnext;
         }
-
-        if(canProceed == k){
-            while(count < k && cur != null){
-                next = cur.next;
-                cur.next = prev;
-                prev = cur;
-                cur = next;
-                count++;
-            }
-            if(next != null){
-                head.next = reverseKGroupPlus(next, k);
-            }
-            return prev;
-        } else {
-            return head;
-        }
+        head.next = reverseKGroup(nh, k);
+        return ans;
     }
 
-    /**
-     *
-     * @param head
-     * @param k
-     * @return
-     */
-    public  ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null){
-            return head;
-        }
-        if (k == 1){
-            return head;
-        }
-        ListNode curr = head;
-        ListNode hand = head;
-        ListNode temp = null;
-        ListNode pre = null;
-
-        while (true){
-            ListNode tempHand = curr;
-            ListNode tempLast = curr;
-            for (int i = 1; i < k; i++) {
-                if (tempLast != null && tempLast.next != null){
-                    tempLast = tempLast.next;
-                    if (i == k - 1){
-                        temp = tempLast.next;
-                        tempLast.next = null;
-                    }
-                }else {
-                    if (temp != null){
-                        getLastNode(hand).next = tempHand;
-                    }
-                    return hand;
-                }
-            }
-            ListNode newNode = reverseList(tempHand);
-            if (pre != null){
-                pre.next = newNode;
-            }else {
-                hand = newNode;
-            }
-
-            while (newNode.next != null){
-                newNode = newNode.next;
-                if (newNode == null){
-                    newNode.next = temp;
-                }else {
-                    pre = newNode;
-                }
-            }
-            curr = temp;
-        }
-
-    }
-
-    public ListNode getLastNode(ListNode hand){
-        if (hand == null){
-            return hand;
-        }
-        ListNode temp = new ListNode(0);
-        temp.next = hand;
-        ListNode last = hand;
-        while (temp.next != null){
-            last = temp.next;
-            temp = temp.next;
-        }
-        return last;
-    }
-    public ListNode reverseList(ListNode head){
-        if (head == null){
-            return null;
-        }
-        ListNode next = null;
-        ListNode pre = null;
-        ListNode curr = head;
-
-        while (curr != null){
-            next = curr.next;
-            curr.next = pre;
-            pre = curr;
-            curr = next;
-        }
-
-        head = pre;
-        return head;
-    }
-
-
-    public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(2);
-        l1.next.next = new ListNode(3);
-        l1.next.next.next = new ListNode(4);
-        l1.next.next.next.next = new ListNode(5);
-        new Leetcode25().reverseKGroupPlus(l1, 4);
-    }
 }
