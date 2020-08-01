@@ -36,29 +36,31 @@ public class Leetcode31 {
      * @param nums
      */
     public void nextPermutation(int[] nums) {
-        int i = nums.length - 2;
-        //找到第一对升序数对
-        while (i >= 0 && nums[i + 1] <= nums[i]) {
-            i--;
-        }
-        if (i >= 0) {
-            int j = nums.length - 1;
-            //从右向左找到第一个大于a[i]的数字
-            while (j >= 0 && nums[j] <= nums[i]) {
-                j--;
+        if (nums == null || nums.length < 2) return;
+        int minIdx = -1, len = nums.length;
+        for (int i = len - 2; i >= 0; i--) {
+            if (nums[i + 1] > nums[i]) {
+                minIdx = i;
+                break;
             }
-            //逆置数字
-            swap(nums, i, j);
         }
-        reverse(nums, i + 1);
+        if (minIdx < 0) {
+            reverse(nums, 0, len - 1);
+            return;
+        }
+        for (int i = len - 1; i >= 0; i--) {
+            if (nums[i] > nums[minIdx]) {
+                swap(nums, minIdx, i);
+                break;
+            }
+        }
+
+        reverse(nums, minIdx + 1, len - 1);
     }
 
-    private void reverse(int[] nums, int start) {
-        int i = start, j = nums.length - 1;
+    private void reverse(int[] nums, int i, int j) {
         while (i < j) {
-            swap(nums, i, j);
-            i++;
-            j--;
+            swap(nums, i++, j--);
         }
     }
 

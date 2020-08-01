@@ -36,7 +36,6 @@ public class Leetcode72 {
 
     /**
      * 【思路】
-     *
      * 令dp[i][j]为：当遍历到字符串word1的第i个字符，遍历到字符串word2的第j个字符时，转换所需要的最少操作次数为dp[i][j]
      * 若word1[i]==word2[j]，那么当前不需要进行任何操作，有dp[i][j]=dp[i-1][j-1]
      * 若word1[i]!=word2[j]不相等，j就有三种操作：
@@ -49,7 +48,7 @@ public class Leetcode72 {
         int m = word1.length();
         int n = word2.length();
 
-        int[][] dp = new int[m][n];
+        int[][] dp = new int[m + 1][n + 1];
 
         for (int i = 0; i <= m; ++i) {
             dp[i][0] = i;
@@ -59,10 +58,10 @@ public class Leetcode72 {
         }
         for (int i = 1; i <= m; ++i) {
             for (int j = 1; j <= n; ++j) {
-                if (word1.charAt(i-1) == word2.charAt(j-1)) {
-                    dp[i][j] = dp[i-1][j-1];
+                if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1];
                 } else {
-                    dp[i][j] = 1 + Math.min(dp[i-1][j-1], Math.min(dp[i][j-1], dp[i-1][j]));
+                    dp[i][j] = 1 + Math.min(dp[i - 1][j - 1], Math.min(dp[i][j - 1], dp[i - 1][j]));
                 }
             }
         }

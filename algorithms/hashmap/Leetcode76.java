@@ -1,7 +1,5 @@
 package hashmap;
 
-import java.util.*;
-
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.hashmap
@@ -21,113 +19,72 @@ import java.util.*;
  * 如果 S 中存在这样的子串，我们保证它是唯一的答案。
  */
 public class Leetcode76 {
-    /**
-     * 3ms典范
-     * @param s
-     * @param t
-     * @return
-     */
-    public String minWindow2(String s, String t) {
-        if (s == null || t == null || s.length() < t.length()) {
+
+    public String minWindow(String s, String t) {
+
+        int sLen = s.length();
+        int tLen = t.length();
+        //特判
+        if (sLen == 0 || tLen == 0 || sLen < tLen) {
             return "";
         }
-        char[] chas1 = s.toCharArray();
-        char[] chas2 = t.toCharArray();
-        // HashMap<Character, Integer> map = new HashMap<>();
-        int[] map = new int[256];
-        for (int i = 0; i < chas2.length; i++) {
-            map[chas2[i]]++;
+
+        char[] charArrS = s.toCharArray();
+        char[] charArrT = t.toCharArray();
+
+        //滑动窗口
+        int[] winFreq = new int[128];//ascii码
+        int[] tFreq = new int[128];
+        for (char c : charArrT) {
+            tFreq[c]++;
         }
-        int curLen = Integer.MAX_VALUE;
-        int minLen = Integer.MAX_VALUE;
-        int minL = 0;
-        int minR = 0;
-        int match = chas2.length;
-        int left = 0;
+
+        //滑动窗口内部包含多少T中的字符，当对应字符频数超过时不重复计算
+        int distance = 0;//类似汉明距离
+        int minLen = sLen + 1;
+        int begin = 0;
+
+        int left = 0;//滑动窗口左开右闭区间
         int right = 0;
-        while (right < chas1.length) {
-            map[chas1[right]]--;
-            if (map[chas1[right]] >= 0) {  // 成功的一笔还款
-                match--;
+        while (right < sLen) {
+            if (tFreq[charArrS[right]] == 0) {//t中不存在的字符
+                right++;
+                continue;
             }
-            if (match == 0) {
-                while (map[chas1[left]] < 0) { // left尽量右移
-                    map[chas1[left]]++;
-                    left++;
-                }
-                curLen = right - left + 1;
-                if (curLen < minLen) {  // 记录最短窗口的位置
-                    minLen = curLen;
-                    minL = left;
-                    minR = right;
-                }
-                // 一定要在if语句内，left不一定是每次都移动
-                map[chas1[left++]]++; // left继续右移1位
-                match++;  // 再次欠款！
+
+            if (winFreq[charArrS[right]] < tFreq[charArrS[right]]) { //滑动窗口大小的 特定字符数量<t中字符数量
+                distance++;
             }
+            winFreq[charArrS[right]]++;
             right++;
-        }
-
-        return minLen == Integer.MAX_VALUE ? "" : s.substring(minL, minR + 1);
-    }
 
 
-    /**
-     * 2ms 典范
-     * @param s
-     * @param t
-     * @return
-     */
-    public static String minWindow(String s, String t) {
-        //记录每个字母出现的次数
-        int[] count = new int['z' - 'A' + 1];
-        int uniq = 0;
-        for (int i = 0; i < t.length(); ++i) {
-            if (++count[t.charAt(i) - 'A'] == 1) {
-                uniq++;
-            }
-        }
-        // expand
-        int found = 0;
-        int i = 0;
-        int j = 0;
-        int minLen = Integer.MAX_VALUE;
-        int minJ = Integer.MAX_VALUE;
-        while (found < uniq) {
-            while (i < s.length()) {
-                if (found >= uniq) {
-                    break;
+            while (distance == tLen) { //当滑动窗口字符串满足包含t中所有字符条件时，左指针移动
+
+                if (right - left < minLen) {
+                    minLen = right - left;
+                    begin = left;
                 }
-                if (--count[s.charAt(i) - 'A'] == 0) {
-                    found++;
+
+                if (tFreq[charArrS[left]] == 0) {
+                    left++;
+                    continue;
                 }
-                i++;
-            }
-            if (found < uniq) {
-                break;
-            }
-            // shorten
-            while (j < i && count[s.charAt(j) - 'A'] < 0) {
-                count[s.charAt(j++) - 'A']++;
-            }
-            if (i - j < minLen) {
-                minLen = i - j;
-                minJ = j;
-            }
-            count[s.charAt(j++) - 'A']++;
-            found--;
-        }
-        if (minLen < Integer.MAX_VALUE) {
-            return s.substring(minJ, minJ + minLen);
-        }
-        return "";
-    }
 
-    public static void main(String[] args) {
-        String s = "ADOBECODEBANC";
-        String t = "ABC";
-        Collection<String> c = new ArrayList();
+                if (winFreq[charArrS[left]] == tFreq[charArrS[left]]) {
+                    distance--;
+                }
 
-        System.out.println(minWindow(s,t));
+                winFreq[charArrS[left]]--;
+                left++;//滑动窗口左指针移动
+            }
+        }
+
+        //返回结果
+        if (minLen == sLen + 1) {
+            return "";
+        } else {
+            return s.substring(begin, begin + minLen);
+        }
     }
 }

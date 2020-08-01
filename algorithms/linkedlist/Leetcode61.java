@@ -68,4 +68,22 @@ public class Leetcode61 {
         cur.next = head;
         return next;
     }
+
+    //法二
+    public ListNode rotateRight2(ListNode head, int k) {
+        if (k == 0 || head == null || head.next == null) return head;
+        int len = 1;
+        ListNode L = head, K = head;
+        while (L.next != null) {
+            len++;
+            L = L.next;
+        }
+        k = len - k % len;  //获取节点的正数位数
+        if (k == 0) return head;
+        while (k-- != 1) K = K.next;
+        L.next = head;
+        head = K.next;
+        K.next = null;
+        return head;
+    }
 }

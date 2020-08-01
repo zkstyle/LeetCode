@@ -49,4 +49,27 @@ public class Leetcode49 {
         }
         return new ArrayList(ans.values());
     }
+
+    //fast
+    public List<List<String>> groupAnagrams2(String[] strs) {
+        List<List<String>> rs = new ArrayList<List<String>>();
+        Map<String, List<String>> mapping = new HashMap<String, List<String>>();
+
+        for (String str : strs) {
+
+            char[] letters = str.toCharArray();
+            Arrays.sort(letters);
+            String sortStr = new String(letters);
+
+            List<String> out = mapping.get(sortStr);
+            if (null == out) {
+                out = new ArrayList<String>();
+                rs.add(out);
+                mapping.put(sortStr, out);
+            }
+
+            out.add(str);
+        }
+        return rs;
+    }
 }

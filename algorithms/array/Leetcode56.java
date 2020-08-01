@@ -63,28 +63,38 @@ public class Leetcode56 {
      *          然后将　i 位置的值置为null
      */
     public int[][] merge(int[][] intervals) {
-        int row = intervals.length;
-        for (int i = 0; i < intervals.length - 1; i++)
-            for (int j = i + 1; j < intervals.length; j++) {
-                int min = intervals[i][0] < intervals[j][0] ? intervals[i][0] : intervals[j][0];
-                int max = intervals[i][1] > intervals[j][1] ? intervals[i][1] : intervals[j][1];
-                int iLen = intervals[i][1] - intervals[i][0];
-                int jLen = intervals[j][1] - intervals[j][0];
-                if (max - min <= iLen + jLen) {
-                    intervals[j][0] = min;
-                    intervals[j][1] = max;
-                    intervals[i] = null;
-                    row--;
+        int rows = intervals.length;
+        if (rows == 0) {
+            return intervals;
+        }
+        int count = rows;
+        for (int i = 0; i < rows - 1; i++) {
+            for (int j = i + 1; j < rows; j++) {
+                if (canMerge(intervals, i, j)) {
+                    count--;
                     break;
                 }
             }
-        int[][] res = new int[row][2];
-        int i = 0;
-        for (int[] x : intervals) {
-            if (x != null) {
-                res[i++] = x;
+        }
+        int[][] res = new int[count][2];
+        int index = 0;
+        for (int[] row : intervals) {
+            if (row != null) {
+                res[index] = row;
+                index++;
             }
         }
         return res;
+    }
+
+    public boolean canMerge(int[][] intervals, int first, int second) {
+        if (!((intervals[first][0] < intervals[second][0] && intervals[first][1] < intervals[second][0])
+                || (intervals[second][0] < intervals[first][0] && intervals[second][1] < intervals[first][0]))) {
+            intervals[second] = new int[]{Math.min(intervals[first][0], intervals[second][0]),
+                    Math.max(intervals[first][1], intervals[second][1])};
+            intervals[first] = null;
+            return true;
+        }
+        return false;
     }
 }

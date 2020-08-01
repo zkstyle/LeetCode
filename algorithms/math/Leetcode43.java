@@ -9,49 +9,47 @@ package math;
  */
 public class Leetcode43 {
 
+    /**
+     * 首先边界特殊情况处理　其中一个字符串为0　直接返回0
+     * 用数组临时存储计算结果　temp[i+j] 存储 nums1 第 i 位　乘以　nums2 的第　j　位数
+     * 最后对每一位进位进行处理　最高位就不处理　直接append就可以了
+     */
     public String multiply(String num1, String num2) {
-        int l1 = num1.length();
-        int l2 = num2.length();
+        // 首先处理结果为 "0" 的情况
+        if ("0".equals(num1) || "0".equals(num2)) return "0";
+        int len1 = num1.length();
+        int len2 = num2.length();
 
-        if(num1.equals("0") || num2.equals("0"))
-            return "0";
+        // 转字符串数组，方便操作
+        char[] cs1 = num1.toCharArray();
+        char[] cs2 = num2.toCharArray();
 
-        int[] num = new int[l1+l2];
+        // 创建临时结果数组
+        int len = len1 + len2 - 1;
+        int[] temp = new int[len];
 
-        for(int i=l1-1; i>=0;i--){
-            int n1 = num1.charAt(i)-'0';
-            for(int j=l2-1; j>=0;j--){
-                int n2 = num2.charAt(j)-'0';
-                num[l1-1+l2-1-i-j]+=n1*n2;
-            }
-        }
-        int carry = 0;
-        for(int i=0;i<num.length;i++){
-            if(num[i]+carry>=10){
-                int sum = num[i]+carry;
-                carry = sum/10;
-                num[i] = sum%10;
-            }else{
-                num[i] = num[i] + carry;
-                carry=0;
+        // 计算：（不要忘记 "+" 号）
+        for (int i = len1 - 1; i >= 0; i--) {
+            for (int j = len2 - 1; j >= 0; j--) {
+                temp[i + j] += (cs1[i] - '0') * (cs2[j] - '0');
             }
         }
 
-        StringBuffer str = new StringBuffer();
-        int l = l1+l2-1;
-        while(num[l]==0)
-            l--;
-
-        for(int i=l;i>=0;i--){
-            str.append(num[i]+"");
+        // 整理结果，从结果低位（数组高位）开始整理，保证每个数都 < 10
+        for (int i = len - 1; i > 0; i--) {
+            if (temp[i] > 9) {
+                int add = temp[i] / 10;
+                temp[i - 1] += add;
+                temp[i] = temp[i] % 10;
+            }
         }
 
-        return str.toString();
-
-    }
-
-    public static void main(String[] args) {
-        String s1 = "123", s2 = "456";
-        new Leetcode43().multiply(s1,s2);
+        // 生成结果字符串
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < len; i++) {
+            builder.append(temp[i]);
+        }
+        // 输出结果
+        return builder.toString();
     }
 }

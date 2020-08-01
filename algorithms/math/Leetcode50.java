@@ -16,12 +16,11 @@ public class Leetcode50 {
      * @return
      */
     public double myPow(double x, int n) {
-        long N = n;
-        return n < 0 ? pow(1 / x, -N) : pow(x, N);
+        return n < 0 ? pow(1 / x, -n) : pow(x, n);
 
     }
 
-    private double pow(double x, long n) {
+    private double pow(double x, int n) {
         if (n == 0) return 1.0d;
         return n % 2 == 0 ? pow(x * x, n / 2) : pow(x * x, n / 2) * x;
     }

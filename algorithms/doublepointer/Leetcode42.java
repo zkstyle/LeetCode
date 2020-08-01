@@ -18,7 +18,12 @@ package doublepointer;
 public class Leetcode42 {
 
     /**
-     * O(n) time  O(1) space
+     * 算法思路　双指针法　用两个指针　left right分别指向两端
+     *　直接按问题描述进行。对于数组中的每个元素，我们找出下雨后水能达到的最高位置，等于两边最大高度的较小值减去当前高度的值。
+     *  初始化 ans=0　遍历两端　过滤掉不能盛水的l r
+     *  循环遍历　   left,right分别保存左右的"墙"的高度
+     *  如果left<right  更新左墙的盛水量　以左墙高度为参照　ans += left - height[l];
+     *  O(n) time  O(1) space
      * @param height
      * @return
      */
@@ -48,41 +53,5 @@ public class Leetcode42 {
         return ans;
     }
 
-    /**
-     * 算法思路　双指针法　用两个指针　left right分别指向两端
-     * 直接按问题描述进行。对于数组中的每个元素，我们找出下雨后水能达到的最高位置，等于两边最大高度的较小值减去当前高度的值。
-     * 初始化 ans=0
-     * 从左向右扫描数组：
-     * 初始化　max_left=0 和 max_right=0
-     * 从当前元素向左扫描并更新：
-     * 　max_left=max(max_left,height[j])
-     * 从当前元素向右扫描并更新：
-     * 　max_right=max(max_right,height[j])
-     * 将　min(max_left,max_right)−height[i] 累加到 ans
-     */
-    public int trap01(int[] height) {
-        if (height.length < 3)
-            return 0;
-        //双指针
-        int ans = 0, left = 0, right = height.length - 1;
-        int left_max = 0, right_max = 0;
-        while (left < right) {
-            if (height[left] < height[right]) {
-                if (height[left] >= left_max) {
-                    left_max = height[left];
-                } else {
-                    ans += (left_max - height[left]);
-                }
-                left++;
-            } else {
-                if (height[right] >= right_max) {
-                    right_max = height[right];
-                } else {
-                    ans += (right_max - height[right]);
-                }
-                right--;
-            }
-        }
-        return ans;
-    }
+
 }

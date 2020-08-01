@@ -62,16 +62,13 @@ public class Leetcode60 {
     public String getPermutation(int n, int k) {
         int[] fb = new int[n + 1];
         fb[0] = 1;
-        for (int i = 1; i <= n; i++) {
-            fb[i] = fb[i - 1] * i;
-        }
-        // factorial[] = {1, 1, 2, 6, 24, ... n!}
-
         List<Integer> num = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
+            fb[i] = fb[i - 1] * i;
             num.add(i);
         }
 
+        // factorial[] = {1, 1, 2, 6, 24, ... n!}
         k--;
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= n; i++) {
@@ -111,5 +108,6 @@ public class Leetcode60 {
             used[i - 1] = false;
         }
     }
+
 
 }
