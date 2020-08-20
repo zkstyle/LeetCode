@@ -2,7 +2,6 @@ package tree;
 
 import tree.treenode.TreeNode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -36,86 +35,40 @@ import java.util.List;
  */
 public class Leetcode95 {
 
-    /**
-     * dp动态规划
-     * @param n
-     * @return
-     */
     public List<TreeNode> generateTrees(int n) {
-        if (n < 1) return new ArrayList<>();
-        //利用一个辅助数组保存中间的值，避免重复求取，但是也会导致有些子树的结点是公共的
-        List[][] dp = new List[n + 2][n + 2];
-        return generateTrees(1, n,dp);
+        if(n==0) return new LinkedList<TreeNode>();
+        return generateTrees(1,n);
     }
 
-    private List<TreeNode> generateTrees(int start, int end, List[][] dp) {
-        List<TreeNode> res = new ArrayList<>();
-        if (end < start) {
-            res.add(null);
-            return res;
+    /**
+     * 我们定义 generateTrees(start, end) 函数表示当前值的集合为 [start,end]，返回序列 [start,end] 生成的所有可行的二叉搜索树。
+     *
+     * 按照上文的思路，我们考虑枚举 [start,end] 中的值 i为当前二叉搜索树的根，那么序列划分为了[start,i−1] 和 [i+1,end] 两部分。
+     *
+     * 我们递归调用这两部分，即 generateTrees(start, i - 1) 和 generateTrees(i + 1, end)，获得所有可行的左子树和可行的右子树，
+     *
+     * 那么最后一步我们只要从可行左子树集合中选一棵，再从可行右子树集合中选一棵拼接到根节点上，并将生成的二叉搜索树放入答案数组即可。
+     *
+     * 递归的入口即为 generateTrees(1, n)，出口为当 start>end 的时候，当前二叉搜索树为空，返回空节点即可。
+     */
+    public List<TreeNode> generateTrees(int start, int end) {
+        LinkedList<TreeNode> allTree = new LinkedList<>();
+        if (start > end) {
+            allTree.add(null);
+            return allTree;
         }
         for (int i = start; i <= end; i++) {
-            List<TreeNode> list1 = dp[start][i - 1];
-            if (list1 == null) {
-                //递归，并将结果保存下来
-                list1 = generateTrees(start, i - 1, dp);
-                dp[start][i - 1] = list1;
-            }
-            List<TreeNode> list2 = dp[i + 1][end];//当 i = n 时，就需要求 dp[n+1][end] 的值
-            if (list2 == null) {
-                //递归，并将结果保存下来
-                list2 = generateTrees(i + 1, end, dp);
-                dp[i + 1][end] = list2;
-            }
-            //（start,i-1）为左子树，遍历不同的左子树组合
-            for (TreeNode left : list1) {
-
-                //（i+1,end）为右子树，遍历不同的右子树组合
-                for (TreeNode right : list2) {
+            List<TreeNode> leftTrees = generateTrees(start, i - 1);
+            List<TreeNode> rightTrees = generateTrees(i + 1, end);
+            for (TreeNode left : leftTrees)
+                for (TreeNode right : rightTrees) {
                     TreeNode root = new TreeNode(i);
                     root.left = left;
                     root.right = right;
-                    res.add(root);
+                    allTree.add(root);
                 }
-            }
         }
-        return res;
+        return allTree;
     }
-
-    public LinkedList<TreeNode> generate_trees(int start, int end) {
-        LinkedList<TreeNode> all_trees = new LinkedList<TreeNode>();
-        if (start > end) {
-            all_trees.add(null);
-            return all_trees;
-        }
-
-        // pick up a root
-        for (int i = start; i <= end; i++) {
-            // all possible left subtrees if i is choosen to be a root
-            LinkedList<TreeNode> left_trees = generate_trees(start, i - 1);
-
-            // all possible right subtrees if i is choosen to be a root
-            LinkedList<TreeNode> right_trees = generate_trees(i + 1, end);
-
-            // connect left and right trees to the root i
-            for (TreeNode l : left_trees) {
-                for (TreeNode r : right_trees) {
-                    TreeNode current_tree = new TreeNode(i);
-                    current_tree.left = l;
-                    current_tree.right = r;
-                    all_trees.add(current_tree);
-                }
-            }
-        }
-        return all_trees;
-    }
-
-    public List<TreeNode> generateTrees2(int n) {
-        if (n == 0) {
-            return new LinkedList<TreeNode>();
-        }
-        return generate_trees(1, n);
-    }
-
 
 }
