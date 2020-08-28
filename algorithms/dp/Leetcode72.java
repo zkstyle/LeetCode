@@ -1,5 +1,7 @@
 package dp;
 
+import java.util.Scanner;
+
 /**
  * @BelongsProject: LeetCode
  * @BelongsPackage: com.elvis.leetcode.dp
@@ -44,7 +46,7 @@ public class Leetcode72 {
      * 如果把字符word1[i]删除，则有dp[i][j]=dp[i-1][j]+1
      * 那么我们应该选择一种操作，使得dp[i][j]的值最小，即有dp[i][j] = min(dp[i-1][j-1]，dp[i][j-1]，dp[[i-1][j]]) + 1
      */
-    public int minDistance(String word1, String word2) {
+    public static int minDistance(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();
 
@@ -66,5 +68,14 @@ public class Leetcode72 {
             }
         }
         return dp[m][n];
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String A=sc.nextLine();
+        String B=sc.nextLine();
+        String C=sc.nextLine();
+        String[] dict=C.split(" ");
+        int ret=minDistance(A,B);
     }
 }

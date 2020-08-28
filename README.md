@@ -110,6 +110,8 @@ If you like this project, please leave me a star. ★
 |　128 |　　　[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 　　[java](algorithms/set/Leetcode128.java)|　Hard |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　131 |　　　[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 　　[java](algorithms/backtracking/Leetcode131.java)|　Medium |   
+|　132 |　　　[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | 　　[java](algorithms/dp/Leetcode132.java)|　Hard |   
+|　133 |　　　[Clone Graph](https://leetcode.com/problems/clone-graph/) | 　　[java](algorithms/dfs/Leetcode133.java)|　Medium |   
 |　134 |　　　[Gas Station](https://leetcode.com/problems/gas-station/) | 　　[java](algorithms/greed/Leetcode134.java)|　Medium |   
 |　136 |　　　[Single Number](https://leetcode.com/problems/single-number/) | 　　[java](algorithms/bit/Leetcode136.java)|　Easy |   
 |　137 |　　　[Single Number II](https://leetcode.com/problems/single-number-ii/) | 　　[java](algorithms/bit/Leetcode137.java)|　Medium |   

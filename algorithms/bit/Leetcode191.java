@@ -50,7 +50,6 @@ public class Leetcode191 {
             res += n & 1;
             n >>>= 1;
         }
-        
         return res;
     }
 

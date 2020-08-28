@@ -30,34 +30,32 @@ public class Leetcode131 {
      * @param s
      * @return
      */
+    List<List<String>> lists = new ArrayList<>();
+
     public List<List<String>> partition(String s) {
-        List<List<String>> res = new ArrayList<>();
-        if (s == null || s.length() == 0) return res;
-        char[] chars = s.toCharArray();
-        backtrack(chars, res, new ArrayList<>(), 0, 0);
-        return res;
+        back(s, 0, new ArrayList<>());
+        return lists;
     }
 
-    private void backtrack(char[] chars, List<List<String>> res, ArrayList<String> list, int start, int index) {
-        if (start == chars.length) {
-            res.add(new ArrayList<>(list));
+    void back(String s, int idx, List<String> list) {
+        if (idx == s.length()) {
+            lists.add(new ArrayList(list));
             return;
         }
-        for (int i = index; i < chars.length; i++) {
-            //若不是回文串　继续遍历
-            if (!isPalindrome(chars, start, i)) continue;
-            list.add(new String(chars, start, i - start + 1));
-            //回溯接着i后面继续找寻回文串
-            backtrack(chars, res, list, i + 1, i + 1);
-            list.remove(list.size() - 1);
+
+        for (int i = idx + 1; i <= s.length(); i++) {
+            String t = s.substring(idx, i);
+            if (isPalindrome(s, idx, i - 1)) {
+                list.add(s.substring(idx, i));
+                back(s, i, list);
+                list.remove(list.size() - 1);
+            }
         }
     }
 
-    private boolean isPalindrome(char[] chars, int low, int high) {
-        while (low < high) {
-            if (chars[low] != chars[high]) return false;
-            --high;
-            ++low;
+    private boolean isPalindrome(String s, int l, int r) {
+        while (l < r) {
+            if (s.charAt(l++) != s.charAt(r--)) return false;
         }
         return true;
     }

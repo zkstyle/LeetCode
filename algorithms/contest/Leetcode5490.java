@@ -63,8 +63,8 @@ public class Leetcode5490 {
         if(map.containsKey(n)) return map.get(n);
         int ret=Math.min(minDays(n/2)+1+n%2,minDays(n/3)+1+n%3);
         map.put(n,ret);
-
         return ret;
     }
+
 
 }
