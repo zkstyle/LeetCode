@@ -77,6 +77,7 @@ If you like this project, please leave me a star. ★
 |　83 |　　　[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 　　[java](algorithms/linkedlist/Leetcode83.java)|　Easy |
 |　84 |　　　[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | 　　[java](algorithms/stack/Leetcode84.java)|　Hard |
 |　86 |　　　[Partition List](https://leetcode.com/problems/partition-list/) | 　　[java](algorithms/linkedlist/Leetcode86.java)|　Medium |
+|　87 |　　　[Scramble String](https://leetcode.com/problems/scramble-string/) | 　　[java](algorithms/dp/Leetcode87.java)|　Hard |
 |　88 |　　　[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 　　[java](algorithms/array/Leetcode88.java)|　Easy |
 |　90 |　　　[Subsets II](https://leetcode.com/problems/subsets-ii/) | 　　[java](algorithms/backtracking/Leetcode90.java)|　Medium |
 |　91 |　　　[Decode Ways](https://leetcode.com/problems/decode-ways/) | 　　[java](algorithms/dp/Leetcode91.java)|　Medium |
@@ -244,11 +245,14 @@ If you like this project, please leave me a star. ★
 |　09 |　　　[用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO09.java)|　Easy |
 |　10 |　　　[青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO10.java)|　Easy |
 |　11 |　　　[旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO11.java)|　Easy |
+|　12 |　　　[矩阵中的路径](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO12.java)|　Medium |
+|　13 |　　　[机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO13.java)|　Medium |
 |　14 |　　　[剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO14.java)|　Medium |
 |　14-2 |　　　[剪绳子 II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO14_2.java)|　Medium |
 |　15 |　　　[二进制中1的个数](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO15.java)|　Easy |
 |　17 |　　　[打印从1到最大的n位数](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO17.java)|　Easy |
 |　18 |　　　[删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO18.java)|　Easy |
+|　20 |　　　[表示数值的字符串](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO20.java)|　Medium |
 |　21 |　　　[调整数组顺序使奇数位于偶数前面](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO21.java)|　Easy |
 |　22 |　　　[链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO22.java)|　Easy |
 |　24 |　　　[反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO24.java)|　Easy |
@@ -259,3 +263,8 @@ If you like this project, please leave me a star. ★
 |　60 |　　　[n个骰子的点数](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO60.java)|　Easy |
 |　64 |　　　[求1+2+…+n](https://leetcode-cn.com/problems/qiu-12n-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO64.java)|　Medium |
 |　65 |　　　[不用加减乘除做加法](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO65.java)|　Easy |
+### LCP
+| No | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|　02 |　　　[分式化简](https://leetcode-cn.com/problems/deep-dark-fraction/) | 　　[java](algorithms/lcp/LCP09.java)|　Easy |
+|　09 |　　　[最小跳跃次数](https://leetcode-cn.com/problems/zui-xiao-tiao-yue-ci-shu/) | 　　[java](algorithms/lcp/LCP09.java)|　Hard |

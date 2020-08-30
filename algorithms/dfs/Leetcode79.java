@@ -43,27 +43,30 @@ public class Leetcode79 {
      * 2. 其次是越界判断和访问判断　若越界或者已经访问过　则走不通　返回false
      * 3. 最后是dfs并回溯　从上下左右四个方向去访问　若有一个成功　则返回true 否则返回false
      */
-    public boolean exist(char[][] board, String word) {
-        boolean[][] visited = new boolean[board.length][board[0].length];
-        for (int i = 0; i < board.length; i++)
-            for (int j = 0; j < board[i].length; j++) {
-                if (word.charAt(0) == board[i][j]) {
-                    if (dfs(board, word, visited, i, j, 0))
-                        return true;
+    public  static boolean exist(char[][] board, String word) {
+        char[] path=word.toCharArray();
+        int row=board.length,col=board[0].length;
+        for(int i=0;i<row;i++)
+            for(int j=0;j<col;j++){
+                if(board[i][j]==path[0]){
+                    if(dfs(board,path,new boolean[row][col],0,i,j)) return true;
                 }
             }
         return false;
     }
 
-    private boolean dfs(char[][] board, String word, boolean[][] visited, int i, int j, int idx) {
-        if (idx == word.length()) return true;
-        if (i < 0 || j < 0 || i == board.length || j == board[0].length || visited[i][j]) return false;
-        if (word.charAt(idx) == board[i][j]) {
-            visited[i][j] = true;
-            boolean res = dfs(board, word, visited, i + 1, j, idx + 1) || dfs(board, word, visited, i - 1, j, idx + 1) || dfs(board, word, visited, i, j - 1, idx + 1) || dfs(board, word, visited, i, j + 1, idx + 1);
-            visited[i][j] = false;
-            return res;
+    private static boolean dfs(char[][] board,char[] path,boolean[][] use,int idx,int i,int j){
+        if(idx==path.length){
+            return true;
         }
-        return false;
+        if(i<0||j<0||i>=board.length||j>=board[0].length||use[i][j]||board[i][j]!=path[idx]) return false;
+        boolean flag;
+        use[i][j]=true;
+        flag =  dfs(board,path,use,idx+1,i-1,j)||
+                dfs(board,path,use,idx+1,i,j-1)||
+                dfs(board,path,use,idx+1,i+1,j)||
+                dfs(board,path,use,idx+1,i,j+1);
+        use[i][j]=false;
+        return flag;
     }
 }
