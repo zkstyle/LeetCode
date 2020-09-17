@@ -25,94 +25,59 @@ package tree;
  */
 public class Leetcode208 {
 
-    class Node {
-        boolean terminal;
-        Node[] alphabet;
+    static class Trie {
 
-        public Node() {
-            terminal = false;
-            alphabet = new Node[26];
+        private Node head = new Node();
+
+        /** Initialize your data structure here. */
+        public Trie() {
+
         }
 
-        public Node add(int index) {
-            if (!exist(index)) {
-                alphabet[index] = new Node();
+        /** Inserts a word into the trie. */
+        public void insert(String word) {
+            this.goTo(word, true).isWord = true;
+        }
+
+        private Node goTo(String s, boolean createdIfNotExisted) {
+            Node cur = head;
+            for (int i = 0, c; cur != null && i < s.length(); i++) {
+                c = s.charAt(i) - 'a';
+                if (createdIfNotExisted && cur.children[c] == null) {
+                    cur.children[c] = new Node();
+                }
+                cur = cur.children[c];
             }
-            return alphabet[index];
+            return cur;
         }
 
-        public boolean exist(int index) {
-            return alphabet[index] != null;
+        /** Returns if the word is in the trie. */
+        public boolean search(String word) {
+            Node result = this.goTo(word, false);
+            return result != null && result.isWord;
         }
 
-        public Node get(int index) {
-            return alphabet[index];
-        }
-
-        public void terminal() {
-            terminal = true;
-        }
-
-        public boolean isTerminal() {
-            return terminal;
+        /** Returns if there is any word in the trie that starts with the given prefix. */
+        public boolean startsWith(String prefix) {
+            return this.goTo(prefix, false) != null;
         }
     }
 
-    class Trie {
-        private Node root;
+    static class Node {
+        boolean isWord = false;
+        Node children[] = new Node[26];
+    }
 
-        /**
-         * Initialize your data structure here.
-         */
-        public Trie() {
-            root = new Node();
-        }
+    public static void main(String[] args) {
+        Trie trie = new Trie();
 
-        /**
-         * Inserts a word into the trie.
-         */
-        public void insert(String word) {
-            Node ite = root;
-            for (int i = 0; i < word.length(); i++) {
-                int pos = getPosition(word, i);
-                ite = ite.add(pos);
-            }
-            ite.terminal();
-        }
+        trie.insert("apple");
+        trie.search("apple");   // 返回 true
+        trie.search("app");     // 返回 false
+        trie.startsWith("app"); // 返回 true
+        trie.insert("app");
+        trie.search("app");     // 返回 true
 
-        /**
-         * Returns if the word is in the trie.
-         */
-        public boolean search(String word) {
-            Node ite = root;
-            for (int i = 0; i < word.length(); i++) {
-                int pos = getPosition(word, i);
-                if (!ite.exist(pos)) {
-                    return false;
-                }
-                ite = ite.get(pos);
-            }
-            return ite.isTerminal();
-        }
-
-        private int getPosition(String word, int wordPos) {
-            return word.charAt(wordPos) - 'a';
-        }
-
-        /**
-         * Returns if there is any word in the trie that starts with the given prefix.
-         */
-        public boolean startsWith(String prefix) {
-            Node ite = root;
-            for (int i = 0; i < prefix.length(); i++) {
-                int pos = getPosition(prefix, i);
-                if (!ite.exist(pos)) {
-                    return false;
-                }
-                ite = ite.get(pos);
-            }
-            return true;
-        }
     }
 
 }

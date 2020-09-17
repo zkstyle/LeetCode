@@ -108,6 +108,7 @@ If you like this project, please leave me a star. ★
 |　122 |　　　[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | 　　[java](algorithms/dp/Leetcode122.java)|　Easy |
 |　124 |　　　[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | 　　[java](algorithms/tree/Leetcode124.java)|　Hard |
 |　125 |　　　[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 　　[java](algorithms/string/Leetcode125.java)|　Easy |
+|　127 |　　　[Word Ladder](https://leetcode.com/problems/word-ladder/) | 　　[java](algorithms/bfs/Leetcode127.java)|　Hard |
 |　128 |　　　[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 　　[java](algorithms/set/Leetcode128.java)|　Hard |
 |　129 |　　　[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | 　　[java](algorithms/dfs/Leetcode129.java)|　Medium |   
 |　131 |　　　[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 　　[java](algorithms/backtracking/Leetcode131.java)|　Medium |   
@@ -132,6 +133,7 @@ If you like this project, please leave me a star. ★
 |　155 |　　　[Min Stack](https://leetcode.com/problems/min-stack/) | 　　[java](algorithms/stack/Leetcode155.java)|　Easy |   
 |　160 |　　　[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 　　[java](algorithms/linkedlist/Leetcode160.java)|　Easy |   
 |　162 |　　　[Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 　　[java](algorithms/binarysearch/Leetcode162.java)|　Medium |   
+|　165 |　　　[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | 　　[java](algorithms/string/Leetcode165.java)|　Medium |   
 |　167 |　　　[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 　　[java](algorithms/binarysearch/Leetcode167.java)|　Easy |   
 |　168 |　　　[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 　　[java](algorithms/math/Leetcode168.java)|　Easy |
 |　169 |　　　[Majority Element](https://leetcode.com/problems/majority-element/) | 　　[java](algorithms/array/Leetcode169.java)|　Easy |
@@ -179,6 +181,7 @@ If you like this project, please leave me a star. ★
 |　283 |　　　[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | 　　[java](algorithms/array/Leetcode283.java)|　Easy |
 |　287 |　　　[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | 　　[java](algorithms/binarysearch/Leetcode287.java)|　Medium |
 |　290 |　　　[Word Pattern](https://leetcode.com/problems/word-pattern/) | 　　[java](algorithms/hashmap/Leetcode290.java)|　Easy |
+|　312 |　　　[Burst Balloons](https://leetcode.com/problems/burst-balloons/) | 　　[java](algorithms/dp/Leetcode312.java)|　Hard |
 |　313 |　　　[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | 　　[java](algorithms/doublepointer/Leetcode313.java)|　Medium |
 |　316 |　　　[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | 　　[java](algorithms/stack/Leetcode316.java)|　Hard |
 |　322 |　　　[Coin Change](https://leetcode.com/problems/coin-change/) | 　　[java](algorithms/dp/Leetcode322.java)|　Medium |
@@ -226,8 +229,14 @@ If you like this project, please leave me a star. ★
 |　611 |　　　[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | 　　[java](algorithms/array/Leetcode611.java)|　Medium |
 |　643 |　　　[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 　　[java](algorithms/array/Leetcode643.java)|　Easy |
 |　645 |　　　[Set Mismatch](https://leetcode.com/problems/set-mismatch/) | 　　[java](algorithms/set/Leetcode645.java)|　Easy |
+|　680 |　　　[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | 　　[java](algorithms/string/Leetcode680.java)|　Easy |
+|　696 |　　　[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | 　　[java](algorithms/string/Leetcode696.java)|　Easy |
 |　771 |　　　[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 　　[java](algorithms/hashmap/Leetcode771.java)|　Easy |
+|　788 |　　　[Rotated Digits](https://leetcode.com/problems/rotated-digits/) | 　　[java](algorithms/string/Leetcode788.java)|　Easy |
 |　795 |　　　[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | 　　[java](algorithms/array/Leetcode795.java)|　Medium |
+|　804 |　　　[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | 　　[java](algorithms/string/Leetcode804.java)|　Easy |
+|　819 |　　　[Most Common Word](https://leetcode.com/problems/most-common-word/) | 　　[java](algorithms/string/Leetcode819.java)|　Easy |
+|　824 |　　　[Goat Latin](https://leetcode.com/problems/goat-latin/) | 　　[java](algorithms/string/Leetcode824.java)|　Easy |
 |　841 |　　　[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | 　　[java](algorithms/backtracking/Leetcode841.java)|　Medium |
 |　860 |　　　[Lemonade Change](https://leetcode.com/problems/lemonade-change/) | 　　[java](algorithms/greed/Leetcode860.java)|　Easy |
 |　866 |　　　[Prime Palindrome](https://leetcode.com/problems/prime-palindrome/) | 　　[java](algorithms/math/Leetcode866.java)|　Medium |
