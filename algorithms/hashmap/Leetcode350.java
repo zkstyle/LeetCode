@@ -1,9 +1,6 @@
 package hashmap;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @BelongsProject: LeetCode
@@ -53,6 +50,33 @@ public class Leetcode350 {
         int idx = 0;
         for (int x : ans) res[idx++] = x;
         return res;
+    }
+
+
+    /**
+     * 先将两个数组排序　
+     * 然后双指针遍历　依次赋值
+     */
+    public int[] intersect2(int[] nums1, int[] nums2) {
+        List<Integer> list=new ArrayList<>();
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int idx1=0,idx2=0;
+        int n1=nums1.length,n2=nums2.length;
+        while(idx1<n1&&idx2<n2){
+            if(nums1[idx1]<nums2[idx2]) idx1++;
+            else if(nums1[idx1]>nums2[idx2]) idx2++;
+            else{
+                if(nums1[idx1]==nums2[idx2]){
+                    list.add(nums1[idx1]);
+                    idx1++;
+                    idx2++;
+                }
+            }
+        }
+        int[] ret=new int[list.size()];
+        for(int i=0;i<ret.length;i++) ret[i]=list.get(i);
+        return ret;
     }
 
 }

@@ -48,7 +48,7 @@ public class Leetcode216 {
         }
 
         for (int i = idx; i <= 9; i++) {
-            if (n < i) break;
+            if (n < i || k == 0) break;
             list.add(i);
             dfs(i + 1, k, n - i, list);
             list.remove(list.size() - 1);

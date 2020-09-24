@@ -66,9 +66,7 @@ public class Leetcode94 {
             res.add(curr.val);
             curr = curr.right;
         }
-        Integer[] ans=new Integer[2];
-        Map<Integer,Integer> map=new HashMap<>();
-        ans=map.keySet().toArray(ans);
+
         return res;
     }
 }

@@ -191,7 +191,8 @@ If you like this project, please leave me a star. ★
 |　343 |　　　[Integer Break](https://leetcode.com/problems/integer-break/) | 　　[java](algorithms/dp/Leetcode343.java)|　Medium |
 |　344 |　　　[Reverse String](https://leetcode.com/problems/reverse-string/) | 　　[java](algorithms/string/Leetcode344.java)|　Easy |
 |　345 |　　　[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | 　　[java](algorithms/string/Leetcode345.java)|　Easy |
-|　349 |　　　[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | 　　[java](algorithms/hashmap/Leetcode349.java)|　Easy |
+|　347 |　　　[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 　　[java](algorithms/hashmap/Leetcode347.java)|　Medium |
+|　349 |　　　[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | 　　[java](algorithms/set/Leetcode349.java)|　Easy |
 |　350 |　　　[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | 　　[java](algorithms/hashmap/Leetcode350.java)|　Easy |
 |　355 |　　　[Design Twitter](https://leetcode.com/problems/design-twitter/) | 　　[java](algorithms/hashmap/Leetcode355.java)|　Medium |
 |　371 |　　　[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | 　　[java](algorithms/bit/Leetcode371.java)|　Easy |
@@ -218,6 +219,7 @@ If you like this project, please leave me a star. ★
 |　500 |　　　[Keyboard Row](https://leetcode.com/problems/keyboard-row/) | 　　[java](algorithms/hashmap/Leetcode500.java)|　Medium | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　518 |　　　[Coin Change 2](https://leetcode.com/problems/coin-change-2/) | 　　[java](algorithms/dp/Leetcode518.java)|　Medium |
+|　532 |　　　[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | 　　[java](algorithms/doublepointer/Leetcode532.java)|　Easy |
 |　556 |　　　[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | 　　[java](algorithms/string/Leetcode556.java)|　Medium |
 |　560 |　　　[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | 　　[java](algorithms/hashmap/Leetcode560.java)|　Medium |
 |　561 |　　　[Array Partition I](https://leetcode.com/problems/array-partition-i/) | 　　[java](algorithms/array/Leetcode561.java)|　Easy |
@@ -231,6 +233,7 @@ If you like this project, please leave me a star. ★
 |　645 |　　　[Set Mismatch](https://leetcode.com/problems/set-mismatch/) | 　　[java](algorithms/set/Leetcode645.java)|　Easy |
 |　680 |　　　[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | 　　[java](algorithms/string/Leetcode680.java)|　Easy |
 |　696 |　　　[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | 　　[java](algorithms/string/Leetcode696.java)|　Easy |
+|　713 |　　　[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | 　　[java](algorithms/slidingwindow/Leetcode713.java)|　Medium |
 |　771 |　　　[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 　　[java](algorithms/hashmap/Leetcode771.java)|　Easy |
 |　788 |　　　[Rotated Digits](https://leetcode.com/problems/rotated-digits/) | 　　[java](algorithms/string/Leetcode788.java)|　Easy |
 |　795 |　　　[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | 　　[java](algorithms/array/Leetcode795.java)|　Medium |
