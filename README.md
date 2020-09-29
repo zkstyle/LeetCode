@@ -228,6 +228,8 @@ If you like this project, please leave me a star. ★
 |　589 |　　　[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | 　　[java](algorithms/tree/Leetcode589.java)|　Easy |
 |　593 |　　　[Valid Square](https://leetcode.com/problems/valid-square/) | 　　[java](algorithms/math/Leetcode593.java)|　Medium |
 |　594 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | 　　[java](algorithms/hashmap/Leetcode594.java)|　Easy |
+|　599 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | 　　[java](algorithms/hashmap/Leetcode599.java)|　Medium |
+
 |　611 |　　　[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | 　　[java](algorithms/array/Leetcode611.java)|　Medium |
 |　643 |　　　[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 　　[java](algorithms/array/Leetcode643.java)|　Easy |
 |　645 |　　　[Set Mismatch](https://leetcode.com/problems/set-mismatch/) | 　　[java](algorithms/set/Leetcode645.java)|　Easy |

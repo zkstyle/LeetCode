@@ -51,35 +51,49 @@ public class Leetcode300 {
         return ++maxL;
     }
 
-  static  class Solution{
-        public static int lengthOfLIS(int[] nums) {
-            if(nums.length <= 1){
-                return nums.length;
+    public int lengthOfLIS2(int[] nums) {
+        int n=nums.length;
+        if(n<=1) return n;
+        int[] dp=new int[n];
+        dp[0]=1;
+        int max=1;
+        for(int i=1;i<n;i++){
+            dp[i]=1;
+            for(int j=0;j<i;j++){
+                if(nums[i]>nums[j]) dp[i]=Math.max(dp[i],dp[j]+1);
             }
-            //最大长度
-            int max = 1;
-            //dp[i]表示第i长的子序列，最后的元素
-            int[] dp = new int[nums.length + 1];
-            dp[1] = nums[0];
-            for(int i = 1;i < nums.length;i++){
-                //如果当前元素比最大的那个子串的最后一个元素还要大
-                //那就直接长度加一，新子串的最后一个元素为当前元素
-                if(nums[i] > dp[max]){
-                    dp[++max] = nums[i];
-                }else if(nums[i] < dp[max]){
-                    //如果当前元素比最大的那个子串的最后一个元素要小
-                    //那就要更新dp数组，保证每一个子串都是最优解
-                    for(int j = 1 ;j <= max; j++){
-                        //因为是递增，所以是<=,在将等于的时候直接终止循环
-                        if(nums[i] <= dp[j]){
-                            dp[j] = nums[i];
-                            break;
-                        }
+            max=Math.max(dp[i],max);
+        }
+        return max;
+    }
+
+    public static int lengthOfLIS3(int[] nums) {
+        if(nums.length <= 1){
+            return nums.length;
+        }
+        //最大长度
+        int max = 1;
+        //dp[i]表示第i长的子序列，最后的元素
+        int[] dp = new int[nums.length + 1];
+        dp[1] = nums[0];
+        for(int i = 1;i < nums.length;i++){
+            //如果当前元素比最大的那个子串的最后一个元素还要大
+            //那就直接长度加一，新子串的最后一个元素为当前元素
+            if(nums[i] > dp[max]){
+                dp[++max] = nums[i];
+            }else if(nums[i] < dp[max]){
+                //如果当前元素比最大的那个子串的最后一个元素要小
+                //那就要更新dp数组，保证每一个子串都是最优解
+                for(int j = 1 ;j <= max; j++){
+                    //因为是递增，所以是<=,在将等于的时候直接终止循环
+                    if(nums[i] <= dp[j]){
+                        dp[j] = nums[i];
+                        break;
                     }
                 }
             }
-            return max;
         }
+        return max;
     }
 
     public static void main(String[] args) {
