@@ -186,6 +186,7 @@ If you like this project, please leave me a star. ★
 |　316 |　　　[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | 　　[java](algorithms/stack/Leetcode316.java)|　Hard |
 |　322 |　　　[Coin Change](https://leetcode.com/problems/coin-change/) | 　　[java](algorithms/dp/Leetcode322.java)|　Medium |
 |　328 |　　　[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode328.java)|　Medium |
+|　334 |　　　[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | 　　[java](algorithms/dp/Leetcode334.java)|　Medium |
 |　338 |　　　[Counting Bits](https://leetcode.com/problems/counting-bits/) | 　　[java](algorithms/bit/Leetcode338.java)|　Medium |
 |　342 |　　　[Power of Four](https://leetcode.com/problems/power-of-four/) | 　　[java](algorithms/bit/Leetcode342.java)|　Easy |
 |　343 |　　　[Integer Break](https://leetcode.com/problems/integer-break/) | 　　[java](algorithms/dp/Leetcode343.java)|　Medium |
@@ -194,6 +195,7 @@ If you like this project, please leave me a star. ★
 |　347 |　　　[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 　　[java](algorithms/hashmap/Leetcode347.java)|　Medium |
 |　349 |　　　[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | 　　[java](algorithms/set/Leetcode349.java)|　Easy |
 |　350 |　　　[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | 　　[java](algorithms/hashmap/Leetcode350.java)|　Easy |
+|　354 |　　　[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) | 　　[java](algorithms/dp/Leetcode354.java)|　Hard |
 |　355 |　　　[Design Twitter](https://leetcode.com/problems/design-twitter/) | 　　[java](algorithms/hashmap/Leetcode355.java)|　Medium |
 |　371 |　　　[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | 　　[java](algorithms/bit/Leetcode371.java)|　Easy |
 |　374 |　　　[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | 　　[java](algorithms/binarysearch/Leetcode374.java)|　Easy |
@@ -207,19 +209,23 @@ If you like this project, please leave me a star. ★
 |　409 |　　　[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | 　　[java](algorithms/string/Leetcode409.java)|　Easy |
 |　414 |　　　[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | 　　[java](algorithms/array/Leetcode414.java)|　Easy |
 |　415 |　　　[Add Strings](https://leetcode.com/problems/add-strings/) | 　　[java](algorithms/string/Leetcode415.java)|　Easy |
+|　435 |　　　[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | 　　[java](algorithms/greed/Leetcode435.java)|　Medium |
 |　441 |　　　[Arranging Coins](https://leetcode.com/problems/arranging-coins/) | 　　[java](algorithms/binarysearch/Leetcode441.java)|　Easy |
 |　442 |　　　[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 　　[java](algorithms/array/Leetcode442.java)|　Medium |
+|　443 |　　　[String Compression](https://leetcode.com/problems/string-compression/) | 　　[java](algorithms/string/Leetcode443.java)|　Medium |
 |　447 |　　　[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/) | 　　[java](algorithms/hashmap/Leetcode447.java)|　Easy |
 |　448 |　　　[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | 　　[java](algorithms/array/Leetcode448.java)|　Easy |
 |　453 |　　　[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | 　　[java](algorithms/math/Leetcode453.java)|　Easy |
 |　454 |　　　[4Sum II](https://leetcode.com/problems/4sum-ii/) | 　　[java](algorithms/hashmap/Leetcode454.java)|　Medium |
 |　462 |　　　[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | 　　[java](algorithms/math/Leetcode462.java)|　Medium |
+|　485 |　　　[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | 　　[java](algorithms/array/Leetcode485.java)|　Easy | 
 |　494 |　　　[Target Sum](https://leetcode.com/problems/target-sum/) | 　　[java](algorithms/dp/Leetcode494.java)|　Easy | 
 |　496 |　　　[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | 　　[java](algorithms/hashmap/Leetcode496.java)|　Easy | 
 |　500 |　　　[Keyboard Row](https://leetcode.com/problems/keyboard-row/) | 　　[java](algorithms/hashmap/Leetcode500.java)|　Medium | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　518 |　　　[Coin Change 2](https://leetcode.com/problems/coin-change-2/) | 　　[java](algorithms/dp/Leetcode518.java)|　Medium |
 |　532 |　　　[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | 　　[java](algorithms/doublepointer/Leetcode532.java)|　Easy |
+|　543 |　　　[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | 　　[java](algorithms/tree/Leetcode543.java)|　Easy |
 |　556 |　　　[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | 　　[java](algorithms/string/Leetcode556.java)|　Medium |
 |　560 |　　　[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | 　　[java](algorithms/hashmap/Leetcode560.java)|　Medium |
 |　561 |　　　[Array Partition I](https://leetcode.com/problems/array-partition-i/) | 　　[java](algorithms/array/Leetcode561.java)|　Easy |
@@ -228,14 +234,17 @@ If you like this project, please leave me a star. ★
 |　589 |　　　[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | 　　[java](algorithms/tree/Leetcode589.java)|　Easy |
 |　593 |　　　[Valid Square](https://leetcode.com/problems/valid-square/) | 　　[java](algorithms/math/Leetcode593.java)|　Medium |
 |　594 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | 　　[java](algorithms/hashmap/Leetcode594.java)|　Easy |
-|　599 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | 　　[java](algorithms/hashmap/Leetcode599.java)|　Medium |
-
+|　599 |　　　[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | 　　[java](algorithms/hashmap/Leetcode599.java)|　Medium |
 |　611 |　　　[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | 　　[java](algorithms/array/Leetcode611.java)|　Medium |
+|　637 |　　　[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | 　　[java](algorithms/tree/Leetcode637.java)|　Easy |
 |　643 |　　　[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 　　[java](algorithms/array/Leetcode643.java)|　Easy |
 |　645 |　　　[Set Mismatch](https://leetcode.com/problems/set-mismatch/) | 　　[java](algorithms/set/Leetcode645.java)|　Easy |
+|　650 |　　　[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/) | 　　[java](algorithms/dp/Leetcode650.java)|　Medium |
 |　680 |　　　[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | 　　[java](algorithms/string/Leetcode680.java)|　Easy |
 |　696 |　　　[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | 　　[java](algorithms/string/Leetcode696.java)|　Easy |
+|　698 |　　　[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) | 　　[java](algorithms/dfs/Leetcode698.java)|　Medium |
 |　713 |　　　[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | 　　[java](algorithms/slidingwindow/Leetcode713.java)|　Medium |
+|　740 |　　　[Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | 　　[java](algorithms/dp/Leetcode740.java)|　Medium |
 |　771 |　　　[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 　　[java](algorithms/hashmap/Leetcode771.java)|　Easy |
 |　788 |　　　[Rotated Digits](https://leetcode.com/problems/rotated-digits/) | 　　[java](algorithms/string/Leetcode788.java)|　Easy |
 |　795 |　　　[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | 　　[java](algorithms/array/Leetcode795.java)|　Medium |

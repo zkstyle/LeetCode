@@ -17,12 +17,17 @@ import java.util.Arrays;
  *
  * 示例:
  *
- * 输入: envelopes = [[5,4],[6,4],[6,7],[2,3]]
+ * 输入: ev = [[5,4],[6,4],[6,7],[2,3]]
  * 输出: 3
  * 解释: 最多信封的个数为 3, 组合为: [2,3] => [5,4] => [6,7]。
  */
 public class Leetcode354 {
 
+    /**
+     * 信封套娃问题　dp问题　
+     * 首先对信封数组排序　按　w　排序　
+     * 双重for遍历　dp[i]代表 以第i个信封作为最外层的套娃　所获取最大信封数
+     */
     public int maxEnvelopes(int[][] ev) {
         Arrays.sort(ev, (e1, e2) -> e1[0] - e2[0]);
         int n = ev.length;
@@ -37,5 +42,39 @@ public class Leetcode354 {
             max = Math.max(dp[i], max);
         }
         return max;
+    }
+
+
+    public int maxEnvelopes2(int[][] ev) {
+        if (ev.length == 0) {
+            return 0;
+        }
+        Arrays.sort(ev, (e1, e2) -> e1[0] == e2[0] ? e1[1] - e2[1] : e1[0] - e2[0]);
+        int[] d = new int[ev.length];
+        d[0] = ev[0][1];
+        int len = 1;
+        for (int i = 1; i < ev.length; i++) {
+            if (ev[i][1] > d[len - 1]) {
+                d[len++] = ev[i][1];
+            } else {
+                int k = bs(d, len, ev[i][1]);
+                d[k] = ev[i][1];
+            }
+        }
+        return len;
+    }
+
+    int bs(int[] d, int len, int target) {
+        int l = 0;
+        int r = len - 1;
+        while (l < r) {
+            int mid = l + r >> 1;
+            if (d[mid] >= target) {
+                r = mid;
+            } else {
+                l = mid + 1;
+            }
+        }
+        return l;
     }
 }
