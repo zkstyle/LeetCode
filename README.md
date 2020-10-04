@@ -166,8 +166,10 @@ If you like this project, please leave me a star. ★
 |　220 |　　　[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | 　　[java](algorithms/treeset/Leetcode220.java)|　Medium |
 |　221 |　　　[Maximal Square](https://leetcode.com/problems/maximal-square/) | 　　[java](algorithms/dp/Leetcode221.java)|　Medium |
 |　225 |　　　[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | 　　[java](algorithms/stack/Leetcode225.java)|　Easy | 
+|　226 |　　　[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 　　[java](algorithms/tree/Leetcode226.java)|　Easy | 
 |　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
 |　234 |　　　[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode234.java)|　Easy |
+|　235 |　　　[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 　　[java](algorithms/tree/Leetcode235.java)|　Easy |
 |　237 |　　　[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode237.java)|　Easy |
 |　238 |　　　[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 　　[java](algorithms/array/Leetcode238.java)|　Medium |
 |　242 |　　　[Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 　　[java](algorithms/hashmap/Leetcode242.java)|　Easy |
@@ -207,12 +209,14 @@ If you like this project, please leave me a star. ★
 |　397 |　　　[Integer Replacement](https://leetcode.com/problems/integer-replacement/) | 　　[java](algorithms/bit/Leetcode397.java)|　Medium |
 |　398 |　　　[Random Pick Index](https://leetcode.com/problems/random-pick-index/) | 　　[java](algorithms/array/Leetcode398.java)|　Medium |
 |　400 |　　　[Nth Digit](https://leetcode.com/problems/nth-digit/) | 　　[java](algorithms/math/Leetcode400.java)|　Medium |
+|　401 |　　　[Binary Watch](https://leetcode.com/problems/binary-watch/) | 　　[java](algorithms/bit/Leetcode401.java)|　Easy |
 |　404 |　　　[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 　　[java](algorithms/tree/Leetcode404.java)|　Easy |
 |　405 |　　　[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | 　　[java](algorithms/bit/Leetcode405.java)|　Easy |
 |　406 |　　　[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | 　　[java](algorithms/greed/Leetcode406.java)|　Medium |
 |　409 |　　　[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | 　　[java](algorithms/string/Leetcode409.java)|　Easy |
 |　414 |　　　[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | 　　[java](algorithms/array/Leetcode414.java)|　Easy |
 |　415 |　　　[Add Strings](https://leetcode.com/problems/add-strings/) | 　　[java](algorithms/string/Leetcode415.java)|　Easy |
+|　434 |　　　[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/) | 　　[java](algorithms/string/Leetcode434.java)|　Easy |
 |　435 |　　　[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | 　　[java](algorithms/greed/Leetcode435.java)|　Medium |
 |　441 |　　　[Arranging Coins](https://leetcode.com/problems/arranging-coins/) | 　　[java](algorithms/binarysearch/Leetcode441.java)|　Easy |
 |　442 |　　　[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 　　[java](algorithms/array/Leetcode442.java)|　Medium |
@@ -222,6 +226,7 @@ If you like this project, please leave me a star. ★
 |　453 |　　　[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | 　　[java](algorithms/math/Leetcode453.java)|　Easy |
 |　454 |　　　[4Sum II](https://leetcode.com/problems/4sum-ii/) | 　　[java](algorithms/hashmap/Leetcode454.java)|　Medium |
 |　459 |　　　[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) | 　　[java](algorithms/string/Leetcode459.java)|　Easy |
+|　461 |　　　[Hamming Distance](https://leetcode.com/problems/hamming-distance/) | 　　[java](algorithms/bit/Leetcode461.java)|　Easy |
 |　462 |　　　[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | 　　[java](algorithms/math/Leetcode462.java)|　Medium |
 |　485 |　　　[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | 　　[java](algorithms/array/Leetcode485.java)|　Easy | 
 |　491 |　　　[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/) | 　　[java](algorithms/dfs/Leetcode491.java)|　Medium | 
@@ -252,6 +257,7 @@ If you like this project, please leave me a star. ★
 |　654 |　　　[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 　　[java](algorithms/tree/Leetcode654.java)|　Medium |
 |　657 |　　　[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | 　　[java](algorithms/string/Leetcode657.java)|　Easy |
 |　680 |　　　[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | 　　[java](algorithms/string/Leetcode680.java)|　Easy |
+|　692 |　　　[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) | 　　[java](algorithms/hashmap/Leetcode692.java)|　Medium |
 |　696 |　　　[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | 　　[java](algorithms/string/Leetcode696.java)|　Easy |
 |　698 |　　　[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) | 　　[java](algorithms/dfs/Leetcode698.java)|　Medium |
 |　709 |　　　[To Lower Case](https://leetcode.com/problems/to-lower-case/) | 　　[java](algorithms/string/Leetcode709.java)|　Easy |
@@ -275,6 +281,7 @@ If you like this project, please leave me a star. ★
 |　908 |　　　[Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | 　　[java](algorithms/math/Leetcode908.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
+
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
@@ -303,6 +310,16 @@ If you like this project, please leave me a star. ★
 |　60 |　　　[n个骰子的点数](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO60.java)|　Easy |
 |　64 |　　　[求1+2+…+n](https://leetcode-cn.com/problems/qiu-12n-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO64.java)|　Medium |
 |　65 |　　　[不用加减乘除做加法](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO65.java)|　Easy |
+
+### 面试题
+|　02.06 |　　　[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/) | 　　[java](algorithms/interview/Interview02_06.java)|　Easy |
+|　05.01 |　　　[插入](https://leetcode-cn.com/problems/insert-into-bits-lcci/) | 　　[java](algorithms/interview/Interview05_01.java)|　Easy |
+|　08.06 |　　　[汉诺塔问题](https://leetcode-cn.com/problems/hanota-lcci/) | 　　[java](algorithms/interview/Interview08_06.java)|　Easy |
+|　16.05 |　　　[阶乘尾数](https://leetcode-cn.com/problems/factorial-zeros-lcci/) | 　　[java](algorithms/interview/Interview16_05.java)|　Easy |
+|　16.07 |　　　[最大数值](https://leetcode-cn.com/problems/maximum-lcci/) | 　　[java](algorithms/interview/Interview16_07.java)|　Easy |
+|　16.11 |　　　[跳水板](https://leetcode-cn.com/problems/diving-board-lcci/) | 　　[java](algorithms/interview/Interview16_11.java)|　Easy |
+|　16.17 |　　　[连续数列](https://leetcode-cn.com/problems/contiguous-sequence-lcci/) | 　　[java](algorithms/interview/Interview16_17.java)|　Easy |
+
 ### LCP
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
