@@ -203,8 +203,12 @@ If you like this project, please leave me a star. ★
 |　380 |　　　[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | 　　[java](algorithms/hashmap/Leetcode380.java)|　Medium |
 |　386 |　　　[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | 　　[java](algorithms/dfs/Leetcode386.java)|　Medium |
 |　387 |　　　[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 　　[java](algorithms/hashmap/Leetcode387.java)|　Easy |
+|　390 |　　　[Elimination Game](https://leetcode.com/problems/elimination-game/) | 　　[java](algorithms/math/Leetcode390.java)|　Medium |
+|　397 |　　　[Integer Replacement](https://leetcode.com/problems/integer-replacement/) | 　　[java](algorithms/bit/Leetcode397.java)|　Medium |
 |　398 |　　　[Random Pick Index](https://leetcode.com/problems/random-pick-index/) | 　　[java](algorithms/array/Leetcode398.java)|　Medium |
+|　400 |　　　[Nth Digit](https://leetcode.com/problems/nth-digit/) | 　　[java](algorithms/math/Leetcode400.java)|　Medium |
 |　404 |　　　[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 　　[java](algorithms/tree/Leetcode404.java)|　Easy |
+|　405 |　　　[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | 　　[java](algorithms/bit/Leetcode405.java)|　Easy |
 |　406 |　　　[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | 　　[java](algorithms/greed/Leetcode406.java)|　Medium |
 |　409 |　　　[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | 　　[java](algorithms/string/Leetcode409.java)|　Easy |
 |　414 |　　　[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | 　　[java](algorithms/array/Leetcode414.java)|　Easy |
@@ -217,13 +221,17 @@ If you like this project, please leave me a star. ★
 |　448 |　　　[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | 　　[java](algorithms/array/Leetcode448.java)|　Easy |
 |　453 |　　　[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | 　　[java](algorithms/math/Leetcode453.java)|　Easy |
 |　454 |　　　[4Sum II](https://leetcode.com/problems/4sum-ii/) | 　　[java](algorithms/hashmap/Leetcode454.java)|　Medium |
+|　459 |　　　[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) | 　　[java](algorithms/string/Leetcode459.java)|　Easy |
 |　462 |　　　[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | 　　[java](algorithms/math/Leetcode462.java)|　Medium |
 |　485 |　　　[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | 　　[java](algorithms/array/Leetcode485.java)|　Easy | 
+|　491 |　　　[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/) | 　　[java](algorithms/dfs/Leetcode491.java)|　Medium | 
 |　494 |　　　[Target Sum](https://leetcode.com/problems/target-sum/) | 　　[java](algorithms/dp/Leetcode494.java)|　Easy | 
 |　496 |　　　[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | 　　[java](algorithms/hashmap/Leetcode496.java)|　Easy | 
 |　500 |　　　[Keyboard Row](https://leetcode.com/problems/keyboard-row/) | 　　[java](algorithms/hashmap/Leetcode500.java)|　Medium | 
+|　506 |　　　[Relative Ranks](https://leetcode.com/problems/relative-ranks/) | 　　[java](algorithms/hashmap/Leetcode506.java)|　Easy | 
 |　509 |　　　[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 　　[java](algorithms/dp/Leetcode509.java)|　Easy |
 |　518 |　　　[Coin Change 2](https://leetcode.com/problems/coin-change-2/) | 　　[java](algorithms/dp/Leetcode518.java)|　Medium |
+|　520 |　　　[Detect Capital](https://leetcode.com/problems/detect-capital/) | 　　[java](algorithms/string/Leetcode520.java)|　Easy |
 |　532 |　　　[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | 　　[java](algorithms/doublepointer/Leetcode532.java)|　Easy |
 |　543 |　　　[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | 　　[java](algorithms/tree/Leetcode543.java)|　Easy |
 |　556 |　　　[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | 　　[java](algorithms/string/Leetcode556.java)|　Medium |
@@ -232,6 +240,7 @@ If you like this project, please leave me a star. ★
 |　567 |　　　[Permutation in String](https://leetcode.com/problems/permutation-in-string/) | 　　[java](algorithms/hashmap/Leetcode567.java)|　Medium |
 |　575 |　　　[Distribute Candies](https://leetcode.com/problems/distribute-candies/) | 　　[java](algorithms/array/Leetcode575.java)|　Easy |
 |　589 |　　　[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | 　　[java](algorithms/tree/Leetcode589.java)|　Easy |
+|　590 |　　　[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/) | 　　[java](algorithms/tree/Leetcode590.java)|　Easy |
 |　593 |　　　[Valid Square](https://leetcode.com/problems/valid-square/) | 　　[java](algorithms/math/Leetcode593.java)|　Medium |
 |　594 |　　　[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | 　　[java](algorithms/hashmap/Leetcode594.java)|　Easy |
 |　599 |　　　[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | 　　[java](algorithms/hashmap/Leetcode599.java)|　Medium |
@@ -240,22 +249,30 @@ If you like this project, please leave me a star. ★
 |　643 |　　　[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 　　[java](algorithms/array/Leetcode643.java)|　Easy |
 |　645 |　　　[Set Mismatch](https://leetcode.com/problems/set-mismatch/) | 　　[java](algorithms/set/Leetcode645.java)|　Easy |
 |　650 |　　　[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/) | 　　[java](algorithms/dp/Leetcode650.java)|　Medium |
+|　654 |　　　[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 　　[java](algorithms/tree/Leetcode654.java)|　Medium |
+|　657 |　　　[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | 　　[java](algorithms/string/Leetcode657.java)|　Easy |
 |　680 |　　　[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | 　　[java](algorithms/string/Leetcode680.java)|　Easy |
 |　696 |　　　[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) | 　　[java](algorithms/string/Leetcode696.java)|　Easy |
 |　698 |　　　[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) | 　　[java](algorithms/dfs/Leetcode698.java)|　Medium |
+|　709 |　　　[To Lower Case](https://leetcode.com/problems/to-lower-case/) | 　　[java](algorithms/string/Leetcode709.java)|　Easy |
 |　713 |　　　[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | 　　[java](algorithms/slidingwindow/Leetcode713.java)|　Medium |
+|　718 |　　　[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | 　　[java](algorithms/dp/Leetcode718.java)|　Medium |
+|　724 |　　　[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 　　[java](algorithms/array/Leetcode724.java)|　Easy |
 |　740 |　　　[Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | 　　[java](algorithms/dp/Leetcode740.java)|　Medium |
 |　771 |　　　[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 　　[java](algorithms/hashmap/Leetcode771.java)|　Easy |
 |　788 |　　　[Rotated Digits](https://leetcode.com/problems/rotated-digits/) | 　　[java](algorithms/string/Leetcode788.java)|　Easy |
 |　795 |　　　[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | 　　[java](algorithms/array/Leetcode795.java)|　Medium |
 |　804 |　　　[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | 　　[java](algorithms/string/Leetcode804.java)|　Easy |
 |　819 |　　　[Most Common Word](https://leetcode.com/problems/most-common-word/) | 　　[java](algorithms/string/Leetcode819.java)|　Easy |
+|　821 |　　　[Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | 　　[java](algorithms/string/Leetcode821.java)|　Easy |
 |　824 |　　　[Goat Latin](https://leetcode.com/problems/goat-latin/) | 　　[java](algorithms/string/Leetcode824.java)|　Easy |
 |　841 |　　　[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | 　　[java](algorithms/backtracking/Leetcode841.java)|　Medium |
 |　860 |　　　[Lemonade Change](https://leetcode.com/problems/lemonade-change/) | 　　[java](algorithms/greed/Leetcode860.java)|　Easy |
 |　866 |　　　[Prime Palindrome](https://leetcode.com/problems/prime-palindrome/) | 　　[java](algorithms/math/Leetcode866.java)|　Medium |
+|　877 |　　　[Stone Game](https://leetcode.com/problems/stone-game/) | 　　[java](algorithms/dp/Leetcode877.java)|　Medium |
 |　896 |　　　[Monotonic Array](https://leetcode.com/problems/monotonic-array/) | 　　[java](algorithms/array/Leetcode896.java)|　Easy |
 |　898 |　　　[Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | 　　[java](algorithms/bit/Leetcode898.java)|　Medium |
+|　908 |　　　[Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | 　　[java](algorithms/math/Leetcode908.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
 ### 剑指Offer

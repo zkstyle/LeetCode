@@ -41,6 +41,7 @@ public class Leetcode435 {
 
     /**
      * 对二维区间排序　若有交集时，优先选择较短的区间
+     * 双指针对区间进行比较
      */
     public int eraseOverlapIntervals(int[][] intervals) {
         Arrays.sort(intervals, (o1, o2) -> o1[0] == o2[0] ? o1[1] - o2[1] : o1[0] - o2[0]);

@@ -60,4 +60,30 @@ public class Leetcode414 {
             return queue.poll();
         }
     }
+
+    /**
+     * 设置三个值　最大值　次大值　第三大值
+     * 如果nums[i]大于最大值　更新三个值
+     * 如果大于次大值　更新两个值
+     * 否则更新第三大值
+     */
+    public int thirdMax2(int[] nums) {
+        long max=Long.MIN_VALUE,secondMax=Long.MIN_VALUE,thirdMax = Long.MIN_VALUE;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] > max){
+                thirdMax = secondMax;
+                secondMax = max;
+                max = nums[i];
+            } else if(nums[i]>secondMax && nums[i] != max){
+                thirdMax = secondMax;
+                secondMax = nums[i];
+            } else if(nums[i]>thirdMax && nums[i]!=secondMax && nums[i]!=max){
+                thirdMax = nums[i];
+            }
+        }
+        if(thirdMax == Long.MIN_VALUE){
+            return (int)max;
+        }
+        return (int)thirdMax;
+    }
 }

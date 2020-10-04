@@ -45,6 +45,11 @@ public class Leetcode354 {
     }
 
 
+    /**
+     * 动态规划加二分查找加贪心思想。按照width 升序，height 降序排序之后。
+     *
+     * 利用贪心思想，本质上如果两个信封不能嵌套，我们选择height 尽量小的，以便极可能的让后面的大信封嵌套起来容易。
+     */
     public int maxEnvelopes2(int[][] ev) {
         if (ev.length == 0) {
             return 0;
