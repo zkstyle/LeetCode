@@ -20,6 +20,7 @@ package dp;
  * 进阶: 你能将算法的时间复杂度降低到 O(n log n) 吗?
  */
 public class Leetcode300 {
+
     public static int lengthOfLIS(int[] nums) {
         int len = nums.length;
         if(len <= 1){
