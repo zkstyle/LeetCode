@@ -170,6 +170,7 @@ If you like this project, please leave me a star. ★
 |　231 |　　　[Power of Two](https://leetcode.com/problems/power-of-two/) | 　　[java](algorithms/math/Leetcode231.java)|　Easy |
 |　234 |　　　[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode234.java)|　Easy |
 |　235 |　　　[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 　　[java](algorithms/tree/Leetcode235.java)|　Easy |
+|　236 |　　　[Lowest Common Ancestor of a Binary Search Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | 　　[java](algorithms/tree/Leetcode236.java)|　Medium |
 |　237 |　　　[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode237.java)|　Easy |
 |　238 |　　　[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 　　[java](algorithms/array/Leetcode238.java)|　Medium |
 |　242 |　　　[Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 　　[java](algorithms/hashmap/Leetcode242.java)|　Easy |
@@ -199,10 +200,13 @@ If you like this project, please leave me a star. ★
 |　350 |　　　[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | 　　[java](algorithms/hashmap/Leetcode350.java)|　Easy |
 |　354 |　　　[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) | 　　[java](algorithms/dp/Leetcode354.java)|　Hard |
 |　355 |　　　[Design Twitter](https://leetcode.com/problems/design-twitter/) | 　　[java](algorithms/hashmap/Leetcode355.java)|　Medium |
+|　365 |　　　[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/) | 　　[java](algorithms/math/Leetcode365.java)|　Medium |
 |　371 |　　　[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | 　　[java](algorithms/bit/Leetcode371.java)|　Easy |
+|　372 |　　　[Super Pow](https://leetcode.com/problems/super-pow/) | 　　[java](algorithms/math/Leetcode372.java)|　Medium |
 |　374 |　　　[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | 　　[java](algorithms/binarysearch/Leetcode374.java)|　Easy |
 |　377 |　　　[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) | 　　[java](algorithms/dp/Leetcode377.java)|　Medium |
 |　380 |　　　[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | 　　[java](algorithms/hashmap/Leetcode380.java)|　Medium |
+|　384 |　　　[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | 　　[java](algorithms/array/Leetcode384.java)|　Medium |
 |　386 |　　　[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | 　　[java](algorithms/dfs/Leetcode386.java)|　Medium |
 |　387 |　　　[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 　　[java](algorithms/hashmap/Leetcode387.java)|　Easy |
 |　390 |　　　[Elimination Game](https://leetcode.com/problems/elimination-game/) | 　　[java](algorithms/math/Leetcode390.java)|　Medium |
@@ -216,6 +220,7 @@ If you like this project, please leave me a star. ★
 |　409 |　　　[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | 　　[java](algorithms/string/Leetcode409.java)|　Easy |
 |　414 |　　　[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | 　　[java](algorithms/array/Leetcode414.java)|　Easy |
 |　415 |　　　[Add Strings](https://leetcode.com/problems/add-strings/) | 　　[java](algorithms/string/Leetcode415.java)|　Easy |
+|　416 |　　　[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | 　　[java](algorithms/dp/Leetcode416.java)|　Medium |
 |　434 |　　　[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/) | 　　[java](algorithms/string/Leetcode434.java)|　Easy |
 |　435 |　　　[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | 　　[java](algorithms/greed/Leetcode435.java)|　Medium |
 |　441 |　　　[Arranging Coins](https://leetcode.com/problems/arranging-coins/) | 　　[java](algorithms/binarysearch/Leetcode441.java)|　Easy |
@@ -280,6 +285,10 @@ If you like this project, please leave me a star. ★
 |　898 |　　　[Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | 　　[java](algorithms/bit/Leetcode898.java)|　Medium |
 |　908 |　　　[Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | 　　[java](algorithms/math/Leetcode908.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
+|　1011 |　　　[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | 　　[java](algorithms/binarysearch/Leetcode1011.java)|　Medium | 
+|　1019 |　　　[Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | 　　[java](algorithms/greed/Leetcode1029.java)|　Medium | 
+|　1029 |　　　[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | 　　[java](algorithms/greed/Leetcode1029.java)|　Medium | 
+|　1046 |　　　[Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | 　　[java](algorithms/heap/Leetcode1046.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
 
 ### 剑指Offer
@@ -304,12 +313,17 @@ If you like this project, please leave me a star. ★
 |　22 |　　　[链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO22.java)|　Easy |
 |　24 |　　　[反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO24.java)|　Easy |
 |　39 |　　　[数组中出现次数超过一半的数字](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO39.java)|　Easy |
+|　40 |　　　[最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO40.java)|　Easy |
+|　46 |　　　[把数字翻译成字符串](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO46.java)|　Medium |
 |　47 |　　　[礼物的最大价值](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO47.java)|　Medium |
 |　50 |　　　[第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO50.java)|　Easy |
 |　53 |　　　[0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO53.java)|　Easy |
+|　58-2 |　　　[左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO58_2.java)|　Easy |
+|　59-1 |　　　[滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO59_1.java)|　Easy |
 |　60 |　　　[n个骰子的点数](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO60.java)|　Easy |
 |　64 |　　　[求1+2+…+n](https://leetcode-cn.com/problems/qiu-12n-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO64.java)|　Medium |
 |　65 |　　　[不用加减乘除做加法](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO65.java)|　Easy |
+|　66 |　　　[构建乘积数组](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/) | 　　[java](algorithms/swordmeansoffer/SMO66.java)|　Medium |
 
 ### 面试题
 |　02.06 |　　　[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/) | 　　[java](algorithms/interview/Interview02_06.java)|　Easy |
