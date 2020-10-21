@@ -286,10 +286,22 @@ If you like this project, please leave me a star. ★
 |　908 |　　　[Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | 　　[java](algorithms/math/Leetcode908.java)|　Easy |
 |　994 |　　　[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 　　[java](algorithms/bfs/Leetcode994.java)|　Easy | 
 |　1011 |　　　[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | 　　[java](algorithms/binarysearch/Leetcode1011.java)|　Medium | 
+|　1012 |　　　[Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/) | 　　[java](algorithms/dp/Leetcode1012.java)|　Hard | 
+|　1015 |　　　[Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | 　　[java](algorithms/math/Leetcode1015.java)|　Medium | 
+|　1018 |　　　[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/) | 　　[java](algorithms/array/Leetcode1018.java)|　Easy | 
 |　1019 |　　　[Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | 　　[java](algorithms/greed/Leetcode1029.java)|　Medium | 
+|　1027 |　　　[Longest Arithmetic Subsequence](https://leetcode.com/problems/longest-arithmetic-subsequence/) | 　　[java](algorithms/dp/Leetcode1027.java)|　Medium | 
 |　1029 |　　　[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | 　　[java](algorithms/greed/Leetcode1029.java)|　Medium | 
 |　1046 |　　　[Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | 　　[java](algorithms/heap/Leetcode1046.java)|　Easy | 
+|　1089 |　　　[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/) | 　　[java](algorithms/array/Leetcode1089.java)|　Easy | 
 |　1103 |　　　[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | 　　[java](algorithms/math/Leetcode1103.java)|　Easy |
+|　1115 |　　　[Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/) | 　　[java](algorithms/thread/Leetcode1115.java)|　Medium |
+|　1117 |　　　[Building H2O](https://leetcode.com/problems/building-h2o/) | 　　[java](algorithms/thread/Leetcode1117.java)|　Medium |
+|　1122 |　　　[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | 　　[java](algorithms/array/Leetcode1122.java)|　Easy |
+|　1143 |　　　[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | 　　[java](algorithms/dp/Leetcode1143.java)|　Medium |
+|　1222 |　　　[Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | 　　[java](algorithms/array/Leetcode1222.java)|　Medium |
+|　1250 |　　　[Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/) | 　　[java](algorithms/math/Leetcode1250.java)|　Hard |
+|　1325 |　　　[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/) | 　　[java](algorithms/tree/Leetcode1325.java)|　Medium |
 
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
