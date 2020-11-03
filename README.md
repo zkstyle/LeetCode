@@ -299,10 +299,11 @@ If you like this project, please leave me a star. ★
 |　1117 |　　　[Building H2O](https://leetcode.com/problems/building-h2o/) | 　　[java](algorithms/thread/Leetcode1117.java)|　Medium |
 |　1122 |　　　[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | 　　[java](algorithms/array/Leetcode1122.java)|　Easy |
 |　1143 |　　　[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | 　　[java](algorithms/dp/Leetcode1143.java)|　Medium |
+|　1201 |　　　[Ugly Number III](https://leetcode.com/problems/ugly-number-iii/) | 　　[java](algorithms/binarysearch/Leetcode1201.java)|　Medium |
 |　1222 |　　　[Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | 　　[java](algorithms/array/Leetcode1222.java)|　Medium |
 |　1250 |　　　[Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/) | 　　[java](algorithms/math/Leetcode1250.java)|　Hard |
 |　1325 |　　　[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/) | 　　[java](algorithms/tree/Leetcode1325.java)|　Medium |
-
+|　1338 |　　　[Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/) | 　　[java](algorithms/array/Leetcode1338.java)|　Medium |
 ### 剑指Offer
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |

@@ -30,12 +30,12 @@ public class Leetcode713 {
      * 类似于滑动窗口的双指针　先将right指针向右移动　若连续乘积大于等于k　则将left++
      */
     public int numSubarrayProductLessThanK(int[] nums, int k) {
-        if(k<=1) return 0;
-        int left=0,prod=1,ans=0;
-        for(int right=0;right<nums.length;right++){
-            prod*=nums[right];
-            while(prod>=k) prod/=nums[left++];
-            ans+=right-left+1;
+        if (k <= 1) return 0;
+        int left = 0, prod = 1, ans = 0;
+        for (int right = 0; right < nums.length; right++) {
+            prod *= nums[right];
+            while (prod >= k) prod /= nums[left++];
+            ans += right - left + 1;
         }
         return ans;
     }
