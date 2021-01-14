@@ -79,6 +79,7 @@ If you like this project, please leave me a star. ★
 |　86 |　　　[Partition List](https://leetcode.com/problems/partition-list/) | 　　[java](algorithms/linkedlist/Leetcode86.java)|　Medium |
 |　87 |　　　[Scramble String](https://leetcode.com/problems/scramble-string/) | 　　[java](algorithms/dp/Leetcode87.java)|　Hard |
 |　88 |　　　[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 　　[java](algorithms/array/Leetcode88.java)|　Easy |
+|　89 |　　　[Gray Code](https://leetcode.com/problems/gray-code/submissions/) | 　　[java](algorithms/backtracking/Leetcode89.java)|　Medium |
 |　90 |　　　[Subsets II](https://leetcode.com/problems/subsets-ii/) | 　　[java](algorithms/backtracking/Leetcode90.java)|　Medium |
 |　91 |　　　[Decode Ways](https://leetcode.com/problems/decode-ways/) | 　　[java](algorithms/dp/Leetcode91.java)|　Medium |
 |　92 |　　　[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 　　[java](algorithms/linkedlist/Leetcode92.java)|　Medium |
@@ -173,6 +174,7 @@ If you like this project, please leave me a star. ★
 |　236 |　　　[Lowest Common Ancestor of a Binary Search Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | 　　[java](algorithms/tree/Leetcode236.java)|　Medium |
 |　237 |　　　[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | 　　[java](algorithms/linkedlist/Leetcode237.java)|　Easy |
 |　238 |　　　[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 　　[java](algorithms/array/Leetcode238.java)|　Medium |
+|　239 |　　　[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | 　　[java](algorithms/slidingwindow/Leetcode239.java)|　Hard |
 |　242 |　　　[Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 　　[java](algorithms/hashmap/Leetcode242.java)|　Easy |
 |　257 |　　　[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | 　　[java](algorithms/dfs/Leetcode257.java)|　Easy |
 |　258 |　　　[Add Digits](https://leetcode.com/problems/add-digits/) | 　　[java](algorithms/math/Leetcode258.java)|　Easy |
@@ -270,6 +272,7 @@ If you like this project, please leave me a star. ★
 |　718 |　　　[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | 　　[java](algorithms/dp/Leetcode718.java)|　Medium |
 |　724 |　　　[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 　　[java](algorithms/array/Leetcode724.java)|　Easy |
 |　740 |　　　[Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | 　　[java](algorithms/dp/Leetcode740.java)|　Medium |
+|　767 |　　　[Reorganize String](https://leetcode.com/problems/reorganize-string/) | 　　[java](algorithms/string/Leetcode767.java)|　Medium |
 |　771 |　　　[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 　　[java](algorithms/hashmap/Leetcode771.java)|　Easy |
 |　788 |　　　[Rotated Digits](https://leetcode.com/problems/rotated-digits/) | 　　[java](algorithms/string/Leetcode788.java)|　Easy |
 |　795 |　　　[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | 　　[java](algorithms/array/Leetcode795.java)|　Medium |
