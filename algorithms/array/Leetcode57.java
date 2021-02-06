@@ -1,7 +1,6 @@
 package array;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 /**
  * @BelongsProject: LeetCode
@@ -33,28 +32,27 @@ public class Leetcode57 {
      *              4. 将list转化为数组
      */
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        List<int[]> res = new ArrayList<>();
+        int[][] res = new int[intervals.length + 1][2];
+        int idx = 0;
+        // 遍历区间列表：
+        // 首先将新区间左边且相离的区间加入结果集
         int i = 0;
         while (i < intervals.length && intervals[i][1] < newInterval[0]) {
-            res.add(new int[]{intervals[i][0], intervals[i][1]});
-            i++;
+            res[idx++] = intervals[i++];
         }
-        //i is first [][1] >= [0]  overlap
+        // 接着判断当前区间是否与新区间重叠，重叠的话就进行合并，直到遍历到当前区间在新区间的右边且相离，
+        // 将最终合并后的新区间加入结果集
         while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
-            newInterval[0] = Math.min(newInterval[0], intervals[i][0]);
-            newInterval[1] = Math.max(newInterval[1], intervals[i][1]);
+            newInterval[0] = Math.min(intervals[i][0], newInterval[0]);
+            newInterval[1] = Math.max(intervals[i][1], newInterval[1]);
             i++;
         }
-        res.add(newInterval);
+        res[idx++] = newInterval;
+        // 最后将新区间右边且相离的区间加入结果集
+        while (i < intervals.length) {
+            res[idx++] = intervals[i++];
+        }
 
-        for (; i < intervals.length; i++) {
-            res.add(new int[]{intervals[i][0], intervals[i][1]});
-        }
-        int[][] result = new int[res.size()][2];
-        for (int j = 0; j < res.size(); j++) {
-            result[j][0] = res.get(j)[0];
-            result[j][1] = res.get(j)[1];
-        }
-        return result;
+        return Arrays.copyOf(res, idx);
     }
 }

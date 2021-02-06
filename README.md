@@ -50,6 +50,8 @@ If you like this project, please leave me a star. ★
 |　51 |　　　[N-Queens](https://leetcode.com/problems/n-queens/) | 　　[java](algorithms/backtracking/Leetcode51.java)|　Hard |
 |　52 |　　　[N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 　　[java](algorithms/backtracking/Leetcode52.java)|　Hard |
 |　53 |　　　[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 　　[java](algorithms/dp/Leetcode53.java)|　Easy |
+|　54 |　　　[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 　　[java](algorithms/array/Leetcode54.java)|　Medium |
+|　55 |　　　[Jump Game](https://leetcode-cn.com/problems/jump-game/) | 　　[java](algorithms/array/Leetcode55.java)|　Medium |
 |　56 |　　　[Merge Intervals](https://leetcode.com/problems/merge-intervals/) | 　　[java](algorithms/array/Leetcode56.java)|　Medium |
 |　57 |　　　[Insert Interval](https://leetcode.com/problems/insert-interval/) | 　　[java](algorithms/array/Leetcode57.java)|　Hard |
 |　58 |　　　[Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 　　[java](algorithms/string/Leetcode58.java)|　Easy |
@@ -66,6 +68,7 @@ If you like this project, please leave me a star. ★
 |　70 |　　　[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 　　[java](algorithms/dp/Leetcode70.java)|　Easy |
 |　72 |　　　[Edit Distance](https://leetcode.com/problems/edit-distance/) | 　　[java](algorithms/dp/Leetcode72.java)|　Hard |
 |　73 |　　　[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 　　[java](algorithms/array/Leetcode73.java)|　Medium |
+|　74 |　　　[Search a 2d Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | 　　[java](algorithms/array/Leetcode74.java)|　Medium |
 |　75 |　　　[Sort Colors](https://leetcode.com/problems/sort-colors/) | 　　[java](algorithms/array/Leetcode75.java)|　Medium |
 |　76 |　　　[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | 　　[java](algorithms/slidingwindow/Leetcode76.java)|　Hard |
 |　77 |　　　[Combinations](https://leetcode.com/problems/combinations/) | 　　[java](algorithms/backtracking/Leetcode77.java)|　Medium |
